@@ -1,0 +1,13 @@
+{
+  "repo": "asyncz",
+  "n_sync_only_files": 120,
+  "n_async_files": 25,
+  "sync_only_written_name_count": 363,
+  "async_side_read_only_candidate_count": 55,
+  "collision_count": 2,
+  "collision_names": [
+    "SELF_ATTR:self.logger_name",
+    "SELF_ATTR:self.scheduler"
+  ],
+  "verdict": "CONTAMINATION LIKELY -- rescope recommended"
+}

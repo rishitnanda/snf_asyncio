@@ -1,0 +1,38 @@
+{
+  "repo": "aioredis",
+  "destructive_names_total": 26,
+  "flagged_control_bounded_names": [
+    "SELF_ATTR:self._next_response",
+    "SELF_ATTR:self._reader",
+    "SELF_ATTR:self._writer",
+    "SELF_ATTR:self.channels",
+    "SELF_ATTR:self.connection",
+    "SELF_ATTR:self.explicit_transaction",
+    "SELF_ATTR:self.master_address",
+    "SELF_ATTR:self.next_health_check",
+    "SELF_ATTR:self.patterns",
+    "SELF_ATTR:self.pending_unsubscribe_channels",
+    "SELF_ATTR:self.pending_unsubscribe_patterns",
+    "SELF_ATTR:self.redis",
+    "SELF_ATTR:self.scripts",
+    "SELF_ATTR:self.slave_rr_counter",
+    "SELF_ATTR:self.ssl_context",
+    "SELF_ATTR:self.watching"
+  ],
+  "flagged_control_unbounded_names": [],
+  "flagged_data_names": [
+    "GLOBAL:NONBLOCKING_EXCEPTION_ERROR_NUMBERS",
+    "SELF_ATTR:self._available_connections",
+    "SELF_ATTR:self._created_connections",
+    "SELF_ATTR:self._in_use_connections",
+    "SELF_ATTR:self.command_stack",
+    "SELF_ATTR:self.host",
+    "SELF_ATTR:self.p",
+    "SELF_ATTR:self.pool",
+    "SELF_ATTR:self.port",
+    "SELF_ATTR:self.sha"
+  ],
+  "flagged_control_bounded_interactions": 165,
+  "flagged_control_unbounded_interactions": 0,
+  "flagged_data_interactions": 40
+}

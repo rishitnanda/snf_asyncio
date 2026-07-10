@@ -1,0 +1,506 @@
+{
+  "per_repo": {
+    "aio-pika": {
+      "repo": "aio-pika",
+      "thread_offloading_functions": [],
+      "destructive_unmediated_interactions": 316,
+      "overlap_interactions": 0,
+      "pct_destructive_unmediated_in_thread_functions": 0.0,
+      "overlap_examples": []
+    },
+    "aiobotocore": {
+      "repo": "aiobotocore",
+      "thread_offloading_functions": [],
+      "destructive_unmediated_interactions": 108,
+      "overlap_interactions": 0,
+      "pct_destructive_unmediated_in_thread_functions": 0.0,
+      "overlap_examples": []
+    },
+    "aiocache": {
+      "repo": "aiocache",
+      "thread_offloading_functions": [],
+      "destructive_unmediated_interactions": 121,
+      "overlap_interactions": 0,
+      "pct_destructive_unmediated_in_thread_functions": 0.0,
+      "overlap_examples": []
+    },
+    "aiofiles": {
+      "repo": "aiofiles",
+      "thread_offloading_functions": [
+        "__aexit__",
+        "_open",
+        "_spooled_temporary_file",
+        "_temporary_directory",
+        "_temporary_file",
+        "method",
+        "run",
+        "write",
+        "writelines"
+      ],
+      "destructive_unmediated_interactions": 4,
+      "overlap_interactions": 2,
+      "pct_destructive_unmediated_in_thread_functions": 50.0,
+      "overlap_examples": [
+        {
+          "file": "src/aiofiles/base.py",
+          "func": "__aexit__",
+          "lineno": 77,
+          "name": "self._obj",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "src/aiofiles/base.py",
+          "func": "__aexit__",
+          "lineno": 79,
+          "name": "self._obj",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "full_rebind"
+        }
+      ]
+    },
+    "aiohttp": {
+      "repo": "aiohttp",
+      "thread_offloading_functions": [
+        "_handle",
+        "_request",
+        "_sendfile_fallback",
+        "as_bytes",
+        "compress",
+        "decompress",
+        "post",
+        "prepare",
+        "write_with_length"
+      ],
+      "destructive_unmediated_interactions": 626,
+      "overlap_interactions": 31,
+      "pct_destructive_unmediated_in_thread_functions": 4.95,
+      "overlap_examples": [
+        {
+          "file": "aiohttp/web_request.py",
+          "func": "post",
+          "lineno": 679,
+          "name": "self._post",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "aiohttp/web_request.py",
+          "func": "post",
+          "lineno": 680,
+          "name": "self._post",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "aiohttp/web_request.py",
+          "func": "post",
+          "lineno": 682,
+          "name": "self._post",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "full_rebind"
+        },
+        {
+          "file": "aiohttp/web_request.py",
+          "func": "post",
+          "lineno": 683,
+          "name": "self._post",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "aiohttp/web_request.py",
+          "func": "post",
+          "lineno": 685,
+          "name": "self.content_type",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        }
+      ]
+    },
+    "aiokafka": {
+      "repo": "aiokafka",
+      "thread_offloading_functions": [],
+      "destructive_unmediated_interactions": 246,
+      "overlap_interactions": 0,
+      "pct_destructive_unmediated_in_thread_functions": 0.0,
+      "overlap_examples": []
+    },
+    "aiomysql": {
+      "repo": "aiomysql",
+      "thread_offloading_functions": [],
+      "destructive_unmediated_interactions": 378,
+      "overlap_interactions": 0,
+      "pct_destructive_unmediated_in_thread_functions": 0.0,
+      "overlap_examples": []
+    },
+    "aiopath": {
+      "repo": "aiopath",
+      "thread_offloading_functions": [],
+      "destructive_unmediated_interactions": 0,
+      "overlap_interactions": 0,
+      "pct_destructive_unmediated_in_thread_functions": null,
+      "overlap_examples": []
+    },
+    "aiopg": {
+      "repo": "aiopg",
+      "thread_offloading_functions": [],
+      "destructive_unmediated_interactions": 169,
+      "overlap_interactions": 0,
+      "pct_destructive_unmediated_in_thread_functions": 0.0,
+      "overlap_examples": []
+    },
+    "aioredis": {
+      "repo": "aioredis",
+      "thread_offloading_functions": [],
+      "destructive_unmediated_interactions": 180,
+      "overlap_interactions": 0,
+      "pct_destructive_unmediated_in_thread_functions": 0.0,
+      "overlap_examples": []
+    },
+    "aiosonic": {
+      "repo": "aiosonic",
+      "thread_offloading_functions": [
+        "_gen",
+        "_read_file"
+      ],
+      "destructive_unmediated_interactions": 170,
+      "overlap_interactions": 0,
+      "pct_destructive_unmediated_in_thread_functions": 0.0,
+      "overlap_examples": []
+    },
+    "apscheduler": {
+      "repo": "apscheduler",
+      "thread_offloading_functions": [],
+      "destructive_unmediated_interactions": 385,
+      "overlap_interactions": 0,
+      "pct_destructive_unmediated_in_thread_functions": 0.0,
+      "overlap_examples": []
+    },
+    "arq": {
+      "repo": "arq",
+      "thread_offloading_functions": [],
+      "destructive_unmediated_interactions": 47,
+      "overlap_interactions": 0,
+      "pct_destructive_unmediated_in_thread_functions": 0.0,
+      "overlap_examples": []
+    },
+    "asyncmy": {
+      "repo": "asyncmy",
+      "thread_offloading_functions": [],
+      "destructive_unmediated_interactions": 52,
+      "overlap_interactions": 0,
+      "pct_destructive_unmediated_in_thread_functions": 0.0,
+      "overlap_examples": []
+    },
+    "asyncpg": {
+      "repo": "asyncpg",
+      "thread_offloading_functions": [],
+      "destructive_unmediated_interactions": 164,
+      "overlap_interactions": 0,
+      "pct_destructive_unmediated_in_thread_functions": 0.0,
+      "overlap_examples": []
+    },
+    "asynctest": {
+      "repo": "asynctest",
+      "thread_offloading_functions": [],
+      "destructive_unmediated_interactions": 0,
+      "overlap_interactions": 0,
+      "pct_destructive_unmediated_in_thread_functions": null,
+      "overlap_examples": []
+    },
+    "asyncz": {
+      "repo": "asyncz",
+      "thread_offloading_functions": [
+        "start"
+      ],
+      "destructive_unmediated_interactions": 11,
+      "overlap_interactions": 4,
+      "pct_destructive_unmediated_in_thread_functions": 36.36,
+      "overlap_examples": [
+        {
+          "file": "asyncz/schedulers/asyncio.py",
+          "func": "start",
+          "lineno": 117,
+          "name": "self.event_loop_thread",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "full_rebind"
+        },
+        {
+          "file": "asyncz/schedulers/asyncio.py",
+          "func": "start",
+          "lineno": 118,
+          "name": "self.event_loop_thread",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "asyncz/schedulers/asyncio.py",
+          "func": "start",
+          "lineno": 118,
+          "name": "self.event_loop_thread",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "asyncz/schedulers/asyncio.py",
+          "func": "start",
+          "lineno": 121,
+          "name": "self.event_loop",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "full_rebind"
+        }
+      ]
+    },
+    "databases": {
+      "repo": "databases",
+      "thread_offloading_functions": [],
+      "destructive_unmediated_interactions": 211,
+      "overlap_interactions": 0,
+      "pct_destructive_unmediated_in_thread_functions": 0.0,
+      "overlap_examples": []
+    },
+    "elasticsearch-py": {
+      "repo": "elasticsearch-py",
+      "thread_offloading_functions": [],
+      "destructive_unmediated_interactions": 2,
+      "overlap_interactions": 0,
+      "pct_destructive_unmediated_in_thread_functions": 0.0,
+      "overlap_examples": []
+    },
+    "fastapi": {
+      "repo": "fastapi",
+      "thread_offloading_functions": [],
+      "destructive_unmediated_interactions": 63,
+      "overlap_interactions": 0,
+      "pct_destructive_unmediated_in_thread_functions": 0.0,
+      "overlap_examples": []
+    },
+    "fastapi_examples": {
+      "repo": "fastapi_examples",
+      "thread_offloading_functions": [],
+      "destructive_unmediated_interactions": 63,
+      "overlap_interactions": 0,
+      "pct_destructive_unmediated_in_thread_functions": 0.0,
+      "overlap_examples": []
+    },
+    "faust": {
+      "repo": "faust",
+      "thread_offloading_functions": [],
+      "destructive_unmediated_interactions": 377,
+      "overlap_interactions": 0,
+      "pct_destructive_unmediated_in_thread_functions": 0.0,
+      "overlap_examples": []
+    },
+    "httpx": {
+      "repo": "httpx",
+      "thread_offloading_functions": [],
+      "destructive_unmediated_interactions": 34,
+      "overlap_interactions": 0,
+      "pct_destructive_unmediated_in_thread_functions": 0.0,
+      "overlap_examples": []
+    },
+    "kubernetes_asyncio": {
+      "repo": "kubernetes_asyncio",
+      "thread_offloading_functions": [],
+      "destructive_unmediated_interactions": 116,
+      "overlap_interactions": 0,
+      "pct_destructive_unmediated_in_thread_functions": 0.0,
+      "overlap_examples": []
+    },
+    "motor": {
+      "repo": "motor",
+      "thread_offloading_functions": [],
+      "destructive_unmediated_interactions": 2,
+      "overlap_interactions": 0,
+      "pct_destructive_unmediated_in_thread_functions": 0.0,
+      "overlap_examples": []
+    },
+    "pytest-asyncio": {
+      "repo": "pytest-asyncio",
+      "thread_offloading_functions": [],
+      "destructive_unmediated_interactions": 0,
+      "overlap_interactions": 0,
+      "pct_destructive_unmediated_in_thread_functions": null,
+      "overlap_examples": []
+    },
+    "quart": {
+      "repo": "quart",
+      "thread_offloading_functions": [
+        "_gen_wrapper",
+        "_wrapper"
+      ],
+      "destructive_unmediated_interactions": 174,
+      "overlap_interactions": 0,
+      "pct_destructive_unmediated_in_thread_functions": 0.0,
+      "overlap_examples": []
+    },
+    "redis-py": {
+      "repo": "redis-py",
+      "thread_offloading_functions": [
+        "delete",
+        "get",
+        "patch",
+        "post",
+        "put",
+        "request"
+      ],
+      "destructive_unmediated_interactions": 441,
+      "overlap_interactions": 0,
+      "pct_destructive_unmediated_in_thread_functions": 0.0,
+      "overlap_examples": []
+    },
+    "sanic": {
+      "repo": "sanic",
+      "thread_offloading_functions": [],
+      "destructive_unmediated_interactions": 266,
+      "overlap_interactions": 0,
+      "pct_destructive_unmediated_in_thread_functions": 0.0,
+      "overlap_examples": []
+    },
+    "sqlalchemy": {
+      "repo": "sqlalchemy",
+      "thread_offloading_functions": [],
+      "destructive_unmediated_interactions": 86,
+      "overlap_interactions": 0,
+      "pct_destructive_unmediated_in_thread_functions": 0.0,
+      "overlap_examples": []
+    },
+    "taskiq": {
+      "repo": "taskiq",
+      "thread_offloading_functions": [
+        "run_receiver_task",
+        "run_task"
+      ],
+      "destructive_unmediated_interactions": 55,
+      "overlap_interactions": 6,
+      "pct_destructive_unmediated_in_thread_functions": 10.91,
+      "overlap_examples": [
+        {
+          "file": "taskiq/receiver/receiver.py",
+          "func": "run_task",
+          "lineno": 231,
+          "name": "self.task_signatures",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "mutating_method_noncommutative"
+        },
+        {
+          "file": "taskiq/receiver/receiver.py",
+          "func": "run_task",
+          "lineno": 231,
+          "name": "self.task_signatures",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "taskiq/receiver/receiver.py",
+          "func": "run_task",
+          "lineno": 232,
+          "name": "self.dependency_graphs",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "mutating_method_noncommutative"
+        },
+        {
+          "file": "taskiq/receiver/receiver.py",
+          "func": "run_task",
+          "lineno": 232,
+          "name": "self.dependency_graphs",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "taskiq/receiver/receiver.py",
+          "func": "run_task",
+          "lineno": 233,
+          "name": "self.task_hints",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "mutating_method_noncommutative"
+        }
+      ]
+    },
+    "tortoise-orm": {
+      "repo": "tortoise-orm",
+      "thread_offloading_functions": [],
+      "destructive_unmediated_interactions": 288,
+      "overlap_interactions": 0,
+      "pct_destructive_unmediated_in_thread_functions": 0.0,
+      "overlap_examples": []
+    },
+    "trio": {
+      "repo": "trio",
+      "thread_offloading_functions": [
+        "check_case",
+        "check_run_in_trio_thread",
+        "main",
+        "test_ssl_server_basics"
+      ],
+      "destructive_unmediated_interactions": 163,
+      "overlap_interactions": 0,
+      "pct_destructive_unmediated_in_thread_functions": 0.0,
+      "overlap_examples": []
+    },
+    "websockets": {
+      "repo": "websockets",
+      "thread_offloading_functions": [],
+      "destructive_unmediated_interactions": 239,
+      "overlap_interactions": 0,
+      "pct_destructive_unmediated_in_thread_functions": 0.0,
+      "overlap_examples": []
+    }
+  },
+  "overall": {
+    "destructive_unmediated_total": 5557,
+    "overlap_total": 43,
+    "pct_destructive_unmediated_in_thread_functions": 0.77,
+    "repos_with_thread_usage": 8,
+    "note": "Lower bound: same-function only, no call-graph analysis, constructor/run_in_executor detection only (no .start()-based detection). True overlap is >= this figure."
+  }
+}

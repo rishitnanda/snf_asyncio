@@ -1,0 +1,12 @@
+{
+  "repo": "motor",
+  "destructive_names_total": 1,
+  "flagged_control_bounded_names": [
+    "SELF_ATTR:self.closed"
+  ],
+  "flagged_control_unbounded_names": [],
+  "flagged_data_names": [],
+  "flagged_control_bounded_interactions": 2,
+  "flagged_control_unbounded_interactions": 0,
+  "flagged_data_interactions": 0
+}

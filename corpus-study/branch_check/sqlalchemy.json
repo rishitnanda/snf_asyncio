@@ -1,0 +1,23 @@
+{
+  "repo": "sqlalchemy",
+  "destructive_names_total": 11,
+  "flagged_control_bounded_names": [
+    "SELF_ATTR:self._invalidate_schema_cache_asof",
+    "SELF_ATTR:self._transaction",
+    "SELF_ATTR:self.registry",
+    "SELF_ATTR:self.sync_connection"
+  ],
+  "flagged_control_unbounded_names": [],
+  "flagged_data_names": [
+    "SELF_ATTR:self._cursor",
+    "SELF_ATTR:self._description",
+    "SELF_ATTR:self._proxied",
+    "SELF_ATTR:self._rowcount",
+    "SELF_ATTR:self._rows",
+    "SELF_ATTR:self.sync_transaction",
+    "SELF_ATTR:self.trans"
+  ],
+  "flagged_control_bounded_interactions": 18,
+  "flagged_control_unbounded_interactions": 0,
+  "flagged_data_interactions": 77
+}

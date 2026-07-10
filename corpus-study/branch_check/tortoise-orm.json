@@ -1,0 +1,37 @@
+{
+  "repo": "tortoise-orm",
+  "destructive_names_total": 25,
+  "flagged_control_bounded_names": [
+    "SELF_ATTR:self._connection",
+    "SELF_ATTR:self._connections",
+    "SELF_ATTR:self._create_db",
+    "SELF_ATTR:self._db_config",
+    "SELF_ATTR:self._finalized",
+    "SELF_ATTR:self._inited",
+    "SELF_ATTR:self._pool",
+    "SELF_ATTR:self._saved_in_db",
+    "SELF_ATTR:self._savepoint",
+    "SELF_ATTR:self._transaction",
+    "SELF_ATTR:self.connection",
+    "SELF_ATTR:self.prefetch_map",
+    "SELF_ATTR:self.transaction"
+  ],
+  "flagged_control_unbounded_names": [],
+  "flagged_data_names": [
+    "SELF_ATTR:self._apps",
+    "SELF_ATTR:self._await_when_save",
+    "SELF_ATTR:self._bound_loop",
+    "SELF_ATTR:self._context",
+    "SELF_ATTR:self._default_connection",
+    "SELF_ATTR:self._listeners",
+    "SELF_ATTR:self._table_name_generator",
+    "SELF_ATTR:self._template",
+    "SELF_ATTR:self.applied_migrations",
+    "SELF_ATTR:self.graph",
+    "SELF_ATTR:self.table_name_generator",
+    "SELF_ATTR:self.token"
+  ],
+  "flagged_control_bounded_interactions": 237,
+  "flagged_control_unbounded_interactions": 0,
+  "flagged_data_interactions": 51
+}

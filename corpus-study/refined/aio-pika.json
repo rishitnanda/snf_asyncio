@@ -1,0 +1,82 @@
+{
+  "total_interactions": 723,
+  "counts_by_bucket": {
+    "READ_ONLY": 357,
+    "COMMUTATIVE": 35,
+    "DESTRUCTIVE": 331
+  },
+  "mediated_by_bucket": {
+    "READ_ONLY": 18,
+    "COMMUTATIVE": 8,
+    "DESTRUCTIVE": 15
+  },
+  "unmediated_by_bucket": {
+    "READ_ONLY": 339,
+    "COMMUTATIVE": 27,
+    "DESTRUCTIVE": 316
+  },
+  "unmediated_total": 682,
+  "unmediated_destructive_pct_of_all": 43.71,
+  "unmediated_destructive_pct_of_unmediated": 46.33,
+  "distinct_names_seen": 145,
+  "distinct_names_destructive": 40,
+  "distinct_names_commutative": 6,
+  "distinct_names_readonly": 99,
+  "destructive_examples": [
+    {
+      "file": "aio_pika/robust_connection.py",
+      "func": "_on_connection_close",
+      "lineno": 91,
+      "name": "self._close_called",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "aio_pika/robust_connection.py",
+      "func": "_on_connection_close",
+      "lineno": 100,
+      "name": "self.__connection_close_event",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "aio_pika/robust_connection.py",
+      "func": "_on_connected",
+      "lineno": 105,
+      "name": "self.transport",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "aio_pika/robust_connection.py",
+      "func": "_on_connected",
+      "lineno": 138,
+      "name": "self.__connection_close_event",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "aio_pika/robust_connection.py",
+      "func": "__connection_factory",
+      "lineno": 142,
+      "name": "self._close_called",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    }
+  ]
+}

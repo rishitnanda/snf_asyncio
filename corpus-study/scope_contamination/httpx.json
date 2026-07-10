@@ -1,0 +1,14 @@
+{
+  "repo": "httpx",
+  "n_sync_only_files": 13,
+  "n_async_files": 10,
+  "sync_only_written_name_count": 243,
+  "async_side_read_only_candidate_count": 50,
+  "collision_count": 3,
+  "collision_names": [
+    "SELF_ATTR:self.app",
+    "SELF_ATTR:self.raise_app_exceptions",
+    "SELF_ATTR:self.request"
+  ],
+  "verdict": "CONTAMINATION LIKELY -- rescope recommended"
+}

@@ -1,0 +1,785 @@
+{
+  "per_repo": {
+    "aio-pika": {
+      "total_interactions": 723,
+      "mediated": 41,
+      "unmediated": 682,
+      "pct_mediated": 5.67,
+      "by_kind": {
+        "GLOBAL": {
+          "total": 141,
+          "mediated": 6
+        },
+        "SELF_ATTR": {
+          "total": 580,
+          "mediated": 35
+        },
+        "CLOSURE": {
+          "total": 2,
+          "mediated": 0
+        }
+      },
+      "n_python_files_scanned": 21,
+      "n_async_functions_with_interactions": 107,
+      "scoped_to": null
+    },
+    "aiobotocore": {
+      "total_interactions": 1039,
+      "mediated": 36,
+      "unmediated": 1003,
+      "pct_mediated": 3.46,
+      "by_kind": {
+        "GLOBAL": {
+          "total": 139,
+          "mediated": 2
+        },
+        "CLOSURE": {
+          "total": 21,
+          "mediated": 0
+        },
+        "SELF_ATTR": {
+          "total": 879,
+          "mediated": 34
+        }
+      },
+      "n_python_files_scanned": 43,
+      "n_async_functions_with_interactions": 163,
+      "scoped_to": null
+    },
+    "aiocache": {
+      "total_interactions": 266,
+      "mediated": 3,
+      "unmediated": 263,
+      "pct_mediated": 1.13,
+      "by_kind": {
+        "CLOSURE": {
+          "total": 18,
+          "mediated": 0
+        },
+        "SELF_ATTR": {
+          "total": 212,
+          "mediated": 3
+        },
+        "GLOBAL": {
+          "total": 36,
+          "mediated": 0
+        }
+      },
+      "n_python_files_scanned": 13,
+      "n_async_functions_with_interactions": 73,
+      "scoped_to": null
+    },
+    "aiofiles": {
+      "total_interactions": 46,
+      "mediated": 0,
+      "unmediated": 46,
+      "pct_mediated": 0.0,
+      "by_kind": {
+        "CLOSURE": {
+          "total": 4,
+          "mediated": 0
+        },
+        "SELF_ATTR": {
+          "total": 36,
+          "mediated": 0
+        },
+        "GLOBAL": {
+          "total": 6,
+          "mediated": 0
+        }
+      },
+      "n_python_files_scanned": 10,
+      "n_async_functions_with_interactions": 11,
+      "scoped_to": null
+    },
+    "aiohttp": {
+      "total_interactions": 1590,
+      "mediated": 4,
+      "unmediated": 1586,
+      "pct_mediated": 0.25,
+      "by_kind": {
+        "GLOBAL": {
+          "total": 85,
+          "mediated": 0
+        },
+        "CLOSURE": {
+          "total": 21,
+          "mediated": 0
+        },
+        "SELF_ATTR": {
+          "total": 1484,
+          "mediated": 4
+        }
+      },
+      "n_python_files_scanned": 60,
+      "n_async_functions_with_interactions": 194,
+      "scoped_to": null
+    },
+    "aiokafka": {
+      "total_interactions": 1249,
+      "mediated": 37,
+      "unmediated": 1212,
+      "pct_mediated": 2.96,
+      "by_kind": {
+        "SELF_ATTR": {
+          "total": 974,
+          "mediated": 33
+        },
+        "GLOBAL": {
+          "total": 275,
+          "mediated": 4
+        }
+      },
+      "n_python_files_scanned": 68,
+      "n_async_functions_with_interactions": 130,
+      "scoped_to": null
+    },
+    "aiomysql": {
+      "total_interactions": 720,
+      "mediated": 6,
+      "unmediated": 714,
+      "pct_mediated": 0.83,
+      "by_kind": {
+        "SELF_ATTR": {
+          "total": 703,
+          "mediated": 6
+        },
+        "GLOBAL": {
+          "total": 17,
+          "mediated": 0
+        }
+      },
+      "n_python_files_scanned": 13,
+      "n_async_functions_with_interactions": 100,
+      "scoped_to": null
+    },
+    "aiopath": {
+      "total_interactions": 168,
+      "mediated": 0,
+      "unmediated": 168,
+      "pct_mediated": 0.0,
+      "by_kind": {
+        "GLOBAL": {
+          "total": 22,
+          "mediated": 0
+        },
+        "CLOSURE": {
+          "total": 16,
+          "mediated": 0
+        },
+        "SELF_ATTR": {
+          "total": 130,
+          "mediated": 0
+        }
+      },
+      "n_python_files_scanned": 12,
+      "n_async_functions_with_interactions": 79,
+      "scoped_to": null
+    },
+    "aiopg": {
+      "total_interactions": 405,
+      "mediated": 8,
+      "unmediated": 397,
+      "pct_mediated": 1.98,
+      "by_kind": {
+        "SELF_ATTR": {
+          "total": 401,
+          "mediated": 8
+        },
+        "GLOBAL": {
+          "total": 4,
+          "mediated": 0
+        }
+      },
+      "n_python_files_scanned": 13,
+      "n_async_functions_with_interactions": 77,
+      "scoped_to": null
+    },
+    "aioredis": {
+      "total_interactions": 516,
+      "mediated": 32,
+      "unmediated": 484,
+      "pct_mediated": 6.2,
+      "by_kind": {
+        "SELF_ATTR": {
+          "total": 486,
+          "mediated": 30
+        },
+        "GLOBAL": {
+          "total": 30,
+          "mediated": 2
+        }
+      },
+      "n_python_files_scanned": 12,
+      "n_async_functions_with_interactions": 63,
+      "scoped_to": null
+    },
+    "aiosonic": {
+      "total_interactions": 554,
+      "mediated": 9,
+      "unmediated": 545,
+      "pct_mediated": 1.62,
+      "by_kind": {
+        "CLOSURE": {
+          "total": 18,
+          "mediated": 0
+        },
+        "GLOBAL": {
+          "total": 145,
+          "mediated": 0
+        },
+        "SELF_ATTR": {
+          "total": 391,
+          "mediated": 9
+        }
+      },
+      "n_python_files_scanned": 25,
+      "n_async_functions_with_interactions": 93,
+      "scoped_to": null
+    },
+    "apscheduler": {
+      "total_interactions": 898,
+      "mediated": 2,
+      "unmediated": 896,
+      "pct_mediated": 0.22,
+      "by_kind": {
+        "SELF_ATTR": {
+          "total": 866,
+          "mediated": 0
+        },
+        "CLOSURE": {
+          "total": 11,
+          "mediated": 2
+        },
+        "GLOBAL": {
+          "total": 21,
+          "mediated": 0
+        }
+      },
+      "n_python_files_scanned": 45,
+      "n_async_functions_with_interactions": 121,
+      "scoped_to": null
+    },
+    "arq": {
+      "total_interactions": 315,
+      "mediated": 0,
+      "unmediated": 315,
+      "pct_mediated": 0.0,
+      "by_kind": {
+        "SELF_ATTR": {
+          "total": 243,
+          "mediated": 0
+        },
+        "GLOBAL": {
+          "total": 62,
+          "mediated": 0
+        },
+        "CLOSURE": {
+          "total": 10,
+          "mediated": 0
+        }
+      },
+      "n_python_files_scanned": 12,
+      "n_async_functions_with_interactions": 28,
+      "scoped_to": null
+    },
+    "asyncmy": {
+      "total_interactions": 147,
+      "mediated": 0,
+      "unmediated": 147,
+      "pct_mediated": 0.0,
+      "by_kind": {
+        "GLOBAL": {
+          "total": 19,
+          "mediated": 0
+        },
+        "CLOSURE": {
+          "total": 2,
+          "mediated": 0
+        },
+        "SELF_ATTR": {
+          "total": 126,
+          "mediated": 0
+        }
+      },
+      "n_python_files_scanned": 36,
+      "n_async_functions_with_interactions": 18,
+      "scoped_to": null
+    },
+    "asyncpg": {
+      "total_interactions": 585,
+      "mediated": 5,
+      "unmediated": 580,
+      "pct_mediated": 0.85,
+      "by_kind": {
+        "GLOBAL": {
+          "total": 58,
+          "mediated": 0
+        },
+        "SELF_ATTR": {
+          "total": 519,
+          "mediated": 5
+        },
+        "CLOSURE": {
+          "total": 8,
+          "mediated": 0
+        }
+      },
+      "n_python_files_scanned": 26,
+      "n_async_functions_with_interactions": 92,
+      "scoped_to": null
+    },
+    "asynctest": {
+      "total_interactions": 2,
+      "mediated": 0,
+      "unmediated": 2,
+      "pct_mediated": 0.0,
+      "by_kind": {
+        "SELF_ATTR": {
+          "total": 1,
+          "mediated": 0
+        },
+        "CLOSURE": {
+          "total": 1,
+          "mediated": 0
+        }
+      },
+      "n_python_files_scanned": 7,
+      "n_async_functions_with_interactions": 2,
+      "scoped_to": null
+    },
+    "asyncz": {
+      "total_interactions": 211,
+      "mediated": 0,
+      "unmediated": 211,
+      "pct_mediated": 0.0,
+      "by_kind": {
+        "CLOSURE": {
+          "total": 93,
+          "mediated": 0
+        },
+        "GLOBAL": {
+          "total": 13,
+          "mediated": 0
+        },
+        "SELF_ATTR": {
+          "total": 105,
+          "mediated": 0
+        }
+      },
+      "n_python_files_scanned": 145,
+      "n_async_functions_with_interactions": 30,
+      "scoped_to": null
+    },
+    "databases": {
+      "total_interactions": 382,
+      "mediated": 46,
+      "unmediated": 336,
+      "pct_mediated": 12.04,
+      "by_kind": {
+        "SELF_ATTR": {
+          "total": 370,
+          "mediated": 46
+        },
+        "GLOBAL": {
+          "total": 11,
+          "mediated": 0
+        },
+        "CLOSURE": {
+          "total": 1,
+          "mediated": 0
+        }
+      },
+      "n_python_files_scanned": 17,
+      "n_async_functions_with_interactions": 75,
+      "scoped_to": null
+    },
+    "elasticsearch-py": {
+      "total_interactions": 619,
+      "mediated": 0,
+      "unmediated": 619,
+      "pct_mediated": 0.0,
+      "by_kind": {
+        "CLOSURE": {
+          "total": 10,
+          "mediated": 0
+        },
+        "GLOBAL": {
+          "total": 11,
+          "mediated": 0
+        },
+        "SELF_ATTR": {
+          "total": 598,
+          "mediated": 0
+        }
+      },
+      "n_python_files_scanned": 47,
+      "n_async_functions_with_interactions": 585,
+      "scoped_to": [
+        "elasticsearch/_async"
+      ]
+    },
+    "fastapi": {
+      "total_interactions": 390,
+      "mediated": 0,
+      "unmediated": 390,
+      "pct_mediated": 0.0,
+      "by_kind": {
+        "CLOSURE": {
+          "total": 61,
+          "mediated": 0
+        },
+        "SELF_ATTR": {
+          "total": 98,
+          "mediated": 0
+        },
+        "GLOBAL": {
+          "total": 231,
+          "mediated": 0
+        }
+      },
+      "n_python_files_scanned": 534,
+      "n_async_functions_with_interactions": 119,
+      "scoped_to": null
+    },
+    "fastapi_examples": {
+      "total_interactions": 189,
+      "mediated": 0,
+      "unmediated": 189,
+      "pct_mediated": 0.0,
+      "by_kind": {
+        "GLOBAL": {
+          "total": 178,
+          "mediated": 0
+        },
+        "SELF_ATTR": {
+          "total": 11,
+          "mediated": 0
+        }
+      },
+      "n_python_files_scanned": 461,
+      "n_async_functions_with_interactions": 92,
+      "scoped_to": null
+    },
+    "faust": {
+      "total_interactions": 2453,
+      "mediated": 4,
+      "unmediated": 2449,
+      "pct_mediated": 0.16,
+      "by_kind": {
+        "GLOBAL": {
+          "total": 437,
+          "mediated": 0
+        },
+        "SELF_ATTR": {
+          "total": 1871,
+          "mediated": 4
+        },
+        "CLOSURE": {
+          "total": 145,
+          "mediated": 0
+        }
+      },
+      "n_python_files_scanned": 336,
+      "n_async_functions_with_interactions": 571,
+      "scoped_to": null
+    },
+    "httpx": {
+      "total_interactions": 143,
+      "mediated": 0,
+      "unmediated": 143,
+      "pct_mediated": 0.0,
+      "by_kind": {
+        "SELF_ATTR": {
+          "total": 116,
+          "mediated": 0
+        },
+        "GLOBAL": {
+          "total": 16,
+          "mediated": 0
+        },
+        "CLOSURE": {
+          "total": 11,
+          "mediated": 0
+        }
+      },
+      "n_python_files_scanned": 23,
+      "n_async_functions_with_interactions": 37,
+      "scoped_to": null
+    },
+    "kubernetes_asyncio": {
+      "total_interactions": 1089,
+      "mediated": 6,
+      "unmediated": 1083,
+      "pct_mediated": 0.55,
+      "by_kind": {
+        "SELF_ATTR": {
+          "total": 805,
+          "mediated": 6
+        },
+        "GLOBAL": {
+          "total": 262,
+          "mediated": 0
+        },
+        "CLOSURE": {
+          "total": 22,
+          "mediated": 0
+        }
+      },
+      "n_python_files_scanned": 128,
+      "n_async_functions_with_interactions": 203,
+      "scoped_to": null
+    },
+    "motor": {
+      "total_interactions": 96,
+      "mediated": 0,
+      "unmediated": 96,
+      "pct_mediated": 0.0,
+      "by_kind": {
+        "SELF_ATTR": {
+          "total": 84,
+          "mediated": 0
+        },
+        "GLOBAL": {
+          "total": 8,
+          "mediated": 0
+        },
+        "CLOSURE": {
+          "total": 4,
+          "mediated": 0
+        }
+      },
+      "n_python_files_scanned": 16,
+      "n_async_functions_with_interactions": 16,
+      "scoped_to": null
+    },
+    "pytest-asyncio": {
+      "total_interactions": 3,
+      "mediated": 0,
+      "unmediated": 3,
+      "pct_mediated": 0.0,
+      "by_kind": {
+        "CLOSURE": {
+          "total": 3,
+          "mediated": 0
+        }
+      },
+      "n_python_files_scanned": 3,
+      "n_async_functions_with_interactions": 1,
+      "scoped_to": null
+    },
+    "quart": {
+      "total_interactions": 627,
+      "mediated": 33,
+      "unmediated": 594,
+      "pct_mediated": 5.26,
+      "by_kind": {
+        "SELF_ATTR": {
+          "total": 572,
+          "mediated": 33
+        },
+        "GLOBAL": {
+          "total": 33,
+          "mediated": 0
+        },
+        "CLOSURE": {
+          "total": 22,
+          "mediated": 0
+        }
+      },
+      "n_python_files_scanned": 34,
+      "n_async_functions_with_interactions": 131,
+      "scoped_to": null
+    },
+    "redis-py": {
+      "total_interactions": 1359,
+      "mediated": 169,
+      "unmediated": 1190,
+      "pct_mediated": 12.44,
+      "by_kind": {
+        "SELF_ATTR": {
+          "total": 1277,
+          "mediated": 164
+        },
+        "CLOSURE": {
+          "total": 23,
+          "mediated": 0
+        },
+        "GLOBAL": {
+          "total": 59,
+          "mediated": 5
+        }
+      },
+      "n_python_files_scanned": 22,
+      "n_async_functions_with_interactions": 212,
+      "scoped_to": [
+        "redis/asyncio"
+      ]
+    },
+    "sanic": {
+      "total_interactions": 771,
+      "mediated": 148,
+      "unmediated": 623,
+      "pct_mediated": 19.2,
+      "by_kind": {
+        "GLOBAL": {
+          "total": 37,
+          "mediated": 8
+        },
+        "SELF_ATTR": {
+          "total": 721,
+          "mediated": 140
+        },
+        "CLOSURE": {
+          "total": 13,
+          "mediated": 0
+        }
+      },
+      "n_python_files_scanned": 178,
+      "n_async_functions_with_interactions": 95,
+      "scoped_to": null
+    },
+    "sqlalchemy": {
+      "total_interactions": 250,
+      "mediated": 19,
+      "unmediated": 231,
+      "pct_mediated": 7.6,
+      "by_kind": {
+        "SELF_ATTR": {
+          "total": 236,
+          "mediated": 19
+        },
+        "GLOBAL": {
+          "total": 8,
+          "mediated": 0
+        },
+        "CLOSURE": {
+          "total": 6,
+          "mediated": 0
+        }
+      },
+      "n_python_files_scanned": 11,
+      "n_async_functions_with_interactions": 98,
+      "scoped_to": [
+        "lib/sqlalchemy/ext/asyncio",
+        "lib/sqlalchemy/dialects/postgresql/asyncpg.py",
+        "lib/sqlalchemy/dialects/mysql/aiomysql.py",
+        "lib/sqlalchemy/dialects/mysql/asyncmy.py",
+        "lib/sqlalchemy/dialects/sqlite/aiosqlite.py",
+        "lib/sqlalchemy/dialects/oracle/oracledb_async.py"
+      ]
+    },
+    "taskiq": {
+      "total_interactions": 348,
+      "mediated": 2,
+      "unmediated": 346,
+      "pct_mediated": 0.57,
+      "by_kind": {
+        "GLOBAL": {
+          "total": 91,
+          "mediated": 0
+        },
+        "SELF_ATTR": {
+          "total": 252,
+          "mediated": 2
+        },
+        "CLOSURE": {
+          "total": 5,
+          "mediated": 0
+        }
+      },
+      "n_python_files_scanned": 83,
+      "n_async_functions_with_interactions": 65,
+      "scoped_to": null
+    },
+    "tortoise-orm": {
+      "total_interactions": 1548,
+      "mediated": 9,
+      "unmediated": 1539,
+      "pct_mediated": 0.58,
+      "by_kind": {
+        "GLOBAL": {
+          "total": 80,
+          "mediated": 0
+        },
+        "SELF_ATTR": {
+          "total": 1433,
+          "mediated": 9
+        },
+        "CLOSURE": {
+          "total": 35,
+          "mediated": 0
+        }
+      },
+      "n_python_files_scanned": 133,
+      "n_async_functions_with_interactions": 285,
+      "scoped_to": null
+    },
+    "trio": {
+      "total_interactions": 1645,
+      "mediated": 71,
+      "unmediated": 1574,
+      "pct_mediated": 4.32,
+      "by_kind": {
+        "GLOBAL": {
+          "total": 459,
+          "mediated": 5
+        },
+        "SELF_ATTR": {
+          "total": 608,
+          "mediated": 63
+        },
+        "CLOSURE": {
+          "total": 578,
+          "mediated": 3
+        }
+      },
+      "n_python_files_scanned": 144,
+      "n_async_functions_with_interactions": 529,
+      "scoped_to": null
+    },
+    "websockets": {
+      "total_interactions": 721,
+      "mediated": 0,
+      "unmediated": 721,
+      "pct_mediated": 0.0,
+      "by_kind": {
+        "GLOBAL": {
+          "total": 93,
+          "mediated": 0
+        },
+        "SELF_ATTR": {
+          "total": 623,
+          "mediated": 0
+        },
+        "CLOSURE": {
+          "total": 5,
+          "mediated": 0
+        }
+      },
+      "n_python_files_scanned": 62,
+      "n_async_functions_with_interactions": 92,
+      "scoped_to": null
+    }
+  },
+  "overall": {
+    "total_interactions": 22067,
+    "mediated": 690,
+    "unmediated": 21377,
+    "pct_mediated": 3.13,
+    "by_kind": {
+      "GLOBAL": {
+        "total": 3087,
+        "mediated": 32
+      },
+      "SELF_ATTR": {
+        "total": 17811,
+        "mediated": 653
+      },
+      "CLOSURE": {
+        "total": 1169,
+        "mediated": 5
+      }
+    }
+  }
+}

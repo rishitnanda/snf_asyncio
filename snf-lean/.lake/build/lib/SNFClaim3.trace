@@ -1,0 +1,5 @@
+{"log":
+ [{"message":
+   ".> LEAN_PATH=././.lake/build/lib LD_LIBRARY_PATH= /home/rishit-nanda/.elan/toolchains/leanprover--lean4---v4.14.0/bin/lean ././././SNFClaim3.lean -R ./././. -o ././.lake/build/lib/SNFClaim3.olean -i ././.lake/build/lib/SNFClaim3.ilean -c ././.lake/build/ir/SNFClaim3.c --json",
+   "level": "trace"}],
+ "depHash": "3349538091804032330"}

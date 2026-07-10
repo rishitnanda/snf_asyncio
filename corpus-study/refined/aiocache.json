@@ -1,0 +1,82 @@
+{
+  "total_interactions": 266,
+  "counts_by_bucket": {
+    "READ_ONLY": 145,
+    "COMMUTATIVE": 0,
+    "DESTRUCTIVE": 121
+  },
+  "mediated_by_bucket": {
+    "READ_ONLY": 3,
+    "COMMUTATIVE": 0,
+    "DESTRUCTIVE": 0
+  },
+  "unmediated_by_bucket": {
+    "READ_ONLY": 142,
+    "COMMUTATIVE": 0,
+    "DESTRUCTIVE": 121
+  },
+  "unmediated_total": 263,
+  "unmediated_destructive_pct_of_all": 45.49,
+  "unmediated_destructive_pct_of_unmediated": 46.01,
+  "distinct_names_seen": 54,
+  "distinct_names_destructive": 7,
+  "distinct_names_commutative": 0,
+  "distinct_names_readonly": 47,
+  "destructive_examples": [
+    {
+      "file": "aiocache/base.py",
+      "func": "__aenter__",
+      "lineno": 553,
+      "name": "self._conn",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "full_rebind"
+    },
+    {
+      "file": "aiocache/base.py",
+      "func": "__aenter__",
+      "lineno": 553,
+      "name": "self._cache",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "aiocache/base.py",
+      "func": "__aenter__",
+      "lineno": 553,
+      "name": "self._cache",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "aiocache/base.py",
+      "func": "__aexit__",
+      "lineno": 557,
+      "name": "self._cache",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "aiocache/base.py",
+      "func": "__aexit__",
+      "lineno": 557,
+      "name": "self._cache",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    }
+  ]
+}

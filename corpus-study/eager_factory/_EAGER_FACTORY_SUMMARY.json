@@ -1,0 +1,12 @@
+{
+  "per_repo": {},
+  "overall": {
+    "repos_scanned": 34,
+    "repos_with_eager_task_factory_reference": 0,
+    "pct_repos_using_eager_task_factory": 0.0,
+    "repos_with_unclear_set_task_factory_only": 0,
+    "total_eager_task_factory_references": 0,
+    "total_set_task_factory_calls": 0,
+    "note": "Upper bound: a literal reference doesn't prove the eager path actually executes against scanned code (could be behind a version check, feature flag, or dead code). set_task_factory calls whose argument isn't literally 'eager_task_factory' in source text are reported separately as unclear, not resolved."
+  }
+}

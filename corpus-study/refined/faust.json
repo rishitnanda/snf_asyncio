@@ -1,0 +1,82 @@
+{
+  "total_interactions": 2453,
+  "counts_by_bucket": {
+    "READ_ONLY": 1998,
+    "COMMUTATIVE": 74,
+    "DESTRUCTIVE": 381
+  },
+  "mediated_by_bucket": {
+    "READ_ONLY": 0,
+    "COMMUTATIVE": 0,
+    "DESTRUCTIVE": 4
+  },
+  "unmediated_by_bucket": {
+    "READ_ONLY": 1998,
+    "COMMUTATIVE": 74,
+    "DESTRUCTIVE": 377
+  },
+  "unmediated_total": 2449,
+  "unmediated_destructive_pct_of_all": 15.37,
+  "unmediated_destructive_pct_of_unmediated": 15.39,
+  "distinct_names_seen": 719,
+  "distinct_names_destructive": 69,
+  "distinct_names_commutative": 26,
+  "distinct_names_readonly": 624,
+  "destructive_examples": [
+    {
+      "file": "t/unit/agents/test_replies.py",
+      "func": "test_parallel_iterate",
+      "lineno": 76,
+      "name": "self.consumer",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "t/unit/agents/test_replies.py",
+      "func": "test_sync_iterate",
+      "lineno": 115,
+      "name": "self.consumer",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "t/consistency/test_consistency.py",
+      "func": "_start_worker",
+      "lineno": 82,
+      "name": "self._worker_procs",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "t/consistency/test_consistency.py",
+      "func": "_start_worker",
+      "lineno": 84,
+      "name": "self._worker_procs",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "subscript_write"
+    },
+    {
+      "file": "t/consistency/test_consistency.py",
+      "func": "_stop_worker",
+      "lineno": 124,
+      "name": "self._worker_procs",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "mutating_method_noncommutative"
+    }
+  ]
+}

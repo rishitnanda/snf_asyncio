@@ -1,0 +1,13 @@
+{
+  "repo": "motor",
+  "n_sync_only_files": 10,
+  "n_async_files": 6,
+  "sync_only_written_name_count": 201,
+  "async_side_read_only_candidate_count": 44,
+  "collision_count": 2,
+  "collision_names": [
+    "SELF_ATTR:self.database",
+    "SELF_ATTR:self.delegate"
+  ],
+  "verdict": "CONTAMINATION LIKELY -- rescope recommended"
+}

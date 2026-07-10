@@ -1,0 +1,13 @@
+{
+  "repo": "trio",
+  "thread_offloading_functions": [
+    "check_case",
+    "check_run_in_trio_thread",
+    "main",
+    "test_ssl_server_basics"
+  ],
+  "destructive_unmediated_interactions": 163,
+  "overlap_interactions": 0,
+  "pct_destructive_unmediated_in_thread_functions": 0.0,
+  "overlap_examples": []
+}

@@ -1,0 +1,82 @@
+{
+  "total_interactions": 554,
+  "counts_by_bucket": {
+    "READ_ONLY": 373,
+    "COMMUTATIVE": 6,
+    "DESTRUCTIVE": 175
+  },
+  "mediated_by_bucket": {
+    "READ_ONLY": 4,
+    "COMMUTATIVE": 0,
+    "DESTRUCTIVE": 5
+  },
+  "unmediated_by_bucket": {
+    "READ_ONLY": 369,
+    "COMMUTATIVE": 6,
+    "DESTRUCTIVE": 170
+  },
+  "unmediated_total": 545,
+  "unmediated_destructive_pct_of_all": 30.69,
+  "unmediated_destructive_pct_of_unmediated": 31.19,
+  "distinct_names_seen": 182,
+  "distinct_names_destructive": 29,
+  "distinct_names_commutative": 2,
+  "distinct_names_readonly": 151,
+  "destructive_examples": [
+    {
+      "file": "scripts/performance_http11_vs_http2.py",
+      "func": "one_request",
+      "lineno": 96,
+      "name": "client",
+      "kind": "CLOSURE",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "mutating_method_noncommutative"
+    },
+    {
+      "file": "scripts/performance_http11_vs_http2.py",
+      "func": "one_request",
+      "lineno": 96,
+      "name": "client",
+      "kind": "CLOSURE",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "scripts/performance_http11_vs_http2.py",
+      "func": "one_request",
+      "lineno": 104,
+      "name": "version_counter",
+      "kind": "CLOSURE",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "subscript_write"
+    },
+    {
+      "file": "scripts/performance_http11_vs_http2.py",
+      "func": "one_request",
+      "lineno": 104,
+      "name": "version_counter",
+      "kind": "CLOSURE",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "mutating_method_noncommutative"
+    },
+    {
+      "file": "scripts/performance_http11_vs_http2.py",
+      "func": "one_request",
+      "lineno": 104,
+      "name": "version_counter",
+      "kind": "CLOSURE",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    }
+  ]
+}

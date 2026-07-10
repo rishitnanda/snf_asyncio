@@ -1,0 +1,19 @@
+{
+  "repo": "aiocache",
+  "destructive_names_total": 7,
+  "flagged_control_bounded_names": [
+    "SELF_ATTR:self._cache",
+    "SELF_ATTR:self._handlers",
+    "SELF_ATTR:self.client"
+  ],
+  "flagged_control_unbounded_names": [],
+  "flagged_data_names": [
+    "SELF_ATTR:self._conn",
+    "SELF_ATTR:self._token",
+    "SELF_ATTR:self._value",
+    "SELF_ATTR:self.cache"
+  ],
+  "flagged_control_bounded_interactions": 105,
+  "flagged_control_unbounded_interactions": 0,
+  "flagged_data_interactions": 16
+}

@@ -1,0 +1,19 @@
+{
+  "repo": "websockets",
+  "n_sync_only_files": 40,
+  "n_async_files": 22,
+  "sync_only_written_name_count": 337,
+  "async_side_read_only_candidate_count": 132,
+  "collision_count": 8,
+  "collision_names": [
+    "SELF_ATTR:self.available_extensions",
+    "SELF_ATTR:self.available_subprotocols",
+    "SELF_ATTR:self.debug",
+    "SELF_ATTR:self.logger",
+    "SELF_ATTR:self.max_size",
+    "SELF_ATTR:self.origins",
+    "SELF_ATTR:self.proxy",
+    "SELF_ATTR:self.reader"
+  ],
+  "verdict": "CONTAMINATION LIKELY -- rescope recommended"
+}

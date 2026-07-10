@@ -1,0 +1,22 @@
+{
+  "repo": "asyncmy",
+  "destructive_names_total": 10,
+  "flagged_control_bounded_names": [
+    "SELF_ATTR:self._connected",
+    "SELF_ATTR:self._master_log_file",
+    "SELF_ATTR:self._master_log_position",
+    "SELF_ATTR:self._table_map",
+    "SELF_ATTR:self._use_checksum",
+    "SELF_ATTR:self.column_schemas"
+  ],
+  "flagged_control_unbounded_names": [],
+  "flagged_data_names": [
+    "SELF_ATTR:self._conn",
+    "SELF_ATTR:self._obj",
+    "SELF_ATTR:self._pool",
+    "SELF_ATTR:self._table"
+  ],
+  "flagged_control_bounded_interactions": 29,
+  "flagged_control_unbounded_interactions": 0,
+  "flagged_data_interactions": 23
+}

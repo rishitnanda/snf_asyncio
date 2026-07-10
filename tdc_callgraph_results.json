@@ -1,0 +1,33 @@
+[
+  {
+    "file": "corpus-study/repo_src/aiohttp/aiohttp/web_fileresponse.py",
+    "thread_submitting_coroutine": "prepare",
+    "submitted_callable": "_make_response",
+    "other_coroutine": "_prepare_open_file",
+    "overlap": [
+      "self._path"
+    ],
+    "repo": "aiohttp"
+  },
+  {
+    "file": "corpus-study/repo_src/aiohttp/aiohttp/compression_utils.py",
+    "thread_submitting_coroutine": "decompress",
+    "submitted_callable": "decompress_sync",
+    "other_coroutine": "compress",
+    "overlap": [
+      "self._executor",
+      "self._max_sync_chunk_size"
+    ],
+    "repo": "aiohttp"
+  },
+  {
+    "file": "corpus-study/repo_src/asyncz/asyncz/schedulers/asyncio.py",
+    "thread_submitting_coroutine": "start",
+    "submitted_callable": "_init_new_loop",
+    "other_coroutine": "shutdown",
+    "overlap": [
+      "self.event_loop"
+    ],
+    "repo": "asyncz"
+  }
+]

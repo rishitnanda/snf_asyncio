@@ -1,0 +1,53 @@
+{
+  "repo": "aio-pika",
+  "destructive_names_total": 40,
+  "flagged_control_bounded_names": [
+    "SELF_ATTR:self.__closed",
+    "SELF_ATTR:self.__processed",
+    "SELF_ATTR:self.__reconnection_task",
+    "SELF_ATTR:self.__restored",
+    "SELF_ATTR:self._channel",
+    "SELF_ATTR:self._closed",
+    "SELF_ATTR:self._consume_kwargs",
+    "SELF_ATTR:self._exchanges",
+    "SELF_ATTR:self._message_or_closed",
+    "SELF_ATTR:self._queues",
+    "SELF_ATTR:self.channel",
+    "SELF_ATTR:self.consumer_tags",
+    "SELF_ATTR:self.declaration_result",
+    "SELF_ATTR:self.item",
+    "SELF_ATTR:self.name",
+    "SELF_ATTR:self.routes",
+    "SELF_ATTR:self.rpc_exchange",
+    "SELF_ATTR:self.transport"
+  ],
+  "flagged_control_unbounded_names": [
+    "SELF_ATTR:self._close_called"
+  ],
+  "flagged_data_names": [
+    "SELF_ATTR:self._QueueIterator__closing",
+    "SELF_ATTR:self.__closing",
+    "SELF_ATTR:self.__connect_timeout",
+    "SELF_ATTR:self.__connection_close_event",
+    "SELF_ATTR:self.__items",
+    "SELF_ATTR:self._bindings",
+    "SELF_ATTR:self._consumer_tag",
+    "SELF_ATTR:self._consumers",
+    "SELF_ATTR:self._global_qos",
+    "SELF_ATTR:self._prefetch_count",
+    "SELF_ATTR:self._prefetch_size",
+    "SELF_ATTR:self.callback",
+    "SELF_ATTR:self.connected",
+    "SELF_ATTR:self.default_exchange",
+    "SELF_ATTR:self.dlx_exchange",
+    "SELF_ATTR:self.futures",
+    "SELF_ATTR:self.queues",
+    "SELF_ATTR:self.result_consumer_tag",
+    "SELF_ATTR:self.result_queue",
+    "SELF_ATTR:self.state",
+    "SELF_ATTR:self.url"
+  ],
+  "flagged_control_bounded_interactions": 230,
+  "flagged_control_unbounded_interactions": 6,
+  "flagged_data_interactions": 95
+}

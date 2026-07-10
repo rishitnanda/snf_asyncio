@@ -1,0 +1,28 @@
+{
+  "repo": "tortoise-orm",
+  "n_sync_only_files": 80,
+  "n_async_files": 53,
+  "sync_only_written_name_count": 661,
+  "async_side_read_only_candidate_count": 306,
+  "collision_count": 17,
+  "collision_names": [
+    "SELF_ATTR:self.COLUMN_COMMENT_TEMPLATE",
+    "SELF_ATTR:self._annotations",
+    "SELF_ATTR:self.app_label",
+    "SELF_ATTR:self.config",
+    "SELF_ATTR:self.connections",
+    "SELF_ATTR:self.extra",
+    "SELF_ATTR:self.field",
+    "SELF_ATTR:self.fields",
+    "SELF_ATTR:self.filter",
+    "SELF_ATTR:self.index",
+    "SELF_ATTR:self.model",
+    "SELF_ATTR:self.modules",
+    "SELF_ATTR:self.name",
+    "SELF_ATTR:self.operations",
+    "SELF_ATTR:self.pk",
+    "SELF_ATTR:self.query",
+    "SELF_ATTR:self.sql"
+  ],
+  "verdict": "CONTAMINATION LIKELY -- rescope recommended"
+}

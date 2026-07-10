@@ -1,0 +1,82 @@
+{
+  "total_interactions": 147,
+  "counts_by_bucket": {
+    "READ_ONLY": 92,
+    "COMMUTATIVE": 3,
+    "DESTRUCTIVE": 52
+  },
+  "mediated_by_bucket": {
+    "READ_ONLY": 0,
+    "COMMUTATIVE": 0,
+    "DESTRUCTIVE": 0
+  },
+  "unmediated_by_bucket": {
+    "READ_ONLY": 92,
+    "COMMUTATIVE": 3,
+    "DESTRUCTIVE": 52
+  },
+  "unmediated_total": 147,
+  "unmediated_destructive_pct_of_all": 35.37,
+  "unmediated_destructive_pct_of_unmediated": 35.37,
+  "distinct_names_seen": 49,
+  "distinct_names_destructive": 10,
+  "distinct_names_commutative": 1,
+  "distinct_names_readonly": 38,
+  "destructive_examples": [
+    {
+      "file": "asyncmy/contexts.py",
+      "func": "__aenter__",
+      "lineno": 50,
+      "name": "self._obj",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "full_rebind"
+    },
+    {
+      "file": "asyncmy/contexts.py",
+      "func": "__aenter__",
+      "lineno": 51,
+      "name": "self._obj",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "asyncmy/contexts.py",
+      "func": "__aexit__",
+      "lineno": 54,
+      "name": "self._obj",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "asyncmy/contexts.py",
+      "func": "__aexit__",
+      "lineno": 54,
+      "name": "self._obj",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "asyncmy/contexts.py",
+      "func": "__aexit__",
+      "lineno": 55,
+      "name": "self._obj",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "full_rebind"
+    }
+  ]
+}

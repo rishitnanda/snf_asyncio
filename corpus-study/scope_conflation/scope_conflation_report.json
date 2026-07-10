@@ -1,0 +1,548 @@
+{
+  "aio-pika": {
+    "total_files_scanned": 21,
+    "sync_only_files": 5,
+    "pct_sync_only_files": 23.81,
+    "sample_sync_only_paths": [
+      "noxfile.py",
+      "aio_pika/log.py",
+      "aio_pika/__init__.py",
+      "aio_pika/patterns/base.py",
+      "aio_pika/patterns/__init__.py"
+    ],
+    "already_has_scope_fix": false
+  },
+  "aiobotocore": {
+    "total_files_scanned": 43,
+    "sync_only_files": 10,
+    "pct_sync_only_files": 23.26,
+    "sample_sync_only_paths": [
+      "plugins/aiobotocore-bot/evals/generate_scenarios.py",
+      "plugins/aiobotocore-bot/scripts/registries.py",
+      "scripts/changelog.py",
+      "scripts/__init__.py",
+      ".github/usage-summary.py",
+      "aiobotocore/stub.py",
+      "aiobotocore/config.py",
+      "aiobotocore/__init__.py",
+      "aiobotocore/_constants.py",
+      "aiobotocore/retries/__init__.py"
+    ],
+    "already_has_scope_fix": false
+  },
+  "aiocache": {
+    "total_files_scanned": 13,
+    "sync_only_files": 4,
+    "pct_sync_only_files": 30.77,
+    "sample_sync_only_paths": [
+      "aiocache/exceptions.py",
+      "aiocache/__init__.py",
+      "aiocache/serializers/__init__.py",
+      "aiocache/backends/__init__.py"
+    ],
+    "already_has_scope_fix": false
+  },
+  "aiofiles": {
+    "total_files_scanned": 10,
+    "sync_only_files": 2,
+    "pct_sync_only_files": 20.0,
+    "sample_sync_only_paths": [
+      "src/aiofiles/os.py",
+      "src/aiofiles/ospath.py"
+    ],
+    "already_has_scope_fix": false
+  },
+  "aiohttp": {
+    "total_files_scanned": 60,
+    "sync_only_files": 23,
+    "pct_sync_only_files": 38.33,
+    "sample_sync_only_paths": [
+      "setup.py",
+      "tools/cleanup_changes.py",
+      "tools/gen.py",
+      "tools/check_changes.py",
+      "tools/check_sum.py",
+      "requirements/sync-direct-runtime-deps.py",
+      "aiohttp/_cookie_helpers.py",
+      "aiohttp/web_exceptions.py",
+      "aiohttp/typedefs.py",
+      "aiohttp/log.py"
+    ],
+    "already_has_scope_fix": false
+  },
+  "aiokafka": {
+    "total_files_scanned": 68,
+    "sync_only_files": 52,
+    "pct_sync_only_files": 76.47,
+    "sample_sync_only_paths": [
+      "setup.py",
+      "dump_pem.py",
+      "benchmark/record_batch_read.py",
+      "benchmark/record_batch_compose.py",
+      "aiokafka/cluster.py",
+      "aiokafka/helpers.py",
+      "aiokafka/partitioner.py",
+      "aiokafka/__init__.py",
+      "aiokafka/errors.py",
+      "aiokafka/structs.py"
+    ],
+    "already_has_scope_fix": false
+  },
+  "aiomysql": {
+    "total_files_scanned": 13,
+    "sync_only_files": 4,
+    "pct_sync_only_files": 30.77,
+    "sample_sync_only_paths": [
+      "aiomysql/log.py",
+      "aiomysql/_version.py",
+      "aiomysql/sa/exc.py",
+      "aiomysql/sa/__init__.py"
+    ],
+    "already_has_scope_fix": false
+  },
+  "aiopath": {
+    "total_files_scanned": 12,
+    "sync_only_files": 5,
+    "pct_sync_only_files": 41.67,
+    "sample_sync_only_paths": [
+      "src/aiopath/metadata.py",
+      "src/aiopath/__init__.py",
+      "src/aiopath/types.py",
+      "src/aiopath/old/__init__.py",
+      "src/aiopath/old/compat.py"
+    ],
+    "already_has_scope_fix": false
+  },
+  "aiopg": {
+    "total_files_scanned": 13,
+    "sync_only_files": 5,
+    "pct_sync_only_files": 38.46,
+    "sample_sync_only_paths": [
+      "aiopg/log.py",
+      "aiopg/__init__.py",
+      "aiopg/sa/utils.py",
+      "aiopg/sa/exc.py",
+      "aiopg/sa/__init__.py"
+    ],
+    "already_has_scope_fix": false
+  },
+  "aioredis": {
+    "total_files_scanned": 12,
+    "sync_only_files": 5,
+    "pct_sync_only_files": 41.67,
+    "sample_sync_only_paths": [
+      "test.py",
+      "aioredis/log.py",
+      "aioredis/__init__.py",
+      "aioredis/compat.py",
+      "tools/check_changes.py"
+    ],
+    "already_has_scope_fix": false
+  },
+  "aiosonic": {
+    "total_files_scanned": 25,
+    "sync_only_files": 11,
+    "pct_sync_only_files": 44.0,
+    "sample_sync_only_paths": [
+      "aiosonic_utils/structures.py",
+      "aiosonic_utils/__init__.py",
+      "sourcedocs/conf.py",
+      "aiosonic/proxy.py",
+      "aiosonic/utils.py",
+      "aiosonic/tcp_helpers.py",
+      "aiosonic/__init__.py",
+      "aiosonic/version.py",
+      "aiosonic/sse_config.py",
+      "aiosonic/timeout.py"
+    ],
+    "already_has_scope_fix": false
+  },
+  "apscheduler": {
+    "total_files_scanned": 45,
+    "sync_only_files": 28,
+    "pct_sync_only_files": 62.22,
+    "sample_sync_only_paths": [
+      "src/apscheduler/_structures.py",
+      "src/apscheduler/_events.py",
+      "src/apscheduler/_converters.py",
+      "src/apscheduler/_validators.py",
+      "src/apscheduler/_exceptions.py",
+      "src/apscheduler/_retry.py",
+      "src/apscheduler/_decorators.py",
+      "src/apscheduler/_marshalling.py",
+      "src/apscheduler/_enums.py",
+      "src/apscheduler/__init__.py"
+    ],
+    "already_has_scope_fix": false
+  },
+  "arq": {
+    "total_files_scanned": 12,
+    "sync_only_files": 6,
+    "pct_sync_only_files": 50.0,
+    "sample_sync_only_paths": [
+      "arq/constants.py",
+      "arq/__main__.py",
+      "arq/cron.py",
+      "arq/logs.py",
+      "arq/__init__.py",
+      "arq/version.py"
+    ],
+    "already_has_scope_fix": false
+  },
+  "asyncmy": {
+    "total_files_scanned": 36,
+    "sync_only_files": 25,
+    "pct_sync_only_files": 69.44,
+    "sample_sync_only_paths": [
+      "build.py",
+      "benchmark/run_all.py",
+      "benchmark/setup.py",
+      "benchmark/__init__.py",
+      "asyncmy/__init__.py",
+      "asyncmy/version.py",
+      "asyncmy/structs.py",
+      "asyncmy/optionfile.py",
+      "asyncmy/constants/CLIENT.py",
+      "asyncmy/constants/COMMAND.py"
+    ],
+    "already_has_scope_fix": false
+  },
+  "asyncpg": {
+    "total_files_scanned": 26,
+    "sync_only_files": 13,
+    "pct_sync_only_files": 50.0,
+    "sample_sync_only_paths": [
+      "setup.py",
+      "tools/generate_exceptions.py",
+      ".github/release_log.py",
+      "asyncpg/connresource.py",
+      "asyncpg/introspection.py",
+      "asyncpg/__init__.py",
+      "asyncpg/serverversion.py",
+      "asyncpg/_version.py",
+      "asyncpg/types.py",
+      "asyncpg/exceptions/__init__.py"
+    ],
+    "already_has_scope_fix": false
+  },
+  "asynctest": {
+    "total_files_scanned": 7,
+    "sync_only_files": 1,
+    "pct_sync_only_files": 14.29,
+    "sample_sync_only_paths": [
+      "setup.py"
+    ],
+    "already_has_scope_fix": false
+  },
+  "asyncz": {
+    "total_files_scanned": 145,
+    "sync_only_files": 96,
+    "pct_sync_only_files": 66.21,
+    "sample_sync_only_paths": [
+      "scripts/docs_pipeline.py",
+      "scripts/docs.py",
+      "docs_src/contrib/ravyn/decorator.py",
+      "docs_src/schedulers/custom_scheduler.py",
+      "docs_src/stores/custom.py",
+      "docs_src/triggers/custom.py",
+      "docs_src/triggers/shutdown.py",
+      "docs_src/triggers/interval/example3.py",
+      "docs_src/triggers/interval/example2.py",
+      "docs_src/triggers/interval/example1.py"
+    ],
+    "already_has_scope_fix": false
+  },
+  "databases": {
+    "total_files_scanned": 17,
+    "sync_only_files": 10,
+    "pct_sync_only_files": 58.82,
+    "sample_sync_only_paths": [
+      "setup.py",
+      "databases/importer.py",
+      "databases/__init__.py",
+      "databases/backends/__init__.py",
+      "databases/backends/compilers/__init__.py",
+      "databases/backends/compilers/psycopg.py",
+      "databases/backends/common/records.py",
+      "databases/backends/common/__init__.py",
+      "databases/backends/dialects/__init__.py",
+      "databases/backends/dialects/psycopg.py"
+    ],
+    "already_has_scope_fix": false
+  },
+  "elasticsearch-py": {
+    "total_files_scanned": 284,
+    "sync_only_files": 188,
+    "pct_sync_only_files": 66.2,
+    "sample_sync_only_paths": [
+      "noxfile.py",
+      "test_elasticsearch/conftest.py",
+      "test_elasticsearch/test_esql.py",
+      "test_elasticsearch/test_otel.py",
+      "test_elasticsearch/test_serializer.py",
+      "test_elasticsearch/test_strategies.py",
+      "test_elasticsearch/test_transport.py",
+      "test_elasticsearch/test_helpers.py",
+      "test_elasticsearch/test_exceptions.py",
+      "test_elasticsearch/__init__.py"
+    ],
+    "already_has_scope_fix": true
+  },
+  "fastapi": {
+    "total_files_scanned": 534,
+    "sync_only_files": 226,
+    "pct_sync_only_files": 42.32,
+    "sample_sync_only_paths": [
+      "fastapi/__main__.py",
+      "fastapi/params.py",
+      "fastapi/websockets.py",
+      "fastapi/testclient.py",
+      "fastapi/utils.py",
+      "fastapi/sse.py",
+      "fastapi/encoders.py",
+      "fastapi/staticfiles.py",
+      "fastapi/logger.py",
+      "fastapi/__init__.py"
+    ],
+    "already_has_scope_fix": false
+  },
+  "fastapi_examples": {
+    "total_files_scanned": 461,
+    "sync_only_files": 168,
+    "pct_sync_only_files": 36.44,
+    "sample_sync_only_paths": [
+      "header_params/__init__.py",
+      "pydantic_v1_in_v2/tutorial001_an_py310.py",
+      "pydantic_v1_in_v2/__init__.py",
+      "query_params/__init__.py",
+      "sub_applications/tutorial001_py310.py",
+      "sub_applications/__init__.py",
+      "body_nested_models/__init__.py",
+      "response_model/__init__.py",
+      "stream_data/__init__.py",
+      "handling_errors/__init__.py"
+    ],
+    "already_has_scope_fix": false
+  },
+  "faust": {
+    "total_files_scanned": 336,
+    "sync_only_files": 197,
+    "pct_sync_only_files": 58.63,
+    "sample_sync_only_paths": [
+      "t/conftest.py",
+      "t/helpers.py",
+      "t/__init__.py",
+      "t/unit/conftest.py",
+      "t/unit/test_auth.py",
+      "t/unit/test_faust.py",
+      "t/unit/__init__.py",
+      "t/unit/agents/__init__.py",
+      "t/unit/livecheck/test_locals.py",
+      "t/unit/livecheck/test_models.py"
+    ],
+    "already_has_scope_fix": false
+  },
+  "httpx": {
+    "total_files_scanned": 23,
+    "sync_only_files": 13,
+    "pct_sync_only_files": 56.52,
+    "sample_sync_only_paths": [
+      "httpx/_exceptions.py",
+      "httpx/_api.py",
+      "httpx/_decoders.py",
+      "httpx/_status_codes.py",
+      "httpx/_main.py",
+      "httpx/_config.py",
+      "httpx/__version__.py",
+      "httpx/__init__.py",
+      "httpx/_urls.py",
+      "httpx/_utils.py"
+    ],
+    "already_has_scope_fix": false
+  },
+  "kubernetes_asyncio": {
+    "total_files_scanned": 896,
+    "sync_only_files": 857,
+    "pct_sync_only_files": 95.65,
+    "sample_sync_only_paths": [
+      "scripts/constants.py",
+      "scripts/add__all__.py",
+      "scripts/generate_typing.py",
+      "kubernetes_asyncio/__init__.py",
+      "kubernetes_asyncio/leaderelection/leaderelectionrecord.py",
+      "kubernetes_asyncio/leaderelection/electionconfig.py",
+      "kubernetes_asyncio/leaderelection/__init__.py",
+      "kubernetes_asyncio/leaderelection/resourcelock/__init__.py",
+      "kubernetes_asyncio/stream/__init__.py",
+      "kubernetes_asyncio/client/exceptions.py"
+    ],
+    "already_has_scope_fix": false
+  },
+  "motor": {
+    "total_files_scanned": 16,
+    "sync_only_files": 8,
+    "pct_sync_only_files": 50.0,
+    "sample_sync_only_paths": [
+      "synchro/synchrotest.py",
+      "synchro/__init__.py",
+      "motor/motor_tornado.py",
+      "motor/motor_common.py",
+      "motor/__init__.py",
+      "motor/metaprogramming.py",
+      "motor/_version.py",
+      "motor/frameworks/__init__.py"
+    ],
+    "already_has_scope_fix": false
+  },
+  "pytest-asyncio": {
+    "total_files_scanned": 3,
+    "sync_only_files": 0,
+    "pct_sync_only_files": 0.0,
+    "sample_sync_only_paths": [],
+    "already_has_scope_fix": false
+  },
+  "quart": {
+    "total_files_scanned": 34,
+    "sync_only_files": 13,
+    "pct_sync_only_files": 38.24,
+    "sample_sync_only_paths": [
+      "src/quart/logging.py",
+      "src/quart/routing.py",
+      "src/quart/__main__.py",
+      "src/quart/signals.py",
+      "src/quart/globals.py",
+      "src/quart/config.py",
+      "src/quart/__init__.py",
+      "src/quart/json/provider.py",
+      "src/quart/json/__init__.py",
+      "src/quart/json/tag.py"
+    ],
+    "already_has_scope_fix": false
+  },
+  "redis-py": {
+    "total_files_scanned": 157,
+    "sync_only_files": 111,
+    "pct_sync_only_files": 70.7,
+    "sample_sync_only_paths": [
+      "tasks.py",
+      "redis/_defaults.py",
+      "redis/keyspace_notifications.py",
+      "redis/backoff.py",
+      "redis/retry.py",
+      "redis/exceptions.py",
+      "redis/cache.py",
+      "redis/data_structure.py",
+      "redis/crc.py",
+      "redis/client.py"
+    ],
+    "already_has_scope_fix": false
+  },
+  "sanic": {
+    "total_files_scanned": 178,
+    "sync_only_files": 129,
+    "pct_sync_only_files": 72.47,
+    "sample_sync_only_paths": [
+      "setup.py",
+      "scripts/changelog.py",
+      "scripts/release.py",
+      "guide/server.py",
+      "guide/content/en/emoji.py",
+      "guide/content/en/migrate.py",
+      "guide/webapp/__init__.py",
+      "guide/webapp/endpoint/view.py",
+      "guide/webapp/endpoint/__init__.py",
+      "guide/webapp/worker/config.py"
+    ],
+    "already_has_scope_fix": false
+  },
+  "sqlalchemy": {
+    "total_files_scanned": 269,
+    "sync_only_files": 228,
+    "pct_sync_only_files": 84.76,
+    "sample_sync_only_paths": [
+      "reap_dbs.py",
+      "setup.py",
+      "lib/sqlalchemy/inspection.py",
+      "lib/sqlalchemy/events.py",
+      "lib/sqlalchemy/log.py",
+      "lib/sqlalchemy/schema.py",
+      "lib/sqlalchemy/__init__.py",
+      "lib/sqlalchemy/types.py",
+      "lib/sqlalchemy/pool/__init__.py",
+      "lib/sqlalchemy/future/engine.py"
+    ],
+    "already_has_scope_fix": true
+  },
+  "taskiq": {
+    "total_files_scanned": 83,
+    "sync_only_files": 56,
+    "pct_sync_only_files": 67.47,
+    "sample_sync_only_paths": [
+      "taskiq/serialization.py",
+      "taskiq/__main__.py",
+      "taskiq/events.py",
+      "taskiq/exceptions.py",
+      "taskiq/acks.py",
+      "taskiq/state.py",
+      "taskiq/package.py",
+      "taskiq/message.py",
+      "taskiq/__init__.py",
+      "taskiq/compat.py"
+    ],
+    "already_has_scope_fix": false
+  },
+  "tortoise-orm": {
+    "total_files_scanned": 133,
+    "sync_only_files": 79,
+    "pct_sync_only_files": 59.4,
+    "sample_sync_only_paths": [
+      "tortoise/converters.py",
+      "tortoise/__main__.py",
+      "tortoise/apps.py",
+      "tortoise/functions.py",
+      "tortoise/exceptions.py",
+      "tortoise/signals.py",
+      "tortoise/log.py",
+      "tortoise/timezone.py",
+      "tortoise/validators.py",
+      "tortoise/query_utils.py"
+    ],
+    "already_has_scope_fix": false
+  },
+  "trio": {
+    "total_files_scanned": 144,
+    "sync_only_files": 45,
+    "pct_sync_only_files": 31.25,
+    "sample_sync_only_paths": [
+      "src/trio/__main__.py",
+      "src/trio/_deprecate.py",
+      "src/trio/socket.py",
+      "src/trio/to_thread.py",
+      "src/trio/from_thread.py",
+      "src/trio/lowlevel.py",
+      "src/trio/__init__.py",
+      "src/trio/abc.py",
+      "src/trio/_version.py",
+      "src/trio/testing/_raises_group.py"
+    ],
+    "already_has_scope_fix": false
+  },
+  "websockets": {
+    "total_files_scanned": 73,
+    "sync_only_files": 46,
+    "pct_sync_only_files": 63.01,
+    "sample_sync_only_paths": [
+      "setup.py",
+      "fuzzing/fuzz_http11_response_parser.py",
+      "fuzzing/fuzz_websocket_parser.py",
+      "fuzzing/fuzz_http11_request_parser.py",
+      "compliance/sync/client.py",
+      "experiments/json_log_formatter.py",
+      "experiments/profiling/compression.py",
+      "experiments/optimization/streams.py",
+      "experiments/optimization/parse_handshake.py",
+      "experiments/optimization/parse_frames.py"
+    ],
+    "already_has_scope_fix": false
+  }
+}

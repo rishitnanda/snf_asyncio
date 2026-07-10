@@ -1,0 +1,12 @@
+{
+  "repo": "apscheduler",
+  "n_sync_only_files": 29,
+  "n_async_files": 16,
+  "sync_only_written_name_count": 207,
+  "async_side_read_only_candidate_count": 89,
+  "collision_count": 1,
+  "collision_names": [
+    "SELF_ATTR:self.options"
+  ],
+  "verdict": "CONTAMINATION LIKELY -- rescope recommended"
+}

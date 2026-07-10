@@ -1,0 +1,10 @@
+{
+  "repo": "asyncmy",
+  "n_sync_only_files": 25,
+  "n_async_files": 11,
+  "sync_only_written_name_count": 799,
+  "async_side_read_only_candidate_count": 38,
+  "collision_count": 0,
+  "collision_names": [],
+  "verdict": "no direct collision found -- high sync-file% likely benign here"
+}

@@ -1,0 +1,16 @@
+{
+  "repo": "fastapi_examples",
+  "destructive_names_total": 5,
+  "flagged_control_bounded_names": [],
+  "flagged_control_unbounded_names": [],
+  "flagged_data_names": [
+    "GLOBAL:data",
+    "GLOBAL:fake_users_db",
+    "GLOBAL:items",
+    "GLOBAL:ml_models",
+    "SELF_ATTR:self._body"
+  ],
+  "flagged_control_bounded_interactions": 0,
+  "flagged_control_unbounded_interactions": 0,
+  "flagged_data_interactions": 63
+}

@@ -1,0 +1,25 @@
+{
+  "repo": "taskiq",
+  "destructive_names_total": 13,
+  "flagged_control_bounded_names": [
+    "SELF_ATTR:self._client",
+    "SELF_ATTR:self._update_schedules_task_future",
+    "SELF_ATTR:self.progress",
+    "SELF_ATTR:self.results",
+    "SELF_ATTR:self.scheduled_tasks_updated_at",
+    "SELF_ATTR:self.task_hints"
+  ],
+  "flagged_control_unbounded_names": [],
+  "flagged_data_names": [
+    "CLOSURE:task_ids",
+    "SELF_ATTR:self.dependency_graphs",
+    "SELF_ATTR:self.event_handlers",
+    "SELF_ATTR:self.scheduled_tasks",
+    "SELF_ATTR:self.schedules",
+    "SELF_ATTR:self.socket",
+    "SELF_ATTR:self.task_signatures"
+  ],
+  "flagged_control_bounded_interactions": 27,
+  "flagged_control_unbounded_interactions": 0,
+  "flagged_data_interactions": 30
+}

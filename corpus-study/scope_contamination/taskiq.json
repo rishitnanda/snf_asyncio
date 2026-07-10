@@ -1,0 +1,13 @@
+{
+  "repo": "taskiq",
+  "n_sync_only_files": 58,
+  "n_async_files": 25,
+  "sync_only_written_name_count": 240,
+  "async_side_read_only_candidate_count": 75,
+  "collision_count": 2,
+  "collision_names": [
+    "SELF_ATTR:self.broker",
+    "SELF_ATTR:self.callback"
+  ],
+  "verdict": "CONTAMINATION LIKELY -- rescope recommended"
+}

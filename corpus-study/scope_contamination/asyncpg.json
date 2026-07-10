@@ -1,0 +1,13 @@
+{
+  "repo": "asyncpg",
+  "n_sync_only_files": 14,
+  "n_async_files": 12,
+  "sync_only_written_name_count": 149,
+  "async_side_read_only_candidate_count": 131,
+  "collision_count": 2,
+  "collision_names": [
+    "SELF_ATTR:self._connection",
+    "SELF_ATTR:self.loop"
+  ],
+  "verdict": "CONTAMINATION LIKELY -- rescope recommended"
+}

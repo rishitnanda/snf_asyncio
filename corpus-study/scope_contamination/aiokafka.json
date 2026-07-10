@@ -1,0 +1,20 @@
+{
+  "repo": "aiokafka",
+  "n_sync_only_files": 53,
+  "n_async_files": 15,
+  "sync_only_written_name_count": 540,
+  "async_side_read_only_candidate_count": 197,
+  "collision_count": 9,
+  "collision_names": [
+    "SELF_ATTR:self._fetch_waiters",
+    "SELF_ATTR:self._group_id",
+    "SELF_ATTR:self._group_instance_id",
+    "SELF_ATTR:self._is_transactional",
+    "SELF_ATTR:self._isolation_level",
+    "SELF_ATTR:self._loop",
+    "SELF_ATTR:self._size",
+    "SELF_ATTR:self._subscription",
+    "SELF_ATTR:self._topics"
+  ],
+  "verdict": "CONTAMINATION LIKELY -- rescope recommended"
+}

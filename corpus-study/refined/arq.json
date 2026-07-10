@@ -1,0 +1,82 @@
+{
+  "total_interactions": 315,
+  "counts_by_bucket": {
+    "READ_ONLY": 228,
+    "COMMUTATIVE": 40,
+    "DESTRUCTIVE": 47
+  },
+  "mediated_by_bucket": {
+    "READ_ONLY": 0,
+    "COMMUTATIVE": 0,
+    "DESTRUCTIVE": 0
+  },
+  "unmediated_by_bucket": {
+    "READ_ONLY": 228,
+    "COMMUTATIVE": 40,
+    "DESTRUCTIVE": 47
+  },
+  "unmediated_total": 315,
+  "unmediated_destructive_pct_of_all": 14.92,
+  "unmediated_destructive_pct_of_unmediated": 14.92,
+  "distinct_names_seen": 95,
+  "distinct_names_destructive": 9,
+  "distinct_names_commutative": 6,
+  "distinct_names_readonly": 80,
+  "destructive_examples": [
+    {
+      "file": "arq/jobs.py",
+      "func": "result",
+      "lineno": 105,
+      "name": "self._redis",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "arq/jobs.py",
+      "func": "info",
+      "lineno": 133,
+      "name": "self._redis",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "mutating_method_noncommutative"
+    },
+    {
+      "file": "arq/jobs.py",
+      "func": "info",
+      "lineno": 133,
+      "name": "self._redis",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "arq/jobs.py",
+      "func": "info",
+      "lineno": 137,
+      "name": "self._redis",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "arq/jobs.py",
+      "func": "info",
+      "lineno": 137,
+      "name": "self._redis",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    }
+  ]
+}

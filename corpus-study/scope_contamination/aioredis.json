@@ -1,0 +1,10 @@
+{
+  "repo": "aioredis",
+  "n_sync_only_files": 7,
+  "n_async_files": 5,
+  "sync_only_written_name_count": 16,
+  "async_side_read_only_candidate_count": 110,
+  "collision_count": 0,
+  "collision_names": [],
+  "verdict": "no direct collision found -- high sync-file% likely benign here"
+}

@@ -1,0 +1,29 @@
+{
+  "repo": "aiopg",
+  "destructive_names_total": 16,
+  "flagged_control_bounded_names": [
+    "SELF_ATTR:self._closed",
+    "SELF_ATTR:self._conn",
+    "SELF_ATTR:self._connection",
+    "SELF_ATTR:self._engine",
+    "SELF_ATTR:self._is_active",
+    "SELF_ATTR:self._is_begin",
+    "SELF_ATTR:self._obj",
+    "SELF_ATTR:self._pool",
+    "SELF_ATTR:self._transaction",
+    "SELF_ATTR:self._unique_id"
+  ],
+  "flagged_control_unbounded_names": [
+    "SELF_ATTR:self._free"
+  ],
+  "flagged_data_names": [
+    "SELF_ATTR:self._acquiring",
+    "SELF_ATTR:self._cursors",
+    "SELF_ATTR:self._is_prepared",
+    "SELF_ATTR:self._queue",
+    "SELF_ATTR:self._waiter"
+  ],
+  "flagged_control_bounded_interactions": 127,
+  "flagged_control_unbounded_interactions": 22,
+  "flagged_data_interactions": 22
+}

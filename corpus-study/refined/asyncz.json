@@ -1,0 +1,82 @@
+{
+  "total_interactions": 211,
+  "counts_by_bucket": {
+    "READ_ONLY": 200,
+    "COMMUTATIVE": 0,
+    "DESTRUCTIVE": 11
+  },
+  "mediated_by_bucket": {
+    "READ_ONLY": 0,
+    "COMMUTATIVE": 0,
+    "DESTRUCTIVE": 0
+  },
+  "unmediated_by_bucket": {
+    "READ_ONLY": 200,
+    "COMMUTATIVE": 0,
+    "DESTRUCTIVE": 11
+  },
+  "unmediated_total": 211,
+  "unmediated_destructive_pct_of_all": 5.21,
+  "unmediated_destructive_pct_of_unmediated": 5.21,
+  "distinct_names_seen": 58,
+  "distinct_names_destructive": 3,
+  "distinct_names_commutative": 0,
+  "distinct_names_readonly": 55,
+  "destructive_examples": [
+    {
+      "file": "asyncz/schedulers/asyncio.py",
+      "func": "start",
+      "lineno": 117,
+      "name": "self.event_loop_thread",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "full_rebind"
+    },
+    {
+      "file": "asyncz/schedulers/asyncio.py",
+      "func": "start",
+      "lineno": 118,
+      "name": "self.event_loop_thread",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "asyncz/schedulers/asyncio.py",
+      "func": "start",
+      "lineno": 118,
+      "name": "self.event_loop_thread",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "asyncz/schedulers/asyncio.py",
+      "func": "start",
+      "lineno": 121,
+      "name": "self.event_loop",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "full_rebind"
+    },
+    {
+      "file": "asyncz/schedulers/asyncio.py",
+      "func": "shutdown",
+      "lineno": 135,
+      "name": "self._shutdown_handle",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    }
+  ]
+}

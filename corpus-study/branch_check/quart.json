@@ -1,0 +1,44 @@
+{
+  "repo": "quart",
+  "destructive_names_total": 31,
+  "flagged_control_bounded_names": [
+    "SELF_ATTR:self._accepted",
+    "SELF_ATTR:self._closed",
+    "SELF_ATTR:self._cv_tokens",
+    "SELF_ATTR:self._data",
+    "SELF_ATTR:self._files",
+    "SELF_ATTR:self._form",
+    "SELF_ATTR:self._iterated",
+    "SELF_ATTR:self._task",
+    "SELF_ATTR:self.end",
+    "SELF_ATTR:self.headers",
+    "SELF_ATTR:self.preserve_context",
+    "SELF_ATTR:self.scope",
+    "SELF_ATTR:self.session"
+  ],
+  "flagged_control_unbounded_names": [
+    "SELF_ATTR:self._receive_queue"
+  ],
+  "flagged_data_names": [
+    "SELF_ATTR:self._app_queue",
+    "SELF_ATTR:self._has_data",
+    "SELF_ATTR:self._preserved_context",
+    "SELF_ATTR:self._send_queue",
+    "SELF_ATTR:self.accepted",
+    "SELF_ATTR:self.begin",
+    "SELF_ATTR:self.body",
+    "SELF_ATTR:self.content_length",
+    "SELF_ATTR:self.content_range",
+    "SELF_ATTR:self.file",
+    "SELF_ATTR:self.file_manager",
+    "SELF_ATTR:self.filename",
+    "SELF_ATTR:self.preserved",
+    "SELF_ATTR:self.push_promises",
+    "SELF_ATTR:self.response",
+    "SELF_ATTR:self.shutdown_event",
+    "SELF_ATTR:self.status_code"
+  ],
+  "flagged_control_bounded_interactions": 89,
+  "flagged_control_unbounded_interactions": 26,
+  "flagged_data_interactions": 87
+}

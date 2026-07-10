@@ -1,0 +1,82 @@
+{
+  "total_interactions": 721,
+  "counts_by_bucket": {
+    "READ_ONLY": 458,
+    "COMMUTATIVE": 24,
+    "DESTRUCTIVE": 239
+  },
+  "mediated_by_bucket": {
+    "READ_ONLY": 0,
+    "COMMUTATIVE": 0,
+    "DESTRUCTIVE": 0
+  },
+  "unmediated_by_bucket": {
+    "READ_ONLY": 458,
+    "COMMUTATIVE": 24,
+    "DESTRUCTIVE": 239
+  },
+  "unmediated_total": 721,
+  "unmediated_destructive_pct_of_all": 33.15,
+  "unmediated_destructive_pct_of_unmediated": 33.15,
+  "distinct_names_seen": 167,
+  "distinct_names_destructive": 30,
+  "distinct_names_commutative": 5,
+  "distinct_names_readonly": 132,
+  "destructive_examples": [
+    {
+      "file": "experiments/broadcast/server.py",
+      "func": "handler",
+      "lineno": 49,
+      "name": "CLIENTS",
+      "kind": "GLOBAL",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "mutating_method_commutative"
+    },
+    {
+      "file": "experiments/broadcast/server.py",
+      "func": "handler",
+      "lineno": 49,
+      "name": "CLIENTS",
+      "kind": "GLOBAL",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "experiments/broadcast/server.py",
+      "func": "handler",
+      "lineno": 53,
+      "name": "CLIENTS",
+      "kind": "GLOBAL",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "mutating_method_noncommutative"
+    },
+    {
+      "file": "experiments/broadcast/server.py",
+      "func": "handler",
+      "lineno": 53,
+      "name": "CLIENTS",
+      "kind": "GLOBAL",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "experiments/broadcast/server.py",
+      "func": "handler",
+      "lineno": 57,
+      "name": "CLIENTS",
+      "kind": "GLOBAL",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "mutating_method_commutative"
+    }
+  ]
+}

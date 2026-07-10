@@ -1,0 +1,2571 @@
+{
+  "per_repo": {
+    "aio-pika": {
+      "total_interactions": 723,
+      "counts_by_bucket": {
+        "READ_ONLY": 357,
+        "COMMUTATIVE": 35,
+        "DESTRUCTIVE": 331
+      },
+      "mediated_by_bucket": {
+        "READ_ONLY": 18,
+        "COMMUTATIVE": 8,
+        "DESTRUCTIVE": 15
+      },
+      "unmediated_by_bucket": {
+        "READ_ONLY": 339,
+        "COMMUTATIVE": 27,
+        "DESTRUCTIVE": 316
+      },
+      "unmediated_total": 682,
+      "unmediated_destructive_pct_of_all": 43.71,
+      "unmediated_destructive_pct_of_unmediated": 46.33,
+      "distinct_names_seen": 145,
+      "distinct_names_destructive": 40,
+      "distinct_names_commutative": 6,
+      "distinct_names_readonly": 99,
+      "destructive_examples": [
+        {
+          "file": "aio_pika/robust_connection.py",
+          "func": "_on_connection_close",
+          "lineno": 91,
+          "name": "self._close_called",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "aio_pika/robust_connection.py",
+          "func": "_on_connection_close",
+          "lineno": 100,
+          "name": "self.__connection_close_event",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "aio_pika/robust_connection.py",
+          "func": "_on_connected",
+          "lineno": 105,
+          "name": "self.transport",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "aio_pika/robust_connection.py",
+          "func": "_on_connected",
+          "lineno": 138,
+          "name": "self.__connection_close_event",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "aio_pika/robust_connection.py",
+          "func": "__connection_factory",
+          "lineno": 142,
+          "name": "self._close_called",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        }
+      ]
+    },
+    "aiobotocore": {
+      "total_interactions": 1039,
+      "counts_by_bucket": {
+        "READ_ONLY": 877,
+        "COMMUTATIVE": 47,
+        "DESTRUCTIVE": 115
+      },
+      "mediated_by_bucket": {
+        "READ_ONLY": 29,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 7
+      },
+      "unmediated_by_bucket": {
+        "READ_ONLY": 848,
+        "COMMUTATIVE": 47,
+        "DESTRUCTIVE": 108
+      },
+      "unmediated_total": 1003,
+      "unmediated_destructive_pct_of_all": 10.39,
+      "unmediated_destructive_pct_of_unmediated": 10.77,
+      "distinct_names_seen": 414,
+      "distinct_names_destructive": 26,
+      "distinct_names_commutative": 3,
+      "distinct_names_readonly": 385,
+      "destructive_examples": [
+        {
+          "file": "aiobotocore/discovery.py",
+          "func": "_refresh_current_endpoints",
+          "lineno": 22,
+          "name": "self._cache",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "subscript_write"
+        },
+        {
+          "file": "aiobotocore/discovery.py",
+          "func": "_refresh_current_endpoints",
+          "lineno": 23,
+          "name": "self._failed_attempts",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "mutating_method_noncommutative"
+        },
+        {
+          "file": "aiobotocore/discovery.py",
+          "func": "_refresh_current_endpoints",
+          "lineno": 23,
+          "name": "self._failed_attempts",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "aiobotocore/discovery.py",
+          "func": "_refresh_current_endpoints",
+          "lineno": 26,
+          "name": "self._failed_attempts",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "subscript_write"
+        },
+        {
+          "file": "aiobotocore/discovery.py",
+          "func": "describe_endpoint",
+          "lineno": 55,
+          "name": "self._cache",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "mutating_method_noncommutative"
+        }
+      ]
+    },
+    "aiocache": {
+      "total_interactions": 266,
+      "counts_by_bucket": {
+        "READ_ONLY": 145,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 121
+      },
+      "mediated_by_bucket": {
+        "READ_ONLY": 3,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 0
+      },
+      "unmediated_by_bucket": {
+        "READ_ONLY": 142,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 121
+      },
+      "unmediated_total": 263,
+      "unmediated_destructive_pct_of_all": 45.49,
+      "unmediated_destructive_pct_of_unmediated": 46.01,
+      "distinct_names_seen": 54,
+      "distinct_names_destructive": 7,
+      "distinct_names_commutative": 0,
+      "distinct_names_readonly": 47,
+      "destructive_examples": [
+        {
+          "file": "aiocache/base.py",
+          "func": "__aenter__",
+          "lineno": 553,
+          "name": "self._conn",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "full_rebind"
+        },
+        {
+          "file": "aiocache/base.py",
+          "func": "__aenter__",
+          "lineno": 553,
+          "name": "self._cache",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "aiocache/base.py",
+          "func": "__aenter__",
+          "lineno": 553,
+          "name": "self._cache",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "aiocache/base.py",
+          "func": "__aexit__",
+          "lineno": 557,
+          "name": "self._cache",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "aiocache/base.py",
+          "func": "__aexit__",
+          "lineno": 557,
+          "name": "self._cache",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        }
+      ]
+    },
+    "aiofiles": {
+      "total_interactions": 46,
+      "counts_by_bucket": {
+        "READ_ONLY": 42,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 4
+      },
+      "mediated_by_bucket": {
+        "READ_ONLY": 0,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 0
+      },
+      "unmediated_by_bucket": {
+        "READ_ONLY": 42,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 4
+      },
+      "unmediated_total": 46,
+      "unmediated_destructive_pct_of_all": 8.7,
+      "unmediated_destructive_pct_of_unmediated": 8.7,
+      "distinct_names_seen": 13,
+      "distinct_names_destructive": 1,
+      "distinct_names_commutative": 0,
+      "distinct_names_readonly": 12,
+      "destructive_examples": [
+        {
+          "file": "src/aiofiles/base.py",
+          "func": "__aexit__",
+          "lineno": 77,
+          "name": "self._obj",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "src/aiofiles/base.py",
+          "func": "__aexit__",
+          "lineno": 79,
+          "name": "self._obj",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "full_rebind"
+        },
+        {
+          "file": "src/aiofiles/tempfile/__init__.py",
+          "func": "__aenter__",
+          "lineno": 327,
+          "name": "self._obj",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "full_rebind"
+        },
+        {
+          "file": "src/aiofiles/tempfile/__init__.py",
+          "func": "__aenter__",
+          "lineno": 328,
+          "name": "self._obj",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        }
+      ]
+    },
+    "aiohttp": {
+      "total_interactions": 1590,
+      "counts_by_bucket": {
+        "READ_ONLY": 915,
+        "COMMUTATIVE": 49,
+        "DESTRUCTIVE": 626
+      },
+      "mediated_by_bucket": {
+        "READ_ONLY": 4,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 0
+      },
+      "unmediated_by_bucket": {
+        "READ_ONLY": 911,
+        "COMMUTATIVE": 49,
+        "DESTRUCTIVE": 626
+      },
+      "unmediated_total": 1586,
+      "unmediated_destructive_pct_of_all": 39.37,
+      "unmediated_destructive_pct_of_unmediated": 39.47,
+      "distinct_names_seen": 483,
+      "distinct_names_destructive": 93,
+      "distinct_names_commutative": 13,
+      "distinct_names_readonly": 377,
+      "destructive_examples": [
+        {
+          "file": "aiohttp/web_fileresponse.py",
+          "func": "_not_modified",
+          "lineno": 154,
+          "name": "self._length_check",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "full_rebind"
+        },
+        {
+          "file": "aiohttp/web_fileresponse.py",
+          "func": "_not_modified",
+          "lineno": 155,
+          "name": "self.etag",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "full_rebind"
+        },
+        {
+          "file": "aiohttp/web_fileresponse.py",
+          "func": "_not_modified",
+          "lineno": 156,
+          "name": "self.last_modified",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "full_rebind"
+        },
+        {
+          "file": "aiohttp/web_fileresponse.py",
+          "func": "_precondition_failed",
+          "lineno": 165,
+          "name": "self.content_length",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "full_rebind"
+        },
+        {
+          "file": "aiohttp/web_fileresponse.py",
+          "func": "_prepare_open_file",
+          "lineno": 323,
+          "name": "self._headers",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "subscript_write"
+        }
+      ]
+    },
+    "aiokafka": {
+      "total_interactions": 1249,
+      "counts_by_bucket": {
+        "READ_ONLY": 977,
+        "COMMUTATIVE": 19,
+        "DESTRUCTIVE": 253
+      },
+      "mediated_by_bucket": {
+        "READ_ONLY": 30,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 7
+      },
+      "unmediated_by_bucket": {
+        "READ_ONLY": 947,
+        "COMMUTATIVE": 19,
+        "DESTRUCTIVE": 246
+      },
+      "unmediated_total": 1212,
+      "unmediated_destructive_pct_of_all": 19.7,
+      "unmediated_destructive_pct_of_unmediated": 20.3,
+      "distinct_names_seen": 234,
+      "distinct_names_destructive": 34,
+      "distinct_names_commutative": 3,
+      "distinct_names_readonly": 197,
+      "destructive_examples": [
+        {
+          "file": "aiokafka/client.py",
+          "func": "close",
+          "lineno": 177,
+          "name": "self._sync_task",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "aiokafka/client.py",
+          "func": "close",
+          "lineno": 178,
+          "name": "self._sync_task",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "aiokafka/client.py",
+          "func": "close",
+          "lineno": 178,
+          "name": "self._sync_task",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "aiokafka/client.py",
+          "func": "close",
+          "lineno": 180,
+          "name": "self._sync_task",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "aiokafka/client.py",
+          "func": "close",
+          "lineno": 181,
+          "name": "self._sync_task",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "full_rebind"
+        }
+      ]
+    },
+    "aiomysql": {
+      "total_interactions": 720,
+      "counts_by_bucket": {
+        "READ_ONLY": 330,
+        "COMMUTATIVE": 12,
+        "DESTRUCTIVE": 378
+      },
+      "mediated_by_bucket": {
+        "READ_ONLY": 6,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 0
+      },
+      "unmediated_by_bucket": {
+        "READ_ONLY": 324,
+        "COMMUTATIVE": 12,
+        "DESTRUCTIVE": 378
+      },
+      "unmediated_total": 714,
+      "unmediated_destructive_pct_of_all": 52.5,
+      "unmediated_destructive_pct_of_unmediated": 52.94,
+      "distinct_names_seen": 162,
+      "distinct_names_destructive": 53,
+      "distinct_names_commutative": 4,
+      "distinct_names_readonly": 105,
+      "destructive_examples": [
+        {
+          "file": "aiomysql/utils.py",
+          "func": "__aenter__",
+          "lineno": 74,
+          "name": "self._obj",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "full_rebind"
+        },
+        {
+          "file": "aiomysql/utils.py",
+          "func": "__aenter__",
+          "lineno": 75,
+          "name": "self._obj",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "aiomysql/utils.py",
+          "func": "__aexit__",
+          "lineno": 78,
+          "name": "self._obj",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "aiomysql/utils.py",
+          "func": "__aexit__",
+          "lineno": 78,
+          "name": "self._obj",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "aiomysql/utils.py",
+          "func": "__aexit__",
+          "lineno": 79,
+          "name": "self._obj",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "full_rebind"
+        }
+      ]
+    },
+    "aiopath": {
+      "total_interactions": 168,
+      "counts_by_bucket": {
+        "READ_ONLY": 164,
+        "COMMUTATIVE": 4,
+        "DESTRUCTIVE": 0
+      },
+      "mediated_by_bucket": {
+        "READ_ONLY": 0,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 0
+      },
+      "unmediated_by_bucket": {
+        "READ_ONLY": 164,
+        "COMMUTATIVE": 4,
+        "DESTRUCTIVE": 0
+      },
+      "unmediated_total": 168,
+      "unmediated_destructive_pct_of_all": 0.0,
+      "unmediated_destructive_pct_of_unmediated": 0.0,
+      "distinct_names_seen": 43,
+      "distinct_names_destructive": 0,
+      "distinct_names_commutative": 1,
+      "distinct_names_readonly": 42,
+      "destructive_examples": []
+    },
+    "aiopg": {
+      "total_interactions": 405,
+      "counts_by_bucket": {
+        "READ_ONLY": 228,
+        "COMMUTATIVE": 6,
+        "DESTRUCTIVE": 171
+      },
+      "mediated_by_bucket": {
+        "READ_ONLY": 6,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 2
+      },
+      "unmediated_by_bucket": {
+        "READ_ONLY": 222,
+        "COMMUTATIVE": 6,
+        "DESTRUCTIVE": 169
+      },
+      "unmediated_total": 397,
+      "unmediated_destructive_pct_of_all": 41.73,
+      "unmediated_destructive_pct_of_unmediated": 42.57,
+      "distinct_names_seen": 82,
+      "distinct_names_destructive": 16,
+      "distinct_names_commutative": 2,
+      "distinct_names_readonly": 64,
+      "destructive_examples": [
+        {
+          "file": "aiopg/utils.py",
+          "func": "__aenter__",
+          "lineno": 71,
+          "name": "self._obj",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "full_rebind"
+        },
+        {
+          "file": "aiopg/utils.py",
+          "func": "__aenter__",
+          "lineno": 72,
+          "name": "self._obj",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "aiopg/utils.py",
+          "func": "__aenter__",
+          "lineno": 73,
+          "name": "self._obj",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "aiopg/utils.py",
+          "func": "__aexit__",
+          "lineno": 81,
+          "name": "self._obj",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "aiopg/utils.py",
+          "func": "__aexit__",
+          "lineno": 86,
+          "name": "self._obj",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        }
+      ]
+    },
+    "aioredis": {
+      "total_interactions": 516,
+      "counts_by_bucket": {
+        "READ_ONLY": 295,
+        "COMMUTATIVE": 16,
+        "DESTRUCTIVE": 205
+      },
+      "mediated_by_bucket": {
+        "READ_ONLY": 7,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 25
+      },
+      "unmediated_by_bucket": {
+        "READ_ONLY": 288,
+        "COMMUTATIVE": 16,
+        "DESTRUCTIVE": 180
+      },
+      "unmediated_total": 484,
+      "unmediated_destructive_pct_of_all": 34.88,
+      "unmediated_destructive_pct_of_unmediated": 37.19,
+      "distinct_names_seen": 139,
+      "distinct_names_destructive": 26,
+      "distinct_names_commutative": 3,
+      "distinct_names_readonly": 110,
+      "destructive_examples": [
+        {
+          "file": "aioredis/utils.py",
+          "func": "__aenter__",
+          "lineno": 36,
+          "name": "self.p",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "aioredis/utils.py",
+          "func": "__aexit__",
+          "lineno": 39,
+          "name": "self.p",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "aioredis/utils.py",
+          "func": "__aexit__",
+          "lineno": 39,
+          "name": "self.p",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "aioredis/utils.py",
+          "func": "__aexit__",
+          "lineno": 40,
+          "name": "self.p",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "other_write"
+        },
+        {
+          "file": "aioredis/client.py",
+          "func": "initialize",
+          "lineno": 930,
+          "name": "self.connection",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        }
+      ]
+    },
+    "aiosonic": {
+      "total_interactions": 554,
+      "counts_by_bucket": {
+        "READ_ONLY": 373,
+        "COMMUTATIVE": 6,
+        "DESTRUCTIVE": 175
+      },
+      "mediated_by_bucket": {
+        "READ_ONLY": 4,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 5
+      },
+      "unmediated_by_bucket": {
+        "READ_ONLY": 369,
+        "COMMUTATIVE": 6,
+        "DESTRUCTIVE": 170
+      },
+      "unmediated_total": 545,
+      "unmediated_destructive_pct_of_all": 30.69,
+      "unmediated_destructive_pct_of_unmediated": 31.19,
+      "distinct_names_seen": 182,
+      "distinct_names_destructive": 29,
+      "distinct_names_commutative": 2,
+      "distinct_names_readonly": 151,
+      "destructive_examples": [
+        {
+          "file": "scripts/performance_http11_vs_http2.py",
+          "func": "one_request",
+          "lineno": 96,
+          "name": "client",
+          "kind": "CLOSURE",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "mutating_method_noncommutative"
+        },
+        {
+          "file": "scripts/performance_http11_vs_http2.py",
+          "func": "one_request",
+          "lineno": 96,
+          "name": "client",
+          "kind": "CLOSURE",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "scripts/performance_http11_vs_http2.py",
+          "func": "one_request",
+          "lineno": 104,
+          "name": "version_counter",
+          "kind": "CLOSURE",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "subscript_write"
+        },
+        {
+          "file": "scripts/performance_http11_vs_http2.py",
+          "func": "one_request",
+          "lineno": 104,
+          "name": "version_counter",
+          "kind": "CLOSURE",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "mutating_method_noncommutative"
+        },
+        {
+          "file": "scripts/performance_http11_vs_http2.py",
+          "func": "one_request",
+          "lineno": 104,
+          "name": "version_counter",
+          "kind": "CLOSURE",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        }
+      ]
+    },
+    "apscheduler": {
+      "total_interactions": 898,
+      "counts_by_bucket": {
+        "READ_ONLY": 489,
+        "COMMUTATIVE": 24,
+        "DESTRUCTIVE": 385
+      },
+      "mediated_by_bucket": {
+        "READ_ONLY": 2,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 0
+      },
+      "unmediated_by_bucket": {
+        "READ_ONLY": 487,
+        "COMMUTATIVE": 24,
+        "DESTRUCTIVE": 385
+      },
+      "unmediated_total": 896,
+      "unmediated_destructive_pct_of_all": 42.87,
+      "unmediated_destructive_pct_of_unmediated": 42.97,
+      "distinct_names_seen": 116,
+      "distinct_names_destructive": 25,
+      "distinct_names_commutative": 2,
+      "distinct_names_readonly": 89,
+      "destructive_examples": [
+        {
+          "file": "src/apscheduler/eventbrokers/asyncpg.py",
+          "func": "start",
+          "lineno": 104,
+          "name": "self._send",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "full_rebind"
+        },
+        {
+          "file": "src/apscheduler/eventbrokers/asyncpg.py",
+          "func": "start",
+          "lineno": 105,
+          "name": "self._send",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "src/apscheduler/eventbrokers/asyncpg.py",
+          "func": "start",
+          "lineno": 106,
+          "name": "self._task_group",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "src/apscheduler/eventbrokers/asyncpg.py",
+          "func": "start",
+          "lineno": 106,
+          "name": "self._task_group",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "src/apscheduler/eventbrokers/asyncpg.py",
+          "func": "_listen_notifications",
+          "lineno": 130,
+          "name": "self._logger",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        }
+      ]
+    },
+    "arq": {
+      "total_interactions": 315,
+      "counts_by_bucket": {
+        "READ_ONLY": 228,
+        "COMMUTATIVE": 40,
+        "DESTRUCTIVE": 47
+      },
+      "mediated_by_bucket": {
+        "READ_ONLY": 0,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 0
+      },
+      "unmediated_by_bucket": {
+        "READ_ONLY": 228,
+        "COMMUTATIVE": 40,
+        "DESTRUCTIVE": 47
+      },
+      "unmediated_total": 315,
+      "unmediated_destructive_pct_of_all": 14.92,
+      "unmediated_destructive_pct_of_unmediated": 14.92,
+      "distinct_names_seen": 95,
+      "distinct_names_destructive": 9,
+      "distinct_names_commutative": 6,
+      "distinct_names_readonly": 80,
+      "destructive_examples": [
+        {
+          "file": "arq/jobs.py",
+          "func": "result",
+          "lineno": 105,
+          "name": "self._redis",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "arq/jobs.py",
+          "func": "info",
+          "lineno": 133,
+          "name": "self._redis",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "mutating_method_noncommutative"
+        },
+        {
+          "file": "arq/jobs.py",
+          "func": "info",
+          "lineno": 133,
+          "name": "self._redis",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "arq/jobs.py",
+          "func": "info",
+          "lineno": 137,
+          "name": "self._redis",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "arq/jobs.py",
+          "func": "info",
+          "lineno": 137,
+          "name": "self._redis",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        }
+      ]
+    },
+    "asyncmy": {
+      "total_interactions": 147,
+      "counts_by_bucket": {
+        "READ_ONLY": 92,
+        "COMMUTATIVE": 3,
+        "DESTRUCTIVE": 52
+      },
+      "mediated_by_bucket": {
+        "READ_ONLY": 0,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 0
+      },
+      "unmediated_by_bucket": {
+        "READ_ONLY": 92,
+        "COMMUTATIVE": 3,
+        "DESTRUCTIVE": 52
+      },
+      "unmediated_total": 147,
+      "unmediated_destructive_pct_of_all": 35.37,
+      "unmediated_destructive_pct_of_unmediated": 35.37,
+      "distinct_names_seen": 49,
+      "distinct_names_destructive": 10,
+      "distinct_names_commutative": 1,
+      "distinct_names_readonly": 38,
+      "destructive_examples": [
+        {
+          "file": "asyncmy/contexts.py",
+          "func": "__aenter__",
+          "lineno": 50,
+          "name": "self._obj",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "full_rebind"
+        },
+        {
+          "file": "asyncmy/contexts.py",
+          "func": "__aenter__",
+          "lineno": 51,
+          "name": "self._obj",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "asyncmy/contexts.py",
+          "func": "__aexit__",
+          "lineno": 54,
+          "name": "self._obj",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "asyncmy/contexts.py",
+          "func": "__aexit__",
+          "lineno": 54,
+          "name": "self._obj",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "asyncmy/contexts.py",
+          "func": "__aexit__",
+          "lineno": 55,
+          "name": "self._obj",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "full_rebind"
+        }
+      ]
+    },
+    "asyncpg": {
+      "total_interactions": 585,
+      "counts_by_bucket": {
+        "READ_ONLY": 402,
+        "COMMUTATIVE": 16,
+        "DESTRUCTIVE": 167
+      },
+      "mediated_by_bucket": {
+        "READ_ONLY": 2,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 3
+      },
+      "unmediated_by_bucket": {
+        "READ_ONLY": 400,
+        "COMMUTATIVE": 16,
+        "DESTRUCTIVE": 164
+      },
+      "unmediated_total": 580,
+      "unmediated_destructive_pct_of_all": 28.03,
+      "unmediated_destructive_pct_of_unmediated": 28.28,
+      "distinct_names_seen": 162,
+      "distinct_names_destructive": 28,
+      "distinct_names_commutative": 3,
+      "distinct_names_readonly": 131,
+      "destructive_examples": [
+        {
+          "file": "asyncpg/transaction.py",
+          "func": "__aenter__",
+          "lineno": 64,
+          "name": "self._managed",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "asyncpg/transaction.py",
+          "func": "__aenter__",
+          "lineno": 67,
+          "name": "self._managed",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "full_rebind"
+        },
+        {
+          "file": "asyncpg/transaction.py",
+          "func": "__aexit__",
+          "lineno": 93,
+          "name": "self._managed",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "full_rebind"
+        },
+        {
+          "file": "asyncpg/transaction.py",
+          "func": "start",
+          "lineno": 99,
+          "name": "self._state",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "asyncpg/transaction.py",
+          "func": "start",
+          "lineno": 124,
+          "name": "self._nested",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "full_rebind"
+        }
+      ]
+    },
+    "asynctest": {
+      "total_interactions": 2,
+      "counts_by_bucket": {
+        "READ_ONLY": 2,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 0
+      },
+      "mediated_by_bucket": {
+        "READ_ONLY": 0,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 0
+      },
+      "unmediated_by_bucket": {
+        "READ_ONLY": 2,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 0
+      },
+      "unmediated_total": 2,
+      "unmediated_destructive_pct_of_all": 0.0,
+      "unmediated_destructive_pct_of_unmediated": 0.0,
+      "distinct_names_seen": 2,
+      "distinct_names_destructive": 0,
+      "distinct_names_commutative": 0,
+      "distinct_names_readonly": 2,
+      "destructive_examples": []
+    },
+    "asyncz": {
+      "total_interactions": 211,
+      "counts_by_bucket": {
+        "READ_ONLY": 200,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 11
+      },
+      "mediated_by_bucket": {
+        "READ_ONLY": 0,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 0
+      },
+      "unmediated_by_bucket": {
+        "READ_ONLY": 200,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 11
+      },
+      "unmediated_total": 211,
+      "unmediated_destructive_pct_of_all": 5.21,
+      "unmediated_destructive_pct_of_unmediated": 5.21,
+      "distinct_names_seen": 58,
+      "distinct_names_destructive": 3,
+      "distinct_names_commutative": 0,
+      "distinct_names_readonly": 55,
+      "destructive_examples": [
+        {
+          "file": "asyncz/schedulers/asyncio.py",
+          "func": "start",
+          "lineno": 117,
+          "name": "self.event_loop_thread",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "full_rebind"
+        },
+        {
+          "file": "asyncz/schedulers/asyncio.py",
+          "func": "start",
+          "lineno": 118,
+          "name": "self.event_loop_thread",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "asyncz/schedulers/asyncio.py",
+          "func": "start",
+          "lineno": 118,
+          "name": "self.event_loop_thread",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "asyncz/schedulers/asyncio.py",
+          "func": "start",
+          "lineno": 121,
+          "name": "self.event_loop",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "full_rebind"
+        },
+        {
+          "file": "asyncz/schedulers/asyncio.py",
+          "func": "shutdown",
+          "lineno": 135,
+          "name": "self._shutdown_handle",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        }
+      ]
+    },
+    "databases": {
+      "total_interactions": 382,
+      "counts_by_bucket": {
+        "READ_ONLY": 127,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 255
+      },
+      "mediated_by_bucket": {
+        "READ_ONLY": 2,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 44
+      },
+      "unmediated_by_bucket": {
+        "READ_ONLY": 125,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 211
+      },
+      "unmediated_total": 336,
+      "unmediated_destructive_pct_of_all": 55.24,
+      "unmediated_destructive_pct_of_unmediated": 62.8,
+      "distinct_names_seen": 34,
+      "distinct_names_destructive": 9,
+      "distinct_names_commutative": 0,
+      "distinct_names_readonly": 25,
+      "destructive_examples": [
+        {
+          "file": "databases/core.py",
+          "func": "connect",
+          "lineno": 108,
+          "name": "self.is_connected",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "databases/core.py",
+          "func": "connect",
+          "lineno": 116,
+          "name": "self.is_connected",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "full_rebind"
+        },
+        {
+          "file": "databases/core.py",
+          "func": "connect",
+          "lineno": 119,
+          "name": "self._global_connection",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "databases/core.py",
+          "func": "connect",
+          "lineno": 120,
+          "name": "self._global_transaction",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "databases/core.py",
+          "func": "connect",
+          "lineno": 122,
+          "name": "self._global_connection",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "full_rebind"
+        }
+      ]
+    },
+    "elasticsearch-py": {
+      "total_interactions": 619,
+      "counts_by_bucket": {
+        "READ_ONLY": 617,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 2
+      },
+      "mediated_by_bucket": {
+        "READ_ONLY": 0,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 0
+      },
+      "unmediated_by_bucket": {
+        "READ_ONLY": 617,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 2
+      },
+      "unmediated_total": 619,
+      "unmediated_destructive_pct_of_all": 0.32,
+      "unmediated_destructive_pct_of_unmediated": 0.32,
+      "distinct_names_seen": 31,
+      "distinct_names_destructive": 1,
+      "distinct_names_commutative": 0,
+      "distinct_names_readonly": 30,
+      "destructive_examples": [
+        {
+          "file": "elasticsearch/_async/client/_base.py",
+          "func": "_perform_request",
+          "lineno": 365,
+          "name": "self._verified_elasticsearch",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "elasticsearch/_async/client/_base.py",
+          "func": "_perform_request",
+          "lineno": 368,
+          "name": "self._verified_elasticsearch",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "full_rebind"
+        }
+      ]
+    },
+    "fastapi": {
+      "total_interactions": 390,
+      "counts_by_bucket": {
+        "READ_ONLY": 316,
+        "COMMUTATIVE": 11,
+        "DESTRUCTIVE": 63
+      },
+      "mediated_by_bucket": {
+        "READ_ONLY": 0,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 0
+      },
+      "unmediated_by_bucket": {
+        "READ_ONLY": 316,
+        "COMMUTATIVE": 11,
+        "DESTRUCTIVE": 63
+      },
+      "unmediated_total": 390,
+      "unmediated_destructive_pct_of_all": 16.15,
+      "unmediated_destructive_pct_of_unmediated": 16.15,
+      "distinct_names_seen": 130,
+      "distinct_names_destructive": 5,
+      "distinct_names_commutative": 2,
+      "distinct_names_readonly": 123,
+      "destructive_examples": [
+        {
+          "file": "docs_src/response_model/tutorial006_py310.py",
+          "func": "read_item_name",
+          "lineno": 32,
+          "name": "items",
+          "kind": "GLOBAL",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "docs_src/response_model/tutorial006_py310.py",
+          "func": "read_item_public_data",
+          "lineno": 37,
+          "name": "items",
+          "kind": "GLOBAL",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "docs_src/response_model/tutorial005_py310.py",
+          "func": "read_item_name",
+          "lineno": 32,
+          "name": "items",
+          "kind": "GLOBAL",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "docs_src/response_model/tutorial005_py310.py",
+          "func": "read_item_public_data",
+          "lineno": 37,
+          "name": "items",
+          "kind": "GLOBAL",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "docs_src/response_model/tutorial004_py310.py",
+          "func": "read_item",
+          "lineno": 24,
+          "name": "items",
+          "kind": "GLOBAL",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        }
+      ]
+    },
+    "fastapi_examples": {
+      "total_interactions": 189,
+      "counts_by_bucket": {
+        "READ_ONLY": 115,
+        "COMMUTATIVE": 11,
+        "DESTRUCTIVE": 63
+      },
+      "mediated_by_bucket": {
+        "READ_ONLY": 0,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 0
+      },
+      "unmediated_by_bucket": {
+        "READ_ONLY": 115,
+        "COMMUTATIVE": 11,
+        "DESTRUCTIVE": 63
+      },
+      "unmediated_total": 189,
+      "unmediated_destructive_pct_of_all": 33.33,
+      "unmediated_destructive_pct_of_unmediated": 33.33,
+      "distinct_names_seen": 39,
+      "distinct_names_destructive": 5,
+      "distinct_names_commutative": 2,
+      "distinct_names_readonly": 32,
+      "destructive_examples": [
+        {
+          "file": "response_model/tutorial006_py310.py",
+          "func": "read_item_name",
+          "lineno": 32,
+          "name": "items",
+          "kind": "GLOBAL",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "response_model/tutorial006_py310.py",
+          "func": "read_item_public_data",
+          "lineno": 37,
+          "name": "items",
+          "kind": "GLOBAL",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "response_model/tutorial005_py310.py",
+          "func": "read_item_name",
+          "lineno": 32,
+          "name": "items",
+          "kind": "GLOBAL",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "response_model/tutorial005_py310.py",
+          "func": "read_item_public_data",
+          "lineno": 37,
+          "name": "items",
+          "kind": "GLOBAL",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "response_model/tutorial004_py310.py",
+          "func": "read_item",
+          "lineno": 24,
+          "name": "items",
+          "kind": "GLOBAL",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        }
+      ]
+    },
+    "faust": {
+      "total_interactions": 2453,
+      "counts_by_bucket": {
+        "READ_ONLY": 1998,
+        "COMMUTATIVE": 74,
+        "DESTRUCTIVE": 381
+      },
+      "mediated_by_bucket": {
+        "READ_ONLY": 0,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 4
+      },
+      "unmediated_by_bucket": {
+        "READ_ONLY": 1998,
+        "COMMUTATIVE": 74,
+        "DESTRUCTIVE": 377
+      },
+      "unmediated_total": 2449,
+      "unmediated_destructive_pct_of_all": 15.37,
+      "unmediated_destructive_pct_of_unmediated": 15.39,
+      "distinct_names_seen": 719,
+      "distinct_names_destructive": 69,
+      "distinct_names_commutative": 26,
+      "distinct_names_readonly": 624,
+      "destructive_examples": [
+        {
+          "file": "t/unit/agents/test_replies.py",
+          "func": "test_parallel_iterate",
+          "lineno": 76,
+          "name": "self.consumer",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "t/unit/agents/test_replies.py",
+          "func": "test_sync_iterate",
+          "lineno": 115,
+          "name": "self.consumer",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "t/consistency/test_consistency.py",
+          "func": "_start_worker",
+          "lineno": 82,
+          "name": "self._worker_procs",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "t/consistency/test_consistency.py",
+          "func": "_start_worker",
+          "lineno": 84,
+          "name": "self._worker_procs",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "subscript_write"
+        },
+        {
+          "file": "t/consistency/test_consistency.py",
+          "func": "_stop_worker",
+          "lineno": 124,
+          "name": "self._worker_procs",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "mutating_method_noncommutative"
+        }
+      ]
+    },
+    "httpx": {
+      "total_interactions": 143,
+      "counts_by_bucket": {
+        "READ_ONLY": 107,
+        "COMMUTATIVE": 2,
+        "DESTRUCTIVE": 34
+      },
+      "mediated_by_bucket": {
+        "READ_ONLY": 0,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 0
+      },
+      "unmediated_by_bucket": {
+        "READ_ONLY": 107,
+        "COMMUTATIVE": 2,
+        "DESTRUCTIVE": 34
+      },
+      "unmediated_total": 143,
+      "unmediated_destructive_pct_of_all": 23.78,
+      "unmediated_destructive_pct_of_unmediated": 23.78,
+      "distinct_names_seen": 58,
+      "distinct_names_destructive": 7,
+      "distinct_names_commutative": 1,
+      "distinct_names_readonly": 50,
+      "destructive_examples": [
+        {
+          "file": "httpx/_content.py",
+          "func": "__aiter__",
+          "lineno": 76,
+          "name": "self._is_stream_consumed",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "httpx/_content.py",
+          "func": "__aiter__",
+          "lineno": 79,
+          "name": "self._is_stream_consumed",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "full_rebind"
+        },
+        {
+          "file": "httpx/_models.py",
+          "func": "aread",
+          "lineno": 487,
+          "name": "self.stream",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "httpx/_models.py",
+          "func": "aread",
+          "lineno": 488,
+          "name": "self._content",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "full_rebind"
+        },
+        {
+          "file": "httpx/_models.py",
+          "func": "aread",
+          "lineno": 488,
+          "name": "self.stream",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        }
+      ]
+    },
+    "kubernetes_asyncio": {
+      "total_interactions": 1089,
+      "counts_by_bucket": {
+        "READ_ONLY": 943,
+        "COMMUTATIVE": 30,
+        "DESTRUCTIVE": 116
+      },
+      "mediated_by_bucket": {
+        "READ_ONLY": 6,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 0
+      },
+      "unmediated_by_bucket": {
+        "READ_ONLY": 937,
+        "COMMUTATIVE": 30,
+        "DESTRUCTIVE": 116
+      },
+      "unmediated_total": 1083,
+      "unmediated_destructive_pct_of_all": 10.65,
+      "unmediated_destructive_pct_of_unmediated": 10.71,
+      "distinct_names_seen": 192,
+      "distinct_names_destructive": 20,
+      "distinct_names_commutative": 5,
+      "distinct_names_readonly": 167,
+      "destructive_examples": [
+        {
+          "file": "scripts/patched_files/configuration.py",
+          "func": "get_api_key_with_prefix",
+          "lineno": 386,
+          "name": "self.api_key",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "mutating_method_noncommutative"
+        },
+        {
+          "file": "scripts/patched_files/configuration.py",
+          "func": "get_api_key_with_prefix",
+          "lineno": 386,
+          "name": "self.api_key",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "scripts/patched_files/configuration.py",
+          "func": "get_api_key_with_prefix",
+          "lineno": 386,
+          "name": "self.api_key",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "mutating_method_noncommutative"
+        },
+        {
+          "file": "scripts/patched_files/configuration.py",
+          "func": "get_api_key_with_prefix",
+          "lineno": 386,
+          "name": "self.api_key",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "scripts/patched_files/configuration.py",
+          "func": "get_api_key_with_prefix",
+          "lineno": 388,
+          "name": "self.api_key_prefix",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "mutating_method_noncommutative"
+        }
+      ]
+    },
+    "motor": {
+      "total_interactions": 96,
+      "counts_by_bucket": {
+        "READ_ONLY": 94,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 2
+      },
+      "mediated_by_bucket": {
+        "READ_ONLY": 0,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 0
+      },
+      "unmediated_by_bucket": {
+        "READ_ONLY": 94,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 2
+      },
+      "unmediated_total": 96,
+      "unmediated_destructive_pct_of_all": 2.08,
+      "unmediated_destructive_pct_of_unmediated": 2.08,
+      "distinct_names_seen": 45,
+      "distinct_names_destructive": 1,
+      "distinct_names_commutative": 0,
+      "distinct_names_readonly": 44,
+      "destructive_examples": [
+        {
+          "file": "motor/core.py",
+          "func": "close",
+          "lineno": 1746,
+          "name": "self.closed",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "motor/core.py",
+          "func": "close",
+          "lineno": 1747,
+          "name": "self.closed",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "full_rebind"
+        }
+      ]
+    },
+    "pytest-asyncio": {
+      "total_interactions": 3,
+      "counts_by_bucket": {
+        "READ_ONLY": 3,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 0
+      },
+      "mediated_by_bucket": {
+        "READ_ONLY": 0,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 0
+      },
+      "unmediated_by_bucket": {
+        "READ_ONLY": 3,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 0
+      },
+      "unmediated_total": 3,
+      "unmediated_destructive_pct_of_all": 0.0,
+      "unmediated_destructive_pct_of_unmediated": 0.0,
+      "distinct_names_seen": 3,
+      "distinct_names_destructive": 0,
+      "distinct_names_commutative": 0,
+      "distinct_names_readonly": 3,
+      "destructive_examples": []
+    },
+    "quart": {
+      "total_interactions": 627,
+      "counts_by_bucket": {
+        "READ_ONLY": 412,
+        "COMMUTATIVE": 13,
+        "DESTRUCTIVE": 202
+      },
+      "mediated_by_bucket": {
+        "READ_ONLY": 4,
+        "COMMUTATIVE": 1,
+        "DESTRUCTIVE": 28
+      },
+      "unmediated_by_bucket": {
+        "READ_ONLY": 408,
+        "COMMUTATIVE": 12,
+        "DESTRUCTIVE": 174
+      },
+      "unmediated_total": 594,
+      "unmediated_destructive_pct_of_all": 27.75,
+      "unmediated_destructive_pct_of_unmediated": 29.29,
+      "distinct_names_seen": 204,
+      "distinct_names_destructive": 31,
+      "distinct_names_commutative": 3,
+      "distinct_names_readonly": 170,
+      "destructive_examples": [
+        {
+          "file": "src/quart/asgi.py",
+          "func": "_send_push_promise",
+          "lineno": 168,
+          "name": "self.scope",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "mutating_method_noncommutative"
+        },
+        {
+          "file": "src/quart/asgi.py",
+          "func": "_send_push_promise",
+          "lineno": 168,
+          "name": "self.scope",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "src/quart/asgi.py",
+          "func": "handle_websocket",
+          "lineno": 248,
+          "name": "self._accepted",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "src/quart/asgi.py",
+          "func": "handle_websocket",
+          "lineno": 249,
+          "name": "self.scope",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "mutating_method_noncommutative"
+        },
+        {
+          "file": "src/quart/asgi.py",
+          "func": "handle_websocket",
+          "lineno": 249,
+          "name": "self.scope",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        }
+      ]
+    },
+    "redis-py": {
+      "total_interactions": 1359,
+      "counts_by_bucket": {
+        "READ_ONLY": 787,
+        "COMMUTATIVE": 34,
+        "DESTRUCTIVE": 538
+      },
+      "mediated_by_bucket": {
+        "READ_ONLY": 63,
+        "COMMUTATIVE": 9,
+        "DESTRUCTIVE": 97
+      },
+      "unmediated_by_bucket": {
+        "READ_ONLY": 724,
+        "COMMUTATIVE": 25,
+        "DESTRUCTIVE": 441
+      },
+      "unmediated_total": 1190,
+      "unmediated_destructive_pct_of_all": 32.45,
+      "unmediated_destructive_pct_of_unmediated": 37.06,
+      "distinct_names_seen": 313,
+      "distinct_names_destructive": 61,
+      "distinct_names_commutative": 6,
+      "distinct_names_readonly": 246,
+      "destructive_examples": [
+        {
+          "file": "redis/asyncio/keyspace_notifications.py",
+          "func": "get_message",
+          "lineno": 559,
+          "name": "self._closed",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "redis/asyncio/keyspace_notifications.py",
+          "func": "aclose",
+          "lineno": 597,
+          "name": "self._closed",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "full_rebind"
+        },
+        {
+          "file": "redis/asyncio/keyspace_notifications.py",
+          "func": "_ensure_node_pubsub",
+          "lineno": 692,
+          "name": "self._node_pubsubs",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "redis/asyncio/keyspace_notifications.py",
+          "func": "_ensure_node_pubsub",
+          "lineno": 698,
+          "name": "self._node_pubsubs",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "subscript_write"
+        },
+        {
+          "file": "redis/asyncio/keyspace_notifications.py",
+          "func": "_ensure_node_pubsub",
+          "lineno": 699,
+          "name": "self._node_pubsubs",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        }
+      ]
+    },
+    "sanic": {
+      "total_interactions": 771,
+      "counts_by_bucket": {
+        "READ_ONLY": 407,
+        "COMMUTATIVE": 8,
+        "DESTRUCTIVE": 356
+      },
+      "mediated_by_bucket": {
+        "READ_ONLY": 54,
+        "COMMUTATIVE": 4,
+        "DESTRUCTIVE": 90
+      },
+      "unmediated_by_bucket": {
+        "READ_ONLY": 353,
+        "COMMUTATIVE": 4,
+        "DESTRUCTIVE": 266
+      },
+      "unmediated_total": 623,
+      "unmediated_destructive_pct_of_all": 34.5,
+      "unmediated_destructive_pct_of_unmediated": 42.7,
+      "distinct_names_seen": 183,
+      "distinct_names_destructive": 50,
+      "distinct_names_commutative": 1,
+      "distinct_names_readonly": 132,
+      "destructive_examples": [
+        {
+          "file": "sanic/asgi.py",
+          "func": "read",
+          "lineno": 196,
+          "name": "self.stage",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "sanic/asgi.py",
+          "func": "read",
+          "lineno": 197,
+          "name": "self.stage",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "full_rebind"
+        },
+        {
+          "file": "sanic/asgi.py",
+          "func": "read",
+          "lineno": 201,
+          "name": "self.request_body",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "full_rebind"
+        },
+        {
+          "file": "sanic/asgi.py",
+          "func": "__aiter__",
+          "lineno": 207,
+          "name": "self.request_body",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "sanic/asgi.py",
+          "func": "send",
+          "lineno": 222,
+          "name": "self.stage",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        }
+      ]
+    },
+    "sqlalchemy": {
+      "total_interactions": 250,
+      "counts_by_bucket": {
+        "READ_ONLY": 155,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 95
+      },
+      "mediated_by_bucket": {
+        "READ_ONLY": 10,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 9
+      },
+      "unmediated_by_bucket": {
+        "READ_ONLY": 145,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 86
+      },
+      "unmediated_total": 231,
+      "unmediated_destructive_pct_of_all": 34.4,
+      "unmediated_destructive_pct_of_unmediated": 37.23,
+      "distinct_names_seen": 54,
+      "distinct_names_destructive": 11,
+      "distinct_names_commutative": 0,
+      "distinct_names_readonly": 43,
+      "destructive_examples": [
+        {
+          "file": "lib/sqlalchemy/dialects/postgresql/asyncpg.py",
+          "func": "_executemany",
+          "lineno": 639,
+          "name": "self._description",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "full_rebind"
+        },
+        {
+          "file": "lib/sqlalchemy/dialects/postgresql/asyncpg.py",
+          "func": "_all",
+          "lineno": 726,
+          "name": "self._cursor",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "lib/sqlalchemy/dialects/postgresql/asyncpg.py",
+          "func": "_all",
+          "lineno": 731,
+          "name": "self._cursor",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "lib/sqlalchemy/dialects/postgresql/asyncpg.py",
+          "func": "_all",
+          "lineno": 731,
+          "name": "self._cursor",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "lib/sqlalchemy/dialects/postgresql/asyncpg.py",
+          "func": "_check_type_cache_invalidation",
+          "lineno": 792,
+          "name": "self._invalidate_schema_cache_asof",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        }
+      ]
+    },
+    "taskiq": {
+      "total_interactions": 348,
+      "counts_by_bucket": {
+        "READ_ONLY": 281,
+        "COMMUTATIVE": 10,
+        "DESTRUCTIVE": 57
+      },
+      "mediated_by_bucket": {
+        "READ_ONLY": 0,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 2
+      },
+      "unmediated_by_bucket": {
+        "READ_ONLY": 281,
+        "COMMUTATIVE": 10,
+        "DESTRUCTIVE": 55
+      },
+      "unmediated_total": 346,
+      "unmediated_destructive_pct_of_all": 15.8,
+      "unmediated_destructive_pct_of_unmediated": 15.9,
+      "distinct_names_seen": 91,
+      "distinct_names_destructive": 13,
+      "distinct_names_commutative": 3,
+      "distinct_names_readonly": 75,
+      "destructive_examples": [
+        {
+          "file": "taskiq/funcs.py",
+          "func": "check_task",
+          "lineno": 43,
+          "name": "task_ids",
+          "kind": "CLOSURE",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "mutating_method_noncommutative"
+        },
+        {
+          "file": "taskiq/funcs.py",
+          "func": "check_task",
+          "lineno": 43,
+          "name": "task_ids",
+          "kind": "CLOSURE",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "taskiq/schedule_sources/label_based.py",
+          "func": "startup",
+          "lineno": 35,
+          "name": "self.schedules",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "mutating_method_noncommutative"
+        },
+        {
+          "file": "taskiq/schedule_sources/label_based.py",
+          "func": "startup",
+          "lineno": 35,
+          "name": "self.schedules",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "taskiq/schedule_sources/label_based.py",
+          "func": "startup",
+          "lineno": 54,
+          "name": "self.schedules",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "subscript_write"
+        }
+      ]
+    },
+    "tortoise-orm": {
+      "total_interactions": 1548,
+      "counts_by_bucket": {
+        "READ_ONLY": 1247,
+        "COMMUTATIVE": 13,
+        "DESTRUCTIVE": 288
+      },
+      "mediated_by_bucket": {
+        "READ_ONLY": 9,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 0
+      },
+      "unmediated_by_bucket": {
+        "READ_ONLY": 1238,
+        "COMMUTATIVE": 13,
+        "DESTRUCTIVE": 288
+      },
+      "unmediated_total": 1539,
+      "unmediated_destructive_pct_of_all": 18.6,
+      "unmediated_destructive_pct_of_unmediated": 18.71,
+      "distinct_names_seen": 334,
+      "distinct_names_destructive": 25,
+      "distinct_names_commutative": 3,
+      "distinct_names_readonly": 306,
+      "destructive_examples": [
+        {
+          "file": "tortoise/connection.py",
+          "func": "_init",
+          "lineno": 81,
+          "name": "self._db_config",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "tortoise/connection.py",
+          "func": "_init",
+          "lineno": 82,
+          "name": "self._db_config",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "full_rebind"
+        },
+        {
+          "file": "tortoise/connection.py",
+          "func": "_init",
+          "lineno": 84,
+          "name": "self._db_config",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "mutating_method_commutative"
+        },
+        {
+          "file": "tortoise/connection.py",
+          "func": "_init",
+          "lineno": 84,
+          "name": "self._db_config",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "tortoise/connection.py",
+          "func": "_init",
+          "lineno": 85,
+          "name": "self._create_db",
+          "kind": "SELF_ATTR",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "full_rebind"
+        }
+      ]
+    },
+    "trio": {
+      "total_interactions": 1645,
+      "counts_by_bucket": {
+        "READ_ONLY": 1213,
+        "COMMUTATIVE": 246,
+        "DESTRUCTIVE": 186
+      },
+      "mediated_by_bucket": {
+        "READ_ONLY": 41,
+        "COMMUTATIVE": 7,
+        "DESTRUCTIVE": 23
+      },
+      "unmediated_by_bucket": {
+        "READ_ONLY": 1172,
+        "COMMUTATIVE": 239,
+        "DESTRUCTIVE": 163
+      },
+      "unmediated_total": 1574,
+      "unmediated_destructive_pct_of_all": 9.91,
+      "unmediated_destructive_pct_of_unmediated": 10.36,
+      "distinct_names_seen": 472,
+      "distinct_names_destructive": 41,
+      "distinct_names_commutative": 25,
+      "distinct_names_readonly": 406,
+      "destructive_examples": [
+        {
+          "file": "src/trio/_threads.py",
+          "func": "wait_all_threads_completed",
+          "lineno": 105,
+          "name": "_active_threads_local",
+          "kind": "GLOBAL",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "mutating_method_noncommutative"
+        },
+        {
+          "file": "src/trio/_threads.py",
+          "func": "wait_all_threads_completed",
+          "lineno": 105,
+          "name": "_active_threads_local",
+          "kind": "GLOBAL",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "src/trio/_channel.py",
+          "func": "send",
+          "lineno": 212,
+          "name": "self._state",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "src/trio/_channel.py",
+          "func": "receive",
+          "lineno": 360,
+          "name": "self._state",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "src/trio/_dtls.py",
+          "func": "_send_volley",
+          "lineno": 923,
+          "name": "self._handshake_mtu",
+          "kind": "SELF_ATTR",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        }
+      ]
+    },
+    "websockets": {
+      "total_interactions": 721,
+      "counts_by_bucket": {
+        "READ_ONLY": 458,
+        "COMMUTATIVE": 24,
+        "DESTRUCTIVE": 239
+      },
+      "mediated_by_bucket": {
+        "READ_ONLY": 0,
+        "COMMUTATIVE": 0,
+        "DESTRUCTIVE": 0
+      },
+      "unmediated_by_bucket": {
+        "READ_ONLY": 458,
+        "COMMUTATIVE": 24,
+        "DESTRUCTIVE": 239
+      },
+      "unmediated_total": 721,
+      "unmediated_destructive_pct_of_all": 33.15,
+      "unmediated_destructive_pct_of_unmediated": 33.15,
+      "distinct_names_seen": 167,
+      "distinct_names_destructive": 30,
+      "distinct_names_commutative": 5,
+      "distinct_names_readonly": 132,
+      "destructive_examples": [
+        {
+          "file": "experiments/broadcast/server.py",
+          "func": "handler",
+          "lineno": 49,
+          "name": "CLIENTS",
+          "kind": "GLOBAL",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "mutating_method_commutative"
+        },
+        {
+          "file": "experiments/broadcast/server.py",
+          "func": "handler",
+          "lineno": 49,
+          "name": "CLIENTS",
+          "kind": "GLOBAL",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "experiments/broadcast/server.py",
+          "func": "handler",
+          "lineno": 53,
+          "name": "CLIENTS",
+          "kind": "GLOBAL",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "mutating_method_noncommutative"
+        },
+        {
+          "file": "experiments/broadcast/server.py",
+          "func": "handler",
+          "lineno": 53,
+          "name": "CLIENTS",
+          "kind": "GLOBAL",
+          "access": "read",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "read"
+        },
+        {
+          "file": "experiments/broadcast/server.py",
+          "func": "handler",
+          "lineno": 57,
+          "name": "CLIENTS",
+          "kind": "GLOBAL",
+          "access": "write",
+          "mediated": false,
+          "reason": "no lock/queue/event mediation found in function",
+          "write_form": "mutating_method_commutative"
+        }
+      ]
+    }
+  },
+  "overall": {
+    "total_interactions": 22067,
+    "counts_by_bucket": {
+      "READ_ONLY": 15396,
+      "COMMUTATIVE": 753,
+      "DESTRUCTIVE": 5918
+    },
+    "mediated_by_bucket": {
+      "READ_ONLY": 300,
+      "COMMUTATIVE": 29,
+      "DESTRUCTIVE": 361
+    },
+    "unmediated_by_bucket": {
+      "READ_ONLY": 15096,
+      "COMMUTATIVE": 724,
+      "DESTRUCTIVE": 5557
+    },
+    "pct_of_all_read_only": 69.77,
+    "pct_of_all_commutative": 3.41,
+    "pct_of_all_destructive": 26.82,
+    "pct_unmediated_read_only_of_all": 68.41,
+    "pct_unmediated_commutative_of_all": 3.28,
+    "pct_unmediated_destructive_of_all": 25.18
+  }
+}

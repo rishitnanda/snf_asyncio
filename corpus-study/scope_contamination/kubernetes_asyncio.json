@@ -1,0 +1,13 @@
+{
+  "repo": "kubernetes_asyncio",
+  "n_sync_only_files": 90,
+  "n_async_files": 38,
+  "sync_only_written_name_count": 112,
+  "async_side_read_only_candidate_count": 167,
+  "collision_count": 2,
+  "collision_names": [
+    "SELF_ATTR:self.lock",
+    "SELF_ATTR:self.path"
+  ],
+  "verdict": "CONTAMINATION LIKELY -- rescope recommended"
+}

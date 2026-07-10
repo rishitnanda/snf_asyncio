@@ -1,0 +1,486 @@
+{
+  "per_repo": {
+    "aio-pika": {
+      "repo": "aio-pika",
+      "n_sync_only_files": 6,
+      "n_async_files": 15,
+      "sync_only_written_name_count": 15,
+      "async_side_read_only_candidate_count": 99,
+      "collision_count": 0,
+      "collision_names": [],
+      "verdict": "no direct collision found -- high sync-file% likely benign here"
+    },
+    "aiobotocore": {
+      "repo": "aiobotocore",
+      "n_sync_only_files": 11,
+      "n_async_files": 32,
+      "sync_only_written_name_count": 57,
+      "async_side_read_only_candidate_count": 385,
+      "collision_count": 1,
+      "collision_names": [
+        "SELF_ATTR:self.warm_up_loader_caches"
+      ],
+      "verdict": "CONTAMINATION LIKELY -- rescope recommended"
+    },
+    "aiocache": {
+      "repo": "aiocache",
+      "n_sync_only_files": 6,
+      "n_async_files": 7,
+      "sync_only_written_name_count": 14,
+      "async_side_read_only_candidate_count": 47,
+      "collision_count": 0,
+      "collision_names": [],
+      "verdict": "no direct collision found -- high sync-file% likely benign here"
+    },
+    "aiofiles": {
+      "repo": "aiofiles",
+      "n_sync_only_files": 5,
+      "n_async_files": 5,
+      "sync_only_written_name_count": 32,
+      "async_side_read_only_candidate_count": 12,
+      "collision_count": 0,
+      "collision_names": [],
+      "verdict": "no direct collision found -- high sync-file% likely benign here"
+    },
+    "aiohttp": {
+      "repo": "aiohttp",
+      "n_sync_only_files": 28,
+      "n_async_files": 32,
+      "sync_only_written_name_count": 659,
+      "async_side_read_only_candidate_count": 377,
+      "collision_count": 25,
+      "collision_names": [
+        "SELF_ATTR:self._auto_decompress",
+        "SELF_ATTR:self._boundary",
+        "SELF_ATTR:self._chunk_size",
+        "SELF_ATTR:self._cookies",
+        "SELF_ATTR:self._length",
+        "SELF_ATTR:self._limit",
+        "SELF_ATTR:self._loop",
+        "SELF_ATTR:self._max_decompress_size",
+        "SELF_ATTR:self._max_field_size",
+        "SELF_ATTR:self._max_line_size",
+        "SELF_ATTR:self._method",
+        "SELF_ATTR:self._parser",
+        "SELF_ATTR:self._path",
+        "SELF_ATTR:self._paused",
+        "SELF_ATTR:self._payload",
+        "SELF_ATTR:self._reason",
+        "SELF_ATTR:self._timeout",
+        "SELF_ATTR:self._timeout_ceil_threshold",
+        "SELF_ATTR:self._timer",
+        "SELF_ATTR:self.history",
+        "SELF_ATTR:self.loop",
+        "SELF_ATTR:self.method",
+        "SELF_ATTR:self.protocol",
+        "SELF_ATTR:self.request_info",
+        "SELF_ATTR:self.transport"
+      ],
+      "verdict": "CONTAMINATION LIKELY -- rescope recommended"
+    },
+    "aiokafka": {
+      "repo": "aiokafka",
+      "n_sync_only_files": 53,
+      "n_async_files": 15,
+      "sync_only_written_name_count": 540,
+      "async_side_read_only_candidate_count": 197,
+      "collision_count": 9,
+      "collision_names": [
+        "SELF_ATTR:self._fetch_waiters",
+        "SELF_ATTR:self._group_id",
+        "SELF_ATTR:self._group_instance_id",
+        "SELF_ATTR:self._is_transactional",
+        "SELF_ATTR:self._isolation_level",
+        "SELF_ATTR:self._loop",
+        "SELF_ATTR:self._size",
+        "SELF_ATTR:self._subscription",
+        "SELF_ATTR:self._topics"
+      ],
+      "verdict": "CONTAMINATION LIKELY -- rescope recommended"
+    },
+    "aiomysql": {
+      "repo": "aiomysql",
+      "n_sync_only_files": 5,
+      "n_async_files": 8,
+      "sync_only_written_name_count": 4,
+      "async_side_read_only_candidate_count": 105,
+      "collision_count": 0,
+      "collision_names": [],
+      "verdict": "no direct collision found -- high sync-file% likely benign here"
+    },
+    "aiopath": {
+      "repo": "aiopath",
+      "n_sync_only_files": 5,
+      "n_async_files": 7,
+      "sync_only_written_name_count": 22,
+      "async_side_read_only_candidate_count": 42,
+      "collision_count": 0,
+      "collision_names": [],
+      "verdict": "no direct collision found -- high sync-file% likely benign here"
+    },
+    "aiopg": {
+      "repo": "aiopg",
+      "n_sync_only_files": 6,
+      "n_async_files": 7,
+      "sync_only_written_name_count": 19,
+      "async_side_read_only_candidate_count": 64,
+      "collision_count": 0,
+      "collision_names": [],
+      "verdict": "no direct collision found -- high sync-file% likely benign here"
+    },
+    "aioredis": {
+      "repo": "aioredis",
+      "n_sync_only_files": 7,
+      "n_async_files": 5,
+      "sync_only_written_name_count": 16,
+      "async_side_read_only_candidate_count": 110,
+      "collision_count": 0,
+      "collision_names": [],
+      "verdict": "no direct collision found -- high sync-file% likely benign here"
+    },
+    "aiosonic": {
+      "repo": "aiosonic",
+      "n_sync_only_files": 12,
+      "n_async_files": 13,
+      "sync_only_written_name_count": 35,
+      "async_side_read_only_candidate_count": 151,
+      "collision_count": 0,
+      "collision_names": [],
+      "verdict": "no direct collision found -- high sync-file% likely benign here"
+    },
+    "apscheduler": {
+      "repo": "apscheduler",
+      "n_sync_only_files": 29,
+      "n_async_files": 16,
+      "sync_only_written_name_count": 207,
+      "async_side_read_only_candidate_count": 89,
+      "collision_count": 1,
+      "collision_names": [
+        "SELF_ATTR:self.options"
+      ],
+      "verdict": "CONTAMINATION LIKELY -- rescope recommended"
+    },
+    "arq": {
+      "repo": "arq",
+      "n_sync_only_files": 6,
+      "n_async_files": 6,
+      "sync_only_written_name_count": 29,
+      "async_side_read_only_candidate_count": 80,
+      "collision_count": 0,
+      "collision_names": [],
+      "verdict": "no direct collision found -- high sync-file% likely benign here"
+    },
+    "asyncmy": {
+      "repo": "asyncmy",
+      "n_sync_only_files": 25,
+      "n_async_files": 11,
+      "sync_only_written_name_count": 799,
+      "async_side_read_only_candidate_count": 38,
+      "collision_count": 0,
+      "collision_names": [],
+      "verdict": "no direct collision found -- high sync-file% likely benign here"
+    },
+    "asyncpg": {
+      "repo": "asyncpg",
+      "n_sync_only_files": 14,
+      "n_async_files": 12,
+      "sync_only_written_name_count": 149,
+      "async_side_read_only_candidate_count": 131,
+      "collision_count": 2,
+      "collision_names": [
+        "SELF_ATTR:self._connection",
+        "SELF_ATTR:self.loop"
+      ],
+      "verdict": "CONTAMINATION LIKELY -- rescope recommended"
+    },
+    "asynctest": {
+      "repo": "asynctest",
+      "n_sync_only_files": 6,
+      "n_async_files": 1,
+      "sync_only_written_name_count": 45,
+      "async_side_read_only_candidate_count": 2,
+      "collision_count": 0,
+      "collision_names": [],
+      "verdict": "no direct collision found -- high sync-file% likely benign here"
+    },
+    "asyncz": {
+      "repo": "asyncz",
+      "n_sync_only_files": 120,
+      "n_async_files": 25,
+      "sync_only_written_name_count": 363,
+      "async_side_read_only_candidate_count": 55,
+      "collision_count": 2,
+      "collision_names": [
+        "SELF_ATTR:self.logger_name",
+        "SELF_ATTR:self.scheduler"
+      ],
+      "verdict": "CONTAMINATION LIKELY -- rescope recommended"
+    },
+    "databases": {
+      "repo": "databases",
+      "n_sync_only_files": 10,
+      "n_async_files": 7,
+      "sync_only_written_name_count": 18,
+      "async_side_read_only_candidate_count": 25,
+      "collision_count": 1,
+      "collision_names": [
+        "SELF_ATTR:self._dialect"
+      ],
+      "verdict": "CONTAMINATION LIKELY -- rescope recommended"
+    },
+    "elasticsearch-py": {
+      "repo": "elasticsearch-py",
+      "n_sync_only_files": 2,
+      "n_async_files": 45,
+      "sync_only_written_name_count": 1,
+      "async_side_read_only_candidate_count": 30,
+      "collision_count": 0,
+      "collision_names": [],
+      "verdict": "no direct collision found -- high sync-file% likely benign here"
+    },
+    "fastapi": {
+      "repo": "fastapi",
+      "n_sync_only_files": 230,
+      "n_async_files": 304,
+      "sync_only_written_name_count": 783,
+      "async_side_read_only_candidate_count": 123,
+      "collision_count": 0,
+      "collision_names": [],
+      "verdict": "no direct collision found -- high sync-file% likely benign here"
+    },
+    "fastapi_examples": {
+      "repo": "fastapi_examples",
+      "n_sync_only_files": 168,
+      "n_async_files": 293,
+      "sync_only_written_name_count": 62,
+      "async_side_read_only_candidate_count": 32,
+      "collision_count": 0,
+      "collision_names": [],
+      "verdict": "no direct collision found -- high sync-file% likely benign here"
+    },
+    "faust": {
+      "repo": "faust",
+      "n_sync_only_files": 207,
+      "n_async_files": 129,
+      "sync_only_written_name_count": 1080,
+      "async_side_read_only_candidate_count": 624,
+      "collision_count": 16,
+      "collision_names": [
+        "SELF_ATTR:self._name",
+        "SELF_ATTR:self.app",
+        "SELF_ATTR:self.headers",
+        "SELF_ATTR:self.key",
+        "SELF_ATTR:self.loop",
+        "SELF_ATTR:self.message",
+        "SELF_ATTR:self.name",
+        "SELF_ATTR:self.replicas",
+        "SELF_ATTR:self.size",
+        "SELF_ATTR:self.spinner",
+        "SELF_ATTR:self.title",
+        "SELF_ATTR:self.topic",
+        "SELF_ATTR:self.topics",
+        "SELF_ATTR:self.value",
+        "SELF_ATTR:self.value_serializer",
+        "SELF_ATTR:self.window"
+      ],
+      "verdict": "CONTAMINATION LIKELY -- rescope recommended"
+    },
+    "httpx": {
+      "repo": "httpx",
+      "n_sync_only_files": 13,
+      "n_async_files": 10,
+      "sync_only_written_name_count": 243,
+      "async_side_read_only_candidate_count": 50,
+      "collision_count": 3,
+      "collision_names": [
+        "SELF_ATTR:self.app",
+        "SELF_ATTR:self.raise_app_exceptions",
+        "SELF_ATTR:self.request"
+      ],
+      "verdict": "CONTAMINATION LIKELY -- rescope recommended"
+    },
+    "kubernetes_asyncio": {
+      "repo": "kubernetes_asyncio",
+      "n_sync_only_files": 90,
+      "n_async_files": 38,
+      "sync_only_written_name_count": 112,
+      "async_side_read_only_candidate_count": 167,
+      "collision_count": 2,
+      "collision_names": [
+        "SELF_ATTR:self.lock",
+        "SELF_ATTR:self.path"
+      ],
+      "verdict": "CONTAMINATION LIKELY -- rescope recommended"
+    },
+    "motor": {
+      "repo": "motor",
+      "n_sync_only_files": 10,
+      "n_async_files": 6,
+      "sync_only_written_name_count": 201,
+      "async_side_read_only_candidate_count": 44,
+      "collision_count": 2,
+      "collision_names": [
+        "SELF_ATTR:self.database",
+        "SELF_ATTR:self.delegate"
+      ],
+      "verdict": "CONTAMINATION LIKELY -- rescope recommended"
+    },
+    "pytest-asyncio": {
+      "repo": "pytest-asyncio",
+      "n_sync_only_files": 2,
+      "n_async_files": 1,
+      "sync_only_written_name_count": 5,
+      "async_side_read_only_candidate_count": 3,
+      "collision_count": 0,
+      "collision_names": [],
+      "verdict": "no direct collision found -- high sync-file% likely benign here"
+    },
+    "quart": {
+      "repo": "quart",
+      "n_sync_only_files": 13,
+      "n_async_files": 21,
+      "sync_only_written_name_count": 57,
+      "async_side_read_only_candidate_count": 170,
+      "collision_count": 1,
+      "collision_names": [
+        "SELF_ATTR:self.app"
+      ],
+      "verdict": "CONTAMINATION LIKELY -- rescope recommended"
+    },
+    "redis-py": {
+      "repo": "redis-py",
+      "n_sync_only_files": 6,
+      "n_async_files": 16,
+      "sync_only_written_name_count": 37,
+      "async_side_read_only_candidate_count": 246,
+      "collision_count": 1,
+      "collision_names": [
+        "SELF_ATTR:self._client"
+      ],
+      "verdict": "CONTAMINATION LIKELY -- rescope recommended"
+    },
+    "sanic": {
+      "repo": "sanic",
+      "n_sync_only_files": 146,
+      "n_async_files": 32,
+      "sync_only_written_name_count": 894,
+      "async_side_read_only_candidate_count": 132,
+      "collision_count": 10,
+      "collision_names": [
+        "SELF_ATTR:self.app",
+        "SELF_ATTR:self.args",
+        "SELF_ATTR:self.base",
+        "SELF_ATTR:self.ctx",
+        "SELF_ATTR:self.debug",
+        "SELF_ATTR:self.headers",
+        "SELF_ATTR:self.name",
+        "SELF_ATTR:self.request_middleware",
+        "SELF_ATTR:self.run",
+        "SELF_ATTR:self.state"
+      ],
+      "verdict": "CONTAMINATION LIKELY -- rescope recommended"
+    },
+    "sqlalchemy": {
+      "repo": "sqlalchemy",
+      "n_sync_only_files": 2,
+      "n_async_files": 9,
+      "sync_only_written_name_count": 0,
+      "async_side_read_only_candidate_count": 43,
+      "collision_count": 0,
+      "collision_names": [],
+      "verdict": "no direct collision found -- high sync-file% likely benign here"
+    },
+    "taskiq": {
+      "repo": "taskiq",
+      "n_sync_only_files": 58,
+      "n_async_files": 25,
+      "sync_only_written_name_count": 240,
+      "async_side_read_only_candidate_count": 75,
+      "collision_count": 2,
+      "collision_names": [
+        "SELF_ATTR:self.broker",
+        "SELF_ATTR:self.callback"
+      ],
+      "verdict": "CONTAMINATION LIKELY -- rescope recommended"
+    },
+    "tortoise-orm": {
+      "repo": "tortoise-orm",
+      "n_sync_only_files": 80,
+      "n_async_files": 53,
+      "sync_only_written_name_count": 661,
+      "async_side_read_only_candidate_count": 306,
+      "collision_count": 17,
+      "collision_names": [
+        "SELF_ATTR:self.COLUMN_COMMENT_TEMPLATE",
+        "SELF_ATTR:self._annotations",
+        "SELF_ATTR:self.app_label",
+        "SELF_ATTR:self.config",
+        "SELF_ATTR:self.connections",
+        "SELF_ATTR:self.extra",
+        "SELF_ATTR:self.field",
+        "SELF_ATTR:self.fields",
+        "SELF_ATTR:self.filter",
+        "SELF_ATTR:self.index",
+        "SELF_ATTR:self.model",
+        "SELF_ATTR:self.modules",
+        "SELF_ATTR:self.name",
+        "SELF_ATTR:self.operations",
+        "SELF_ATTR:self.pk",
+        "SELF_ATTR:self.query",
+        "SELF_ATTR:self.sql"
+      ],
+      "verdict": "CONTAMINATION LIKELY -- rescope recommended"
+    },
+    "trio": {
+      "repo": "trio",
+      "n_sync_only_files": 51,
+      "n_async_files": 93,
+      "sync_only_written_name_count": 360,
+      "async_side_read_only_candidate_count": 406,
+      "collision_count": 1,
+      "collision_names": [
+        "SELF_ATTR:self._lock"
+      ],
+      "verdict": "CONTAMINATION LIKELY -- rescope recommended"
+    },
+    "websockets": {
+      "repo": "websockets",
+      "n_sync_only_files": 40,
+      "n_async_files": 22,
+      "sync_only_written_name_count": 337,
+      "async_side_read_only_candidate_count": 132,
+      "collision_count": 8,
+      "collision_names": [
+        "SELF_ATTR:self.available_extensions",
+        "SELF_ATTR:self.available_subprotocols",
+        "SELF_ATTR:self.debug",
+        "SELF_ATTR:self.logger",
+        "SELF_ATTR:self.max_size",
+        "SELF_ATTR:self.origins",
+        "SELF_ATTR:self.proxy",
+        "SELF_ATTR:self.reader"
+      ],
+      "verdict": "CONTAMINATION LIKELY -- rescope recommended"
+    }
+  },
+  "flagged_for_rescope": [
+    "aiobotocore",
+    "aiohttp",
+    "aiokafka",
+    "apscheduler",
+    "asyncpg",
+    "asyncz",
+    "databases",
+    "faust",
+    "httpx",
+    "kubernetes_asyncio",
+    "motor",
+    "quart",
+    "redis-py",
+    "sanic",
+    "taskiq",
+    "tortoise-orm",
+    "trio",
+    "websockets"
+  ]
+}

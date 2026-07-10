@@ -1,0 +1,43 @@
+{
+  "repo": "websockets",
+  "destructive_names_total": 30,
+  "flagged_control_bounded_names": [
+    "GLOBAL:CLIENTS",
+    "SELF_ATTR:self._pop_message_waiter",
+    "SELF_ATTR:self._put_message_waiter",
+    "SELF_ATTR:self.close_deadline",
+    "SELF_ATTR:self.close_rcvd",
+    "SELF_ATTR:self.close_sent",
+    "SELF_ATTR:self.get_in_progress",
+    "SELF_ATTR:self.protocol",
+    "SELF_ATTR:self.request",
+    "SELF_ATTR:self.state"
+  ],
+  "flagged_control_unbounded_names": [
+    "SELF_ATTR:self._fragmented_message_waiter",
+    "SELF_ATTR:self.send_in_progress"
+  ],
+  "flagged_data_names": [
+    "SELF_ATTR:self._drain_waiter",
+    "SELF_ATTR:self.close_rcvd_then_sent",
+    "SELF_ATTR:self.connection",
+    "SELF_ATTR:self.drain_waiters",
+    "SELF_ATTR:self.extensions",
+    "SELF_ATTR:self.frames",
+    "SELF_ATTR:self.get_waiter",
+    "SELF_ATTR:self.latency",
+    "SELF_ATTR:self.origin",
+    "SELF_ATTR:self.path",
+    "SELF_ATTR:self.recv_messages",
+    "SELF_ATTR:self.request_headers",
+    "SELF_ATTR:self.response",
+    "SELF_ATTR:self.response_headers",
+    "SELF_ATTR:self.subprotocol",
+    "SELF_ATTR:self.transfer_data_exc",
+    "SELF_ATTR:self.uri",
+    "SELF_ATTR:self.username"
+  ],
+  "flagged_control_bounded_interactions": 150,
+  "flagged_control_unbounded_interactions": 23,
+  "flagged_data_interactions": 66
+}

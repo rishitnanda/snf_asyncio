@@ -1,0 +1,8 @@
+{
+  "repo": "aiopath",
+  "thread_offloading_functions": [],
+  "destructive_unmediated_interactions": 0,
+  "overlap_interactions": 0,
+  "pct_destructive_unmediated_in_thread_functions": null,
+  "overlap_examples": []
+}

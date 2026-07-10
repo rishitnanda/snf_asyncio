@@ -1,0 +1,38 @@
+{
+  "repo": "apscheduler",
+  "destructive_names_total": 25,
+  "flagged_control_bounded_names": [
+    "SELF_ATTR:self._running_jobs",
+    "SELF_ATTR:self._scheduler_cancel_scope",
+    "SELF_ATTR:self._schedules",
+    "SELF_ATTR:self._services_initialized",
+    "SELF_ATTR:self._supports_update_returning"
+  ],
+  "flagged_control_unbounded_names": [
+    "SELF_ATTR:self._state",
+    "SELF_ATTR:self._stopped"
+  ],
+  "flagged_data_names": [
+    "SELF_ATTR:self._event_broker",
+    "SELF_ATTR:self._exit_stack",
+    "SELF_ATTR:self._job_results",
+    "SELF_ATTR:self._jobs_by_id",
+    "SELF_ATTR:self._limiter",
+    "SELF_ATTR:self._logger",
+    "SELF_ATTR:self._portal",
+    "SELF_ATTR:self._ready_future",
+    "SELF_ATTR:self._schedules_by_id",
+    "SELF_ATTR:self._send",
+    "SELF_ATTR:self._services_task_group",
+    "SELF_ATTR:self._t_job_results",
+    "SELF_ATTR:self._t_jobs",
+    "SELF_ATTR:self._t_metadata",
+    "SELF_ATTR:self._t_schedules",
+    "SELF_ATTR:self._t_tasks",
+    "SELF_ATTR:self._task_group",
+    "SELF_ATTR:self._thread_limiter"
+  ],
+  "flagged_control_bounded_interactions": 58,
+  "flagged_control_unbounded_interactions": 14,
+  "flagged_data_interactions": 313
+}

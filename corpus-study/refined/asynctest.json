@@ -1,0 +1,26 @@
+{
+  "total_interactions": 2,
+  "counts_by_bucket": {
+    "READ_ONLY": 2,
+    "COMMUTATIVE": 0,
+    "DESTRUCTIVE": 0
+  },
+  "mediated_by_bucket": {
+    "READ_ONLY": 0,
+    "COMMUTATIVE": 0,
+    "DESTRUCTIVE": 0
+  },
+  "unmediated_by_bucket": {
+    "READ_ONLY": 2,
+    "COMMUTATIVE": 0,
+    "DESTRUCTIVE": 0
+  },
+  "unmediated_total": 2,
+  "unmediated_destructive_pct_of_all": 0.0,
+  "unmediated_destructive_pct_of_unmediated": 0.0,
+  "distinct_names_seen": 2,
+  "distinct_names_destructive": 0,
+  "distinct_names_commutative": 0,
+  "distinct_names_readonly": 2,
+  "destructive_examples": []
+}

@@ -1,0 +1,82 @@
+{
+  "total_interactions": 1089,
+  "counts_by_bucket": {
+    "READ_ONLY": 943,
+    "COMMUTATIVE": 30,
+    "DESTRUCTIVE": 116
+  },
+  "mediated_by_bucket": {
+    "READ_ONLY": 6,
+    "COMMUTATIVE": 0,
+    "DESTRUCTIVE": 0
+  },
+  "unmediated_by_bucket": {
+    "READ_ONLY": 937,
+    "COMMUTATIVE": 30,
+    "DESTRUCTIVE": 116
+  },
+  "unmediated_total": 1083,
+  "unmediated_destructive_pct_of_all": 10.65,
+  "unmediated_destructive_pct_of_unmediated": 10.71,
+  "distinct_names_seen": 192,
+  "distinct_names_destructive": 20,
+  "distinct_names_commutative": 5,
+  "distinct_names_readonly": 167,
+  "destructive_examples": [
+    {
+      "file": "scripts/patched_files/configuration.py",
+      "func": "get_api_key_with_prefix",
+      "lineno": 386,
+      "name": "self.api_key",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "mutating_method_noncommutative"
+    },
+    {
+      "file": "scripts/patched_files/configuration.py",
+      "func": "get_api_key_with_prefix",
+      "lineno": 386,
+      "name": "self.api_key",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "scripts/patched_files/configuration.py",
+      "func": "get_api_key_with_prefix",
+      "lineno": 386,
+      "name": "self.api_key",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "mutating_method_noncommutative"
+    },
+    {
+      "file": "scripts/patched_files/configuration.py",
+      "func": "get_api_key_with_prefix",
+      "lineno": 386,
+      "name": "self.api_key",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "scripts/patched_files/configuration.py",
+      "func": "get_api_key_with_prefix",
+      "lineno": 388,
+      "name": "self.api_key_prefix",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "mutating_method_noncommutative"
+    }
+  ]
+}

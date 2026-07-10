@@ -1,0 +1,21 @@
+{
+  "repo": "arq",
+  "destructive_names_total": 9,
+  "flagged_control_bounded_names": [
+    "SELF_ATTR:self._last_health_check",
+    "SELF_ATTR:self._last_health_check_log",
+    "SELF_ATTR:self._pool",
+    "SELF_ATTR:self.aborting_tasks",
+    "SELF_ATTR:self.job_counter",
+    "SELF_ATTR:self.main_task",
+    "SELF_ATTR:self.max_burst_jobs",
+    "SELF_ATTR:self.retry_jobs"
+  ],
+  "flagged_control_unbounded_names": [],
+  "flagged_data_names": [
+    "SELF_ATTR:self._redis"
+  ],
+  "flagged_control_bounded_interactions": 36,
+  "flagged_control_unbounded_interactions": 0,
+  "flagged_data_interactions": 11
+}

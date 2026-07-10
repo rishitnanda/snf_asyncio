@@ -1,0 +1,21 @@
+{
+  "repo": "databases",
+  "destructive_names_total": 9,
+  "flagged_control_bounded_names": [
+    "SELF_ATTR:self._connection_counter",
+    "SELF_ATTR:self._is_root",
+    "SELF_ATTR:self._pool",
+    "SELF_ATTR:self.is_connected"
+  ],
+  "flagged_control_unbounded_names": [],
+  "flagged_data_names": [
+    "SELF_ATTR:self._connection",
+    "SELF_ATTR:self._global_connection",
+    "SELF_ATTR:self._global_transaction",
+    "SELF_ATTR:self._savepoint_name",
+    "SELF_ATTR:self._transaction"
+  ],
+  "flagged_control_bounded_interactions": 61,
+  "flagged_control_unbounded_interactions": 0,
+  "flagged_data_interactions": 194
+}

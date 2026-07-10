@@ -1,0 +1,82 @@
+{
+  "total_interactions": 1548,
+  "counts_by_bucket": {
+    "READ_ONLY": 1247,
+    "COMMUTATIVE": 13,
+    "DESTRUCTIVE": 288
+  },
+  "mediated_by_bucket": {
+    "READ_ONLY": 9,
+    "COMMUTATIVE": 0,
+    "DESTRUCTIVE": 0
+  },
+  "unmediated_by_bucket": {
+    "READ_ONLY": 1238,
+    "COMMUTATIVE": 13,
+    "DESTRUCTIVE": 288
+  },
+  "unmediated_total": 1539,
+  "unmediated_destructive_pct_of_all": 18.6,
+  "unmediated_destructive_pct_of_unmediated": 18.71,
+  "distinct_names_seen": 334,
+  "distinct_names_destructive": 25,
+  "distinct_names_commutative": 3,
+  "distinct_names_readonly": 306,
+  "destructive_examples": [
+    {
+      "file": "tortoise/connection.py",
+      "func": "_init",
+      "lineno": 81,
+      "name": "self._db_config",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "tortoise/connection.py",
+      "func": "_init",
+      "lineno": 82,
+      "name": "self._db_config",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "full_rebind"
+    },
+    {
+      "file": "tortoise/connection.py",
+      "func": "_init",
+      "lineno": 84,
+      "name": "self._db_config",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "mutating_method_commutative"
+    },
+    {
+      "file": "tortoise/connection.py",
+      "func": "_init",
+      "lineno": 84,
+      "name": "self._db_config",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "tortoise/connection.py",
+      "func": "_init",
+      "lineno": 85,
+      "name": "self._create_db",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "full_rebind"
+    }
+  ]
+}

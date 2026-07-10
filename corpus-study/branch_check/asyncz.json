@@ -1,0 +1,14 @@
+{
+  "repo": "asyncz",
+  "destructive_names_total": 3,
+  "flagged_control_bounded_names": [],
+  "flagged_control_unbounded_names": [],
+  "flagged_data_names": [
+    "SELF_ATTR:self._shutdown_handle",
+    "SELF_ATTR:self.event_loop",
+    "SELF_ATTR:self.event_loop_thread"
+  ],
+  "flagged_control_bounded_interactions": 0,
+  "flagged_control_unbounded_interactions": 0,
+  "flagged_data_interactions": 11
+}

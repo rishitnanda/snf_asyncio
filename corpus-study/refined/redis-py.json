@@ -1,0 +1,82 @@
+{
+  "total_interactions": 1359,
+  "counts_by_bucket": {
+    "READ_ONLY": 787,
+    "COMMUTATIVE": 34,
+    "DESTRUCTIVE": 538
+  },
+  "mediated_by_bucket": {
+    "READ_ONLY": 63,
+    "COMMUTATIVE": 9,
+    "DESTRUCTIVE": 97
+  },
+  "unmediated_by_bucket": {
+    "READ_ONLY": 724,
+    "COMMUTATIVE": 25,
+    "DESTRUCTIVE": 441
+  },
+  "unmediated_total": 1190,
+  "unmediated_destructive_pct_of_all": 32.45,
+  "unmediated_destructive_pct_of_unmediated": 37.06,
+  "distinct_names_seen": 313,
+  "distinct_names_destructive": 61,
+  "distinct_names_commutative": 6,
+  "distinct_names_readonly": 246,
+  "destructive_examples": [
+    {
+      "file": "redis/asyncio/keyspace_notifications.py",
+      "func": "get_message",
+      "lineno": 559,
+      "name": "self._closed",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "redis/asyncio/keyspace_notifications.py",
+      "func": "aclose",
+      "lineno": 597,
+      "name": "self._closed",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "full_rebind"
+    },
+    {
+      "file": "redis/asyncio/keyspace_notifications.py",
+      "func": "_ensure_node_pubsub",
+      "lineno": 692,
+      "name": "self._node_pubsubs",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "redis/asyncio/keyspace_notifications.py",
+      "func": "_ensure_node_pubsub",
+      "lineno": 698,
+      "name": "self._node_pubsubs",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "subscript_write"
+    },
+    {
+      "file": "redis/asyncio/keyspace_notifications.py",
+      "func": "_ensure_node_pubsub",
+      "lineno": 699,
+      "name": "self._node_pubsubs",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    }
+  ]
+}

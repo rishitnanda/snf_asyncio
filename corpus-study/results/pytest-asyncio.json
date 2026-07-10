@@ -1,0 +1,53 @@
+{
+  "repo": "pytest-asyncio",
+  "summary": {
+    "total_interactions": 3,
+    "mediated": 0,
+    "unmediated": 3,
+    "pct_mediated": 0.0,
+    "by_kind": {
+      "CLOSURE": {
+        "total": 3,
+        "mediated": 0
+      }
+    },
+    "n_python_files_scanned": 3,
+    "n_async_functions_with_interactions": 1,
+    "scoped_to": null
+  },
+  "interactions": [
+    {
+      "file": "pytest_asyncio/plugin.py",
+      "func": "setup",
+      "lineno": 452,
+      "name": "fixture_function",
+      "kind": "CLOSURE",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "pytest_asyncio/plugin.py",
+      "func": "setup",
+      "lineno": 452,
+      "name": "args",
+      "kind": "CLOSURE",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "pytest_asyncio/plugin.py",
+      "func": "setup",
+      "lineno": 452,
+      "name": "kwargs",
+      "kind": "CLOSURE",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    }
+  ]
+}

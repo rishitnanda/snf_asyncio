@@ -1,0 +1,41 @@
+{
+  "repo": "aiofiles",
+  "thread_offloading_functions": [
+    "__aexit__",
+    "_open",
+    "_spooled_temporary_file",
+    "_temporary_directory",
+    "_temporary_file",
+    "method",
+    "run",
+    "write",
+    "writelines"
+  ],
+  "destructive_unmediated_interactions": 4,
+  "overlap_interactions": 2,
+  "pct_destructive_unmediated_in_thread_functions": 50.0,
+  "overlap_examples": [
+    {
+      "file": "src/aiofiles/base.py",
+      "func": "__aexit__",
+      "lineno": 77,
+      "name": "self._obj",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/base.py",
+      "func": "__aexit__",
+      "lineno": 79,
+      "name": "self._obj",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "full_rebind"
+    }
+  ]
+}

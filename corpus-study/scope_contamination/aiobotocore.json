@@ -1,0 +1,12 @@
+{
+  "repo": "aiobotocore",
+  "n_sync_only_files": 11,
+  "n_async_files": 32,
+  "sync_only_written_name_count": 57,
+  "async_side_read_only_candidate_count": 385,
+  "collision_count": 1,
+  "collision_names": [
+    "SELF_ATTR:self.warm_up_loader_caches"
+  ],
+  "verdict": "CONTAMINATION LIKELY -- rescope recommended"
+}

@@ -1,0 +1,21 @@
+{
+  "repo": "sanic",
+  "n_sync_only_files": 146,
+  "n_async_files": 32,
+  "sync_only_written_name_count": 894,
+  "async_side_read_only_candidate_count": 132,
+  "collision_count": 10,
+  "collision_names": [
+    "SELF_ATTR:self.app",
+    "SELF_ATTR:self.args",
+    "SELF_ATTR:self.base",
+    "SELF_ATTR:self.ctx",
+    "SELF_ATTR:self.debug",
+    "SELF_ATTR:self.headers",
+    "SELF_ATTR:self.name",
+    "SELF_ATTR:self.request_middleware",
+    "SELF_ATTR:self.run",
+    "SELF_ATTR:self.state"
+  ],
+  "verdict": "CONTAMINATION LIKELY -- rescope recommended"
+}

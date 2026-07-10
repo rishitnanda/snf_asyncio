@@ -1,0 +1,67 @@
+{
+  "repo": "taskiq",
+  "thread_offloading_functions": [
+    "run_receiver_task",
+    "run_task"
+  ],
+  "destructive_unmediated_interactions": 55,
+  "overlap_interactions": 6,
+  "pct_destructive_unmediated_in_thread_functions": 10.91,
+  "overlap_examples": [
+    {
+      "file": "taskiq/receiver/receiver.py",
+      "func": "run_task",
+      "lineno": 231,
+      "name": "self.task_signatures",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "mutating_method_noncommutative"
+    },
+    {
+      "file": "taskiq/receiver/receiver.py",
+      "func": "run_task",
+      "lineno": 231,
+      "name": "self.task_signatures",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "taskiq/receiver/receiver.py",
+      "func": "run_task",
+      "lineno": 232,
+      "name": "self.dependency_graphs",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "mutating_method_noncommutative"
+    },
+    {
+      "file": "taskiq/receiver/receiver.py",
+      "func": "run_task",
+      "lineno": 232,
+      "name": "self.dependency_graphs",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "taskiq/receiver/receiver.py",
+      "func": "run_task",
+      "lineno": 233,
+      "name": "self.task_hints",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "mutating_method_noncommutative"
+    }
+  ]
+}

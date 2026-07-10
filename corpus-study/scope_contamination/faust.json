@@ -1,0 +1,27 @@
+{
+  "repo": "faust",
+  "n_sync_only_files": 207,
+  "n_async_files": 129,
+  "sync_only_written_name_count": 1080,
+  "async_side_read_only_candidate_count": 624,
+  "collision_count": 16,
+  "collision_names": [
+    "SELF_ATTR:self._name",
+    "SELF_ATTR:self.app",
+    "SELF_ATTR:self.headers",
+    "SELF_ATTR:self.key",
+    "SELF_ATTR:self.loop",
+    "SELF_ATTR:self.message",
+    "SELF_ATTR:self.name",
+    "SELF_ATTR:self.replicas",
+    "SELF_ATTR:self.size",
+    "SELF_ATTR:self.spinner",
+    "SELF_ATTR:self.title",
+    "SELF_ATTR:self.topic",
+    "SELF_ATTR:self.topics",
+    "SELF_ATTR:self.value",
+    "SELF_ATTR:self.value_serializer",
+    "SELF_ATTR:self.window"
+  ],
+  "verdict": "CONTAMINATION LIKELY -- rescope recommended"
+}

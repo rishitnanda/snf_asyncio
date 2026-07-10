@@ -1,0 +1,39 @@
+{
+  "repo": "aiobotocore",
+  "destructive_names_total": 26,
+  "flagged_control_bounded_names": [
+    "SELF_ATTR:self.__lock",
+    "SELF_ATTR:self.__ref_count",
+    "SELF_ATTR:self._content",
+    "SELF_ATTR:self._credentials",
+    "SELF_ATTR:self._current_capacity",
+    "SELF_ATTR:self._enabled",
+    "SELF_ATTR:self._has_been_called",
+    "SELF_ATTR:self._instance_metadata_region",
+    "SELF_ATTR:self._remaining",
+    "SELF_ATTR:self._session",
+    "SELF_ATTR:self._sessions",
+    "SELF_ATTR:self._verify",
+    "SELF_ATTR:self.resume_token"
+  ],
+  "flagged_control_unbounded_names": [
+    "SELF_ATTR:self._complete"
+  ],
+  "flagged_data_names": [
+    "SELF_ATTR:self.NAMED_PROVIDER_FEATURE_MAP",
+    "SELF_ATTR:self._cache",
+    "SELF_ATTR:self._client",
+    "SELF_ATTR:self._connector",
+    "SELF_ATTR:self._failed_attempts",
+    "SELF_ATTR:self._frozen_credentials",
+    "SELF_ATTR:self._frozen_token",
+    "SELF_ATTR:self._loaded_config",
+    "SELF_ATTR:self._lookup_cache",
+    "SELF_ATTR:self._next_refresh",
+    "SELF_ATTR:self._visited_profiles",
+    "SELF_ATTR:self.environ"
+  ],
+  "flagged_control_bounded_interactions": 68,
+  "flagged_control_unbounded_interactions": 5,
+  "flagged_data_interactions": 42
+}

@@ -1,0 +1,82 @@
+{
+  "total_interactions": 771,
+  "counts_by_bucket": {
+    "READ_ONLY": 407,
+    "COMMUTATIVE": 8,
+    "DESTRUCTIVE": 356
+  },
+  "mediated_by_bucket": {
+    "READ_ONLY": 54,
+    "COMMUTATIVE": 4,
+    "DESTRUCTIVE": 90
+  },
+  "unmediated_by_bucket": {
+    "READ_ONLY": 353,
+    "COMMUTATIVE": 4,
+    "DESTRUCTIVE": 266
+  },
+  "unmediated_total": 623,
+  "unmediated_destructive_pct_of_all": 34.5,
+  "unmediated_destructive_pct_of_unmediated": 42.7,
+  "distinct_names_seen": 183,
+  "distinct_names_destructive": 50,
+  "distinct_names_commutative": 1,
+  "distinct_names_readonly": 132,
+  "destructive_examples": [
+    {
+      "file": "sanic/asgi.py",
+      "func": "read",
+      "lineno": 196,
+      "name": "self.stage",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "sanic/asgi.py",
+      "func": "read",
+      "lineno": 197,
+      "name": "self.stage",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "full_rebind"
+    },
+    {
+      "file": "sanic/asgi.py",
+      "func": "read",
+      "lineno": 201,
+      "name": "self.request_body",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "full_rebind"
+    },
+    {
+      "file": "sanic/asgi.py",
+      "func": "__aiter__",
+      "lineno": 207,
+      "name": "self.request_body",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "sanic/asgi.py",
+      "func": "send",
+      "lineno": 222,
+      "name": "self.stage",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    }
+  ]
+}

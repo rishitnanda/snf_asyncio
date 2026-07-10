@@ -1,0 +1,82 @@
+{
+  "total_interactions": 627,
+  "counts_by_bucket": {
+    "READ_ONLY": 412,
+    "COMMUTATIVE": 13,
+    "DESTRUCTIVE": 202
+  },
+  "mediated_by_bucket": {
+    "READ_ONLY": 4,
+    "COMMUTATIVE": 1,
+    "DESTRUCTIVE": 28
+  },
+  "unmediated_by_bucket": {
+    "READ_ONLY": 408,
+    "COMMUTATIVE": 12,
+    "DESTRUCTIVE": 174
+  },
+  "unmediated_total": 594,
+  "unmediated_destructive_pct_of_all": 27.75,
+  "unmediated_destructive_pct_of_unmediated": 29.29,
+  "distinct_names_seen": 204,
+  "distinct_names_destructive": 31,
+  "distinct_names_commutative": 3,
+  "distinct_names_readonly": 170,
+  "destructive_examples": [
+    {
+      "file": "src/quart/asgi.py",
+      "func": "_send_push_promise",
+      "lineno": 168,
+      "name": "self.scope",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "mutating_method_noncommutative"
+    },
+    {
+      "file": "src/quart/asgi.py",
+      "func": "_send_push_promise",
+      "lineno": 168,
+      "name": "self.scope",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/quart/asgi.py",
+      "func": "handle_websocket",
+      "lineno": 248,
+      "name": "self._accepted",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/quart/asgi.py",
+      "func": "handle_websocket",
+      "lineno": 249,
+      "name": "self.scope",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "mutating_method_noncommutative"
+    },
+    {
+      "file": "src/quart/asgi.py",
+      "func": "handle_websocket",
+      "lineno": 249,
+      "name": "self.scope",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    }
+  ]
+}

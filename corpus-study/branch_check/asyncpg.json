@@ -1,0 +1,40 @@
+{
+  "repo": "asyncpg",
+  "destructive_names_total": 28,
+  "flagged_control_bounded_names": [
+    "SELF_ATTR:self._closed",
+    "SELF_ATTR:self._closing",
+    "SELF_ATTR:self._con",
+    "SELF_ATTR:self._exhausted",
+    "SELF_ATTR:self._generation",
+    "SELF_ATTR:self._in_use",
+    "SELF_ATTR:self._initialized",
+    "SELF_ATTR:self._initializing",
+    "SELF_ATTR:self._listeners",
+    "SELF_ATTR:self._managed",
+    "SELF_ATTR:self._nested",
+    "SELF_ATTR:self._portal_name",
+    "SELF_ATTR:self._state",
+    "SELF_ATTR:self._stmts_to_close",
+    "SELF_ATTR:self._top_xact",
+    "SELF_ATTR:self.connection",
+    "SELF_ATTR:self.done",
+    "SELF_ATTR:self.proxy_from_backend_task",
+    "SELF_ATTR:self.proxy_to_backend_task"
+  ],
+  "flagged_control_unbounded_names": [],
+  "flagged_data_names": [
+    "SELF_ATTR:self._cancellations",
+    "SELF_ATTR:self._id",
+    "SELF_ATTR:self._last_status",
+    "SELF_ATTR:self._log_listeners",
+    "SELF_ATTR:self._proxy",
+    "SELF_ATTR:self._queue",
+    "SELF_ATTR:self._stmt_cache",
+    "SELF_ATTR:self._timeout",
+    "SELF_ATTR:self.listen_task"
+  ],
+  "flagged_control_bounded_interactions": 138,
+  "flagged_control_unbounded_interactions": 0,
+  "flagged_data_interactions": 29
+}

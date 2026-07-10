@@ -1,0 +1,15 @@
+{
+  "repo": "redis-py",
+  "thread_offloading_functions": [
+    "delete",
+    "get",
+    "patch",
+    "post",
+    "put",
+    "request"
+  ],
+  "destructive_unmediated_interactions": 441,
+  "overlap_interactions": 0,
+  "pct_destructive_unmediated_in_thread_functions": 0.0,
+  "overlap_examples": []
+}

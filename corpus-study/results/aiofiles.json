@@ -1,0 +1,534 @@
+{
+  "repo": "aiofiles",
+  "summary": {
+    "total_interactions": 46,
+    "mediated": 0,
+    "unmediated": 46,
+    "pct_mediated": 0.0,
+    "by_kind": {
+      "CLOSURE": {
+        "total": 4,
+        "mediated": 0
+      },
+      "SELF_ATTR": {
+        "total": 36,
+        "mediated": 0
+      },
+      "GLOBAL": {
+        "total": 6,
+        "mediated": 0
+      }
+    },
+    "n_python_files_scanned": 10,
+    "n_async_functions_with_interactions": 11,
+    "scoped_to": null
+  },
+  "interactions": [
+    {
+      "file": "src/aiofiles/base.py",
+      "func": "run",
+      "lineno": 12,
+      "name": "func",
+      "kind": "CLOSURE",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/base.py",
+      "func": "__anext__",
+      "lineno": 38,
+      "name": "self.readline",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/base.py",
+      "func": "__aexit__",
+      "lineno": 77,
+      "name": "self._obj",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/base.py",
+      "func": "__aexit__",
+      "lineno": 79,
+      "name": "self._obj",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "full_rebind"
+    },
+    {
+      "file": "src/aiofiles/threadpool/utils.py",
+      "func": "method",
+      "lineno": 42,
+      "name": "self._file",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/threadpool/utils.py",
+      "func": "method",
+      "lineno": 42,
+      "name": "attr_name",
+      "kind": "CLOSURE",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/threadpool/utils.py",
+      "func": "method",
+      "lineno": 43,
+      "name": "self._loop",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/threadpool/utils.py",
+      "func": "method",
+      "lineno": 43,
+      "name": "self._loop",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/threadpool/utils.py",
+      "func": "method",
+      "lineno": 43,
+      "name": "self._executor",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/threadpool/utils.py",
+      "func": "method",
+      "lineno": 66,
+      "name": "self._file",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/threadpool/utils.py",
+      "func": "method",
+      "lineno": 67,
+      "name": "self._file",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/threadpool/utils.py",
+      "func": "method",
+      "lineno": 67,
+      "name": "attr_name",
+      "kind": "CLOSURE",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/threadpool/utils.py",
+      "func": "method",
+      "lineno": 68,
+      "name": "self._loop",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/threadpool/utils.py",
+      "func": "method",
+      "lineno": 68,
+      "name": "self._loop",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/threadpool/utils.py",
+      "func": "method",
+      "lineno": 68,
+      "name": "self._executor",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/threadpool/utils.py",
+      "func": "method",
+      "lineno": 69,
+      "name": "self._file",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/threadpool/utils.py",
+      "func": "method",
+      "lineno": 69,
+      "name": "attr_name",
+      "kind": "CLOSURE",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/threadpool/__init__.py",
+      "func": "_open",
+      "lineno": 83,
+      "name": "sync_open",
+      "kind": "GLOBAL",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/threadpool/__init__.py",
+      "func": "_open",
+      "lineno": 95,
+      "name": "wrap",
+      "kind": "GLOBAL",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/tempfile/temptypes.py",
+      "func": "_check",
+      "lineno": 30,
+      "name": "self._file",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/tempfile/temptypes.py",
+      "func": "_check",
+      "lineno": 32,
+      "name": "self._file",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/tempfile/temptypes.py",
+      "func": "_check",
+      "lineno": 33,
+      "name": "self._file",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/tempfile/temptypes.py",
+      "func": "_check",
+      "lineno": 33,
+      "name": "self._file",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/tempfile/temptypes.py",
+      "func": "_check",
+      "lineno": 34,
+      "name": "self.rollover",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/tempfile/temptypes.py",
+      "func": "write",
+      "lineno": 38,
+      "name": "self._file",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/tempfile/temptypes.py",
+      "func": "write",
+      "lineno": 39,
+      "name": "self._file",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/tempfile/temptypes.py",
+      "func": "write",
+      "lineno": 40,
+      "name": "self._loop",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/tempfile/temptypes.py",
+      "func": "write",
+      "lineno": 40,
+      "name": "self._loop",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/tempfile/temptypes.py",
+      "func": "write",
+      "lineno": 40,
+      "name": "self._executor",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/tempfile/temptypes.py",
+      "func": "write",
+      "lineno": 42,
+      "name": "self._file",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/tempfile/temptypes.py",
+      "func": "write",
+      "lineno": 44,
+      "name": "self._check",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/tempfile/temptypes.py",
+      "func": "writelines",
+      "lineno": 49,
+      "name": "self._file",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/tempfile/temptypes.py",
+      "func": "writelines",
+      "lineno": 50,
+      "name": "self._file",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/tempfile/temptypes.py",
+      "func": "writelines",
+      "lineno": 51,
+      "name": "self._loop",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/tempfile/temptypes.py",
+      "func": "writelines",
+      "lineno": 51,
+      "name": "self._loop",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/tempfile/temptypes.py",
+      "func": "writelines",
+      "lineno": 51,
+      "name": "self._executor",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/tempfile/temptypes.py",
+      "func": "writelines",
+      "lineno": 53,
+      "name": "self._file",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/tempfile/temptypes.py",
+      "func": "writelines",
+      "lineno": 55,
+      "name": "self._check",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/tempfile/temptypes.py",
+      "func": "close",
+      "lineno": 70,
+      "name": "self.cleanup",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/tempfile/__init__.py",
+      "func": "_temporary_file",
+      "lineno": 213,
+      "name": "wrap",
+      "kind": "GLOBAL",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/tempfile/__init__.py",
+      "func": "_temporary_file",
+      "lineno": 217,
+      "name": "wrap",
+      "kind": "GLOBAL",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/tempfile/__init__.py",
+      "func": "_temporary_file",
+      "lineno": 268,
+      "name": "wrap",
+      "kind": "GLOBAL",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/tempfile/__init__.py",
+      "func": "_temporary_file",
+      "lineno": 273,
+      "name": "wrap",
+      "kind": "GLOBAL",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/tempfile/__init__.py",
+      "func": "__aenter__",
+      "lineno": 327,
+      "name": "self._obj",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "full_rebind"
+    },
+    {
+      "file": "src/aiofiles/tempfile/__init__.py",
+      "func": "__aenter__",
+      "lineno": 327,
+      "name": "self._coro",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/aiofiles/tempfile/__init__.py",
+      "func": "__aenter__",
+      "lineno": 328,
+      "name": "self._obj",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    }
+  ]
+}

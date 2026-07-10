@@ -1,0 +1,82 @@
+{
+  "total_interactions": 1039,
+  "counts_by_bucket": {
+    "READ_ONLY": 877,
+    "COMMUTATIVE": 47,
+    "DESTRUCTIVE": 115
+  },
+  "mediated_by_bucket": {
+    "READ_ONLY": 29,
+    "COMMUTATIVE": 0,
+    "DESTRUCTIVE": 7
+  },
+  "unmediated_by_bucket": {
+    "READ_ONLY": 848,
+    "COMMUTATIVE": 47,
+    "DESTRUCTIVE": 108
+  },
+  "unmediated_total": 1003,
+  "unmediated_destructive_pct_of_all": 10.39,
+  "unmediated_destructive_pct_of_unmediated": 10.77,
+  "distinct_names_seen": 414,
+  "distinct_names_destructive": 26,
+  "distinct_names_commutative": 3,
+  "distinct_names_readonly": 385,
+  "destructive_examples": [
+    {
+      "file": "aiobotocore/discovery.py",
+      "func": "_refresh_current_endpoints",
+      "lineno": 22,
+      "name": "self._cache",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "subscript_write"
+    },
+    {
+      "file": "aiobotocore/discovery.py",
+      "func": "_refresh_current_endpoints",
+      "lineno": 23,
+      "name": "self._failed_attempts",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "mutating_method_noncommutative"
+    },
+    {
+      "file": "aiobotocore/discovery.py",
+      "func": "_refresh_current_endpoints",
+      "lineno": 23,
+      "name": "self._failed_attempts",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "aiobotocore/discovery.py",
+      "func": "_refresh_current_endpoints",
+      "lineno": 26,
+      "name": "self._failed_attempts",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "subscript_write"
+    },
+    {
+      "file": "aiobotocore/discovery.py",
+      "func": "describe_endpoint",
+      "lineno": 55,
+      "name": "self._cache",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "mutating_method_noncommutative"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+{
+  "repo": "asyncz",
+  "thread_offloading_functions": [
+    "start"
+  ],
+  "destructive_unmediated_interactions": 11,
+  "overlap_interactions": 4,
+  "pct_destructive_unmediated_in_thread_functions": 36.36,
+  "overlap_examples": [
+    {
+      "file": "asyncz/schedulers/asyncio.py",
+      "func": "start",
+      "lineno": 117,
+      "name": "self.event_loop_thread",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "full_rebind"
+    },
+    {
+      "file": "asyncz/schedulers/asyncio.py",
+      "func": "start",
+      "lineno": 118,
+      "name": "self.event_loop_thread",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "asyncz/schedulers/asyncio.py",
+      "func": "start",
+      "lineno": 118,
+      "name": "self.event_loop_thread",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "asyncz/schedulers/asyncio.py",
+      "func": "start",
+      "lineno": 121,
+      "name": "self.event_loop",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "full_rebind"
+    }
+  ]
+}

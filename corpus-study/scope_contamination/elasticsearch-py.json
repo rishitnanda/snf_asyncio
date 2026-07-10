@@ -1,0 +1,10 @@
+{
+  "repo": "elasticsearch-py",
+  "n_sync_only_files": 2,
+  "n_async_files": 45,
+  "sync_only_written_name_count": 1,
+  "async_side_read_only_candidate_count": 30,
+  "collision_count": 0,
+  "collision_names": [],
+  "verdict": "no direct collision found -- high sync-file% likely benign here"
+}

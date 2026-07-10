@@ -1,0 +1,82 @@
+{
+  "total_interactions": 1249,
+  "counts_by_bucket": {
+    "READ_ONLY": 977,
+    "COMMUTATIVE": 19,
+    "DESTRUCTIVE": 253
+  },
+  "mediated_by_bucket": {
+    "READ_ONLY": 30,
+    "COMMUTATIVE": 0,
+    "DESTRUCTIVE": 7
+  },
+  "unmediated_by_bucket": {
+    "READ_ONLY": 947,
+    "COMMUTATIVE": 19,
+    "DESTRUCTIVE": 246
+  },
+  "unmediated_total": 1212,
+  "unmediated_destructive_pct_of_all": 19.7,
+  "unmediated_destructive_pct_of_unmediated": 20.3,
+  "distinct_names_seen": 234,
+  "distinct_names_destructive": 34,
+  "distinct_names_commutative": 3,
+  "distinct_names_readonly": 197,
+  "destructive_examples": [
+    {
+      "file": "aiokafka/client.py",
+      "func": "close",
+      "lineno": 177,
+      "name": "self._sync_task",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "aiokafka/client.py",
+      "func": "close",
+      "lineno": 178,
+      "name": "self._sync_task",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "aiokafka/client.py",
+      "func": "close",
+      "lineno": 178,
+      "name": "self._sync_task",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "aiokafka/client.py",
+      "func": "close",
+      "lineno": 180,
+      "name": "self._sync_task",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "aiokafka/client.py",
+      "func": "close",
+      "lineno": 181,
+      "name": "self._sync_task",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "full_rebind"
+    }
+  ]
+}

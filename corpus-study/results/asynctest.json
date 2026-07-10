@@ -1,0 +1,46 @@
+{
+  "repo": "asynctest",
+  "summary": {
+    "total_interactions": 2,
+    "mediated": 0,
+    "unmediated": 2,
+    "pct_mediated": 0.0,
+    "by_kind": {
+      "SELF_ATTR": {
+        "total": 1,
+        "mediated": 0
+      },
+      "CLOSURE": {
+        "total": 1,
+        "mediated": 0
+      }
+    },
+    "n_python_files_scanned": 7,
+    "n_async_functions_with_interactions": 2,
+    "scoped_to": null
+  },
+  "interactions": [
+    {
+      "file": "asynctest/mock.py",
+      "func": "__anext__",
+      "lineno": 45,
+      "name": "self.iterator",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "asynctest/mock.py",
+      "func": "wrapper",
+      "lineno": 115,
+      "name": "coroutine",
+      "kind": "CLOSURE",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    }
+  ]
+}

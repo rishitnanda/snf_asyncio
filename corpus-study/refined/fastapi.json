@@ -1,0 +1,82 @@
+{
+  "total_interactions": 390,
+  "counts_by_bucket": {
+    "READ_ONLY": 316,
+    "COMMUTATIVE": 11,
+    "DESTRUCTIVE": 63
+  },
+  "mediated_by_bucket": {
+    "READ_ONLY": 0,
+    "COMMUTATIVE": 0,
+    "DESTRUCTIVE": 0
+  },
+  "unmediated_by_bucket": {
+    "READ_ONLY": 316,
+    "COMMUTATIVE": 11,
+    "DESTRUCTIVE": 63
+  },
+  "unmediated_total": 390,
+  "unmediated_destructive_pct_of_all": 16.15,
+  "unmediated_destructive_pct_of_unmediated": 16.15,
+  "distinct_names_seen": 130,
+  "distinct_names_destructive": 5,
+  "distinct_names_commutative": 2,
+  "distinct_names_readonly": 123,
+  "destructive_examples": [
+    {
+      "file": "docs_src/response_model/tutorial006_py310.py",
+      "func": "read_item_name",
+      "lineno": 32,
+      "name": "items",
+      "kind": "GLOBAL",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "docs_src/response_model/tutorial006_py310.py",
+      "func": "read_item_public_data",
+      "lineno": 37,
+      "name": "items",
+      "kind": "GLOBAL",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "docs_src/response_model/tutorial005_py310.py",
+      "func": "read_item_name",
+      "lineno": 32,
+      "name": "items",
+      "kind": "GLOBAL",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "docs_src/response_model/tutorial005_py310.py",
+      "func": "read_item_public_data",
+      "lineno": 37,
+      "name": "items",
+      "kind": "GLOBAL",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "docs_src/response_model/tutorial004_py310.py",
+      "func": "read_item",
+      "lineno": 24,
+      "name": "items",
+      "kind": "GLOBAL",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    }
+  ]
+}

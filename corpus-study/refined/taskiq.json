@@ -1,0 +1,82 @@
+{
+  "total_interactions": 348,
+  "counts_by_bucket": {
+    "READ_ONLY": 281,
+    "COMMUTATIVE": 10,
+    "DESTRUCTIVE": 57
+  },
+  "mediated_by_bucket": {
+    "READ_ONLY": 0,
+    "COMMUTATIVE": 0,
+    "DESTRUCTIVE": 2
+  },
+  "unmediated_by_bucket": {
+    "READ_ONLY": 281,
+    "COMMUTATIVE": 10,
+    "DESTRUCTIVE": 55
+  },
+  "unmediated_total": 346,
+  "unmediated_destructive_pct_of_all": 15.8,
+  "unmediated_destructive_pct_of_unmediated": 15.9,
+  "distinct_names_seen": 91,
+  "distinct_names_destructive": 13,
+  "distinct_names_commutative": 3,
+  "distinct_names_readonly": 75,
+  "destructive_examples": [
+    {
+      "file": "taskiq/funcs.py",
+      "func": "check_task",
+      "lineno": 43,
+      "name": "task_ids",
+      "kind": "CLOSURE",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "mutating_method_noncommutative"
+    },
+    {
+      "file": "taskiq/funcs.py",
+      "func": "check_task",
+      "lineno": 43,
+      "name": "task_ids",
+      "kind": "CLOSURE",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "taskiq/schedule_sources/label_based.py",
+      "func": "startup",
+      "lineno": 35,
+      "name": "self.schedules",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "mutating_method_noncommutative"
+    },
+    {
+      "file": "taskiq/schedule_sources/label_based.py",
+      "func": "startup",
+      "lineno": 35,
+      "name": "self.schedules",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "taskiq/schedule_sources/label_based.py",
+      "func": "startup",
+      "lineno": 54,
+      "name": "self.schedules",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "subscript_write"
+    }
+  ]
+}

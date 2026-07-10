@@ -1,0 +1,82 @@
+{
+  "total_interactions": 250,
+  "counts_by_bucket": {
+    "READ_ONLY": 155,
+    "COMMUTATIVE": 0,
+    "DESTRUCTIVE": 95
+  },
+  "mediated_by_bucket": {
+    "READ_ONLY": 10,
+    "COMMUTATIVE": 0,
+    "DESTRUCTIVE": 9
+  },
+  "unmediated_by_bucket": {
+    "READ_ONLY": 145,
+    "COMMUTATIVE": 0,
+    "DESTRUCTIVE": 86
+  },
+  "unmediated_total": 231,
+  "unmediated_destructive_pct_of_all": 34.4,
+  "unmediated_destructive_pct_of_unmediated": 37.23,
+  "distinct_names_seen": 54,
+  "distinct_names_destructive": 11,
+  "distinct_names_commutative": 0,
+  "distinct_names_readonly": 43,
+  "destructive_examples": [
+    {
+      "file": "lib/sqlalchemy/dialects/postgresql/asyncpg.py",
+      "func": "_executemany",
+      "lineno": 639,
+      "name": "self._description",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "full_rebind"
+    },
+    {
+      "file": "lib/sqlalchemy/dialects/postgresql/asyncpg.py",
+      "func": "_all",
+      "lineno": 726,
+      "name": "self._cursor",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "lib/sqlalchemy/dialects/postgresql/asyncpg.py",
+      "func": "_all",
+      "lineno": 731,
+      "name": "self._cursor",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "lib/sqlalchemy/dialects/postgresql/asyncpg.py",
+      "func": "_all",
+      "lineno": 731,
+      "name": "self._cursor",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "lib/sqlalchemy/dialects/postgresql/asyncpg.py",
+      "func": "_check_type_cache_invalidation",
+      "lineno": 792,
+      "name": "self._invalidate_schema_cache_asof",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    }
+  ]
+}

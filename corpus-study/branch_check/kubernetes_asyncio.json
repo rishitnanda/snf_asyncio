@@ -1,0 +1,32 @@
+{
+  "repo": "kubernetes_asyncio",
+  "destructive_names_total": 20,
+  "flagged_control_bounded_names": [
+    "SELF_ATTR:self.__base_resource",
+    "SELF_ATTR:self._cache",
+    "SELF_ATTR:self._pool",
+    "SELF_ATTR:self._well_known",
+    "SELF_ATTR:self.api_key",
+    "SELF_ATTR:self.exec_plugin_expiry",
+    "SELF_ATTR:self.observed_record",
+    "SELF_ATTR:self.observed_time_milliseconds",
+    "SELF_ATTR:self.resp"
+  ],
+  "flagged_control_unbounded_names": [],
+  "flagged_data_names": [
+    "SELF_ATTR:self.__discoverer",
+    "SELF_ATTR:self.__resources",
+    "SELF_ATTR:self.__update_cache",
+    "SELF_ATTR:self.__version",
+    "SELF_ATTR:self.api_key_prefix",
+    "SELF_ATTR:self.cert_file",
+    "SELF_ATTR:self.configmap_reference",
+    "SELF_ATTR:self.key_file",
+    "SELF_ATTR:self.last_response",
+    "SELF_ATTR:self.lease_reference",
+    "SELF_ATTR:self.token"
+  ],
+  "flagged_control_bounded_interactions": 75,
+  "flagged_control_unbounded_interactions": 0,
+  "flagged_data_interactions": 41
+}

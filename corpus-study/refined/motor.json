@@ -1,0 +1,49 @@
+{
+  "total_interactions": 96,
+  "counts_by_bucket": {
+    "READ_ONLY": 94,
+    "COMMUTATIVE": 0,
+    "DESTRUCTIVE": 2
+  },
+  "mediated_by_bucket": {
+    "READ_ONLY": 0,
+    "COMMUTATIVE": 0,
+    "DESTRUCTIVE": 0
+  },
+  "unmediated_by_bucket": {
+    "READ_ONLY": 94,
+    "COMMUTATIVE": 0,
+    "DESTRUCTIVE": 2
+  },
+  "unmediated_total": 96,
+  "unmediated_destructive_pct_of_all": 2.08,
+  "unmediated_destructive_pct_of_unmediated": 2.08,
+  "distinct_names_seen": 45,
+  "distinct_names_destructive": 1,
+  "distinct_names_commutative": 0,
+  "distinct_names_readonly": 44,
+  "destructive_examples": [
+    {
+      "file": "motor/core.py",
+      "func": "close",
+      "lineno": 1746,
+      "name": "self.closed",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "motor/core.py",
+      "func": "close",
+      "lineno": 1747,
+      "name": "self.closed",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "full_rebind"
+    }
+  ]
+}

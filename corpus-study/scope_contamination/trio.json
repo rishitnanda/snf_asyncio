@@ -1,0 +1,12 @@
+{
+  "repo": "trio",
+  "n_sync_only_files": 51,
+  "n_async_files": 93,
+  "sync_only_written_name_count": 360,
+  "async_side_read_only_candidate_count": 406,
+  "collision_count": 1,
+  "collision_names": [
+    "SELF_ATTR:self._lock"
+  ],
+  "verdict": "CONTAMINATION LIKELY -- rescope recommended"
+}

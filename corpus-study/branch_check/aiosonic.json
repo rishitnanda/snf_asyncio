@@ -1,0 +1,42 @@
+{
+  "repo": "aiosonic",
+  "destructive_names_total": 29,
+  "flagged_control_bounded_names": [
+    "SELF_ATTR:self._conn_obj",
+    "SELF_ATTR:self._connection",
+    "SELF_ATTR:self._h2_chunk_queue",
+    "SELF_ATTR:self._h2_sem_release",
+    "SELF_ATTR:self._last_event_id",
+    "SELF_ATTR:self._last_yielded_data",
+    "SELF_ATTR:self._response",
+    "SELF_ATTR:self._verify",
+    "SELF_ATTR:self.h2handler",
+    "SELF_ATTR:self.key",
+    "SELF_ATTR:self.pool",
+    "SELF_ATTR:self.reader",
+    "SELF_ATTR:self.temp_key",
+    "SELF_ATTR:self.writer"
+  ],
+  "flagged_control_unbounded_names": [
+    "SELF_ATTR:self._closed",
+    "SELF_ATTR:self._msg_queue",
+    "SELF_ATTR:self.chunks_readed",
+    "SELF_ATTR:self.connected",
+    "SELF_ATTR:self.h2conn"
+  ],
+  "flagged_data_names": [
+    "CLOSURE:client",
+    "CLOSURE:version_counter",
+    "SELF_ATTR:self._pong_queue",
+    "SELF_ATTR:self._stream_sem",
+    "SELF_ATTR:self._window_updated",
+    "SELF_ATTR:self.cache",
+    "SELF_ATTR:self.close_code",
+    "SELF_ATTR:self.connections",
+    "SELF_ATTR:self.loop",
+    "SELF_ATTR:self.requests"
+  ],
+  "flagged_control_bounded_interactions": 93,
+  "flagged_control_unbounded_interactions": 40,
+  "flagged_data_interactions": 42
+}

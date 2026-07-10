@@ -1,0 +1,74 @@
+{
+  "repo": "aiohttp",
+  "thread_offloading_functions": [
+    "_handle",
+    "_request",
+    "_sendfile_fallback",
+    "as_bytes",
+    "compress",
+    "decompress",
+    "post",
+    "prepare",
+    "write_with_length"
+  ],
+  "destructive_unmediated_interactions": 626,
+  "overlap_interactions": 31,
+  "pct_destructive_unmediated_in_thread_functions": 4.95,
+  "overlap_examples": [
+    {
+      "file": "aiohttp/web_request.py",
+      "func": "post",
+      "lineno": 679,
+      "name": "self._post",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "aiohttp/web_request.py",
+      "func": "post",
+      "lineno": 680,
+      "name": "self._post",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "aiohttp/web_request.py",
+      "func": "post",
+      "lineno": 682,
+      "name": "self._post",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "full_rebind"
+    },
+    {
+      "file": "aiohttp/web_request.py",
+      "func": "post",
+      "lineno": 683,
+      "name": "self._post",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "aiohttp/web_request.py",
+      "func": "post",
+      "lineno": 685,
+      "name": "self.content_type",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+{
+  "total_interactions": 585,
+  "counts_by_bucket": {
+    "READ_ONLY": 402,
+    "COMMUTATIVE": 16,
+    "DESTRUCTIVE": 167
+  },
+  "mediated_by_bucket": {
+    "READ_ONLY": 2,
+    "COMMUTATIVE": 0,
+    "DESTRUCTIVE": 3
+  },
+  "unmediated_by_bucket": {
+    "READ_ONLY": 400,
+    "COMMUTATIVE": 16,
+    "DESTRUCTIVE": 164
+  },
+  "unmediated_total": 580,
+  "unmediated_destructive_pct_of_all": 28.03,
+  "unmediated_destructive_pct_of_unmediated": 28.28,
+  "distinct_names_seen": 162,
+  "distinct_names_destructive": 28,
+  "distinct_names_commutative": 3,
+  "distinct_names_readonly": 131,
+  "destructive_examples": [
+    {
+      "file": "asyncpg/transaction.py",
+      "func": "__aenter__",
+      "lineno": 64,
+      "name": "self._managed",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "asyncpg/transaction.py",
+      "func": "__aenter__",
+      "lineno": 67,
+      "name": "self._managed",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "full_rebind"
+    },
+    {
+      "file": "asyncpg/transaction.py",
+      "func": "__aexit__",
+      "lineno": 93,
+      "name": "self._managed",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "full_rebind"
+    },
+    {
+      "file": "asyncpg/transaction.py",
+      "func": "start",
+      "lineno": 99,
+      "name": "self._state",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "asyncpg/transaction.py",
+      "func": "start",
+      "lineno": 124,
+      "name": "self._nested",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "full_rebind"
+    }
+  ]
+}

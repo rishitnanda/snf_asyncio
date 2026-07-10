@@ -1,0 +1,12 @@
+{
+  "repo": "redis-py",
+  "n_sync_only_files": 6,
+  "n_async_files": 16,
+  "sync_only_written_name_count": 37,
+  "async_side_read_only_candidate_count": 246,
+  "collision_count": 1,
+  "collision_names": [
+    "SELF_ATTR:self._client"
+  ],
+  "verdict": "CONTAMINATION LIKELY -- rescope recommended"
+}

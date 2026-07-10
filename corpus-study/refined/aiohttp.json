@@ -1,0 +1,82 @@
+{
+  "total_interactions": 1590,
+  "counts_by_bucket": {
+    "READ_ONLY": 915,
+    "COMMUTATIVE": 49,
+    "DESTRUCTIVE": 626
+  },
+  "mediated_by_bucket": {
+    "READ_ONLY": 4,
+    "COMMUTATIVE": 0,
+    "DESTRUCTIVE": 0
+  },
+  "unmediated_by_bucket": {
+    "READ_ONLY": 911,
+    "COMMUTATIVE": 49,
+    "DESTRUCTIVE": 626
+  },
+  "unmediated_total": 1586,
+  "unmediated_destructive_pct_of_all": 39.37,
+  "unmediated_destructive_pct_of_unmediated": 39.47,
+  "distinct_names_seen": 483,
+  "distinct_names_destructive": 93,
+  "distinct_names_commutative": 13,
+  "distinct_names_readonly": 377,
+  "destructive_examples": [
+    {
+      "file": "aiohttp/web_fileresponse.py",
+      "func": "_not_modified",
+      "lineno": 154,
+      "name": "self._length_check",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "full_rebind"
+    },
+    {
+      "file": "aiohttp/web_fileresponse.py",
+      "func": "_not_modified",
+      "lineno": 155,
+      "name": "self.etag",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "full_rebind"
+    },
+    {
+      "file": "aiohttp/web_fileresponse.py",
+      "func": "_not_modified",
+      "lineno": 156,
+      "name": "self.last_modified",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "full_rebind"
+    },
+    {
+      "file": "aiohttp/web_fileresponse.py",
+      "func": "_precondition_failed",
+      "lineno": 165,
+      "name": "self.content_length",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "full_rebind"
+    },
+    {
+      "file": "aiohttp/web_fileresponse.py",
+      "func": "_prepare_open_file",
+      "lineno": 323,
+      "name": "self._headers",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "subscript_write"
+    }
+  ]
+}

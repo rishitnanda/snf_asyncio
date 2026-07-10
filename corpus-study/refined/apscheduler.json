@@ -1,0 +1,82 @@
+{
+  "total_interactions": 898,
+  "counts_by_bucket": {
+    "READ_ONLY": 489,
+    "COMMUTATIVE": 24,
+    "DESTRUCTIVE": 385
+  },
+  "mediated_by_bucket": {
+    "READ_ONLY": 2,
+    "COMMUTATIVE": 0,
+    "DESTRUCTIVE": 0
+  },
+  "unmediated_by_bucket": {
+    "READ_ONLY": 487,
+    "COMMUTATIVE": 24,
+    "DESTRUCTIVE": 385
+  },
+  "unmediated_total": 896,
+  "unmediated_destructive_pct_of_all": 42.87,
+  "unmediated_destructive_pct_of_unmediated": 42.97,
+  "distinct_names_seen": 116,
+  "distinct_names_destructive": 25,
+  "distinct_names_commutative": 2,
+  "distinct_names_readonly": 89,
+  "destructive_examples": [
+    {
+      "file": "src/apscheduler/eventbrokers/asyncpg.py",
+      "func": "start",
+      "lineno": 104,
+      "name": "self._send",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "full_rebind"
+    },
+    {
+      "file": "src/apscheduler/eventbrokers/asyncpg.py",
+      "func": "start",
+      "lineno": 105,
+      "name": "self._send",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/apscheduler/eventbrokers/asyncpg.py",
+      "func": "start",
+      "lineno": 106,
+      "name": "self._task_group",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/apscheduler/eventbrokers/asyncpg.py",
+      "func": "start",
+      "lineno": 106,
+      "name": "self._task_group",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "src/apscheduler/eventbrokers/asyncpg.py",
+      "func": "_listen_notifications",
+      "lineno": 130,
+      "name": "self._logger",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    }
+  ]
+}

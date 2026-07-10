@@ -1,0 +1,49 @@
+{
+  "total_interactions": 619,
+  "counts_by_bucket": {
+    "READ_ONLY": 617,
+    "COMMUTATIVE": 0,
+    "DESTRUCTIVE": 2
+  },
+  "mediated_by_bucket": {
+    "READ_ONLY": 0,
+    "COMMUTATIVE": 0,
+    "DESTRUCTIVE": 0
+  },
+  "unmediated_by_bucket": {
+    "READ_ONLY": 617,
+    "COMMUTATIVE": 0,
+    "DESTRUCTIVE": 2
+  },
+  "unmediated_total": 619,
+  "unmediated_destructive_pct_of_all": 0.32,
+  "unmediated_destructive_pct_of_unmediated": 0.32,
+  "distinct_names_seen": 31,
+  "distinct_names_destructive": 1,
+  "distinct_names_commutative": 0,
+  "distinct_names_readonly": 30,
+  "destructive_examples": [
+    {
+      "file": "elasticsearch/_async/client/_base.py",
+      "func": "_perform_request",
+      "lineno": 365,
+      "name": "self._verified_elasticsearch",
+      "kind": "SELF_ATTR",
+      "access": "read",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "read"
+    },
+    {
+      "file": "elasticsearch/_async/client/_base.py",
+      "func": "_perform_request",
+      "lineno": 368,
+      "name": "self._verified_elasticsearch",
+      "kind": "SELF_ATTR",
+      "access": "write",
+      "mediated": false,
+      "reason": "no lock/queue/event mediation found in function",
+      "write_form": "full_rebind"
+    }
+  ]
+}

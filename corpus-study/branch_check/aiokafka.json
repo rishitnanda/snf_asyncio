@@ -1,0 +1,47 @@
+{
+  "repo": "aiokafka",
+  "destructive_names_total": 34,
+  "flagged_control_bounded_names": [
+    "SELF_ATTR:self._closed",
+    "SELF_ATTR:self._commit_refresh_task",
+    "SELF_ATTR:self._conns",
+    "SELF_ATTR:self._coordinator",
+    "SELF_ATTR:self._fetcher",
+    "SELF_ATTR:self._heartbeat_task",
+    "SELF_ATTR:self._md_update_fut",
+    "SELF_ATTR:self._next_autocommit_deadline",
+    "SELF_ATTR:self._performed_join_prepare",
+    "SELF_ATTR:self._rack_warning_logged",
+    "SELF_ATTR:self._sender_task",
+    "SELF_ATTR:self._started",
+    "SELF_ATTR:self._sync_task",
+    "SELF_ATTR:self._token_sent"
+  ],
+  "flagged_control_unbounded_names": [
+    "SELF_ATTR:self.coordinator_id"
+  ],
+  "flagged_data_names": [
+    "SELF_ATTR:self._batches",
+    "SELF_ATTR:self._closed_fut",
+    "SELF_ATTR:self._coordinator_dead_fut",
+    "SELF_ATTR:self._group_subscription",
+    "SELF_ATTR:self._idle_handle",
+    "SELF_ATTR:self._in_flight",
+    "SELF_ATTR:self._md_update_waiter",
+    "SELF_ATTR:self._metadata_snapshot",
+    "SELF_ATTR:self._muted_partitions",
+    "SELF_ATTR:self._pending_tasks",
+    "SELF_ATTR:self._preferred_read_replica",
+    "SELF_ATTR:self._protocol",
+    "SELF_ATTR:self._read_task",
+    "SELF_ATTR:self._reader",
+    "SELF_ATTR:self._records",
+    "SELF_ATTR:self._reset_committed_task",
+    "SELF_ATTR:self._versions",
+    "SELF_ATTR:self._wait_consume_future",
+    "SELF_ATTR:self._writer"
+  ],
+  "flagged_control_bounded_interactions": 167,
+  "flagged_control_unbounded_interactions": 12,
+  "flagged_data_interactions": 74
+}
