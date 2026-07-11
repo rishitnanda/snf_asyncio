@@ -8,13 +8,6 @@ __pycache__/
 venv/
 env/
 
-# Python tooling
-.pytest_cache/
-.mypy_cache/
-.ruff_cache/
-.coverage
-htmlcov/
-
 # Environment variables
 .env
 .env.*

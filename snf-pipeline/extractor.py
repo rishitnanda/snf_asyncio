@@ -239,6 +239,7 @@ class CoroutineExtractor(ast.NodeVisitor):
         self.current_class_scope = None
         self.current_function_scope = None
         self.current_func_node = None
+        self.current_is_async = True
         self.seq_counter = 0
         self._seen_wait_for_ids = set()
         self._visited_func_ids = set()
@@ -302,10 +303,41 @@ class CoroutineExtractor(ast.NodeVisitor):
         )
 
     def visit_AsyncFunctionDef(self, node):
+        self._visit_function_common(node, is_async=True)
+
+    def visit_FunctionDef(self, node):
+        """Plain `def` methods are visited too (not just `async def`).
+        This matters because Event.set()/clear(), Lock.release(), and
+        Queue.put_nowait() are all SYNCHRONOUS asyncio methods -- no
+        `await` required -- and it's completely normal for them to be
+        called from a plain `def`, most commonly asyncio Protocol
+        callback methods (`data_received`, `pause_writing`,
+        `resume_writing`, etc.), which asyncio always calls synchronously
+        by design, never as coroutines. Confirmed as a real, systematic
+        false-negative source via manual corpus verification: aiosonic's
+        `Http2Handler._on_window_updated` and sanic's `SanicProtocol`'s
+        writer-pause/data-received callbacks all call `.set()` from a
+        plain `def`, which was invisible to the old async-only traversal
+        -- undercounting `num_sets`/etc. to 0 and leaving the wake
+        guarantee unconstrained in the structured encoding, producing a
+        spurious `sat` (both-sat) result on real code across 3 separate
+        real-world objects in one corpus sweep.
+
+        ACQUIRE/Q_GET/EV_WAIT/wait_for are NOT emitted from a plain def
+        (see _visit_function_common's is_async gating) -- those all
+        require `await`, which is a SyntaxError outside `async def`, so
+        there's nothing legitimate to model there; any such call sitting
+        in a plain def in real code would be a no-op bug in the target
+        code itself (calling `.acquire()` without awaiting it discards
+        the coroutine object without ever running it), not something this
+        tool should treat as real synchronization."""
+        self._visit_function_common(node, is_async=False)
+
+    def _visit_function_common(self, node, is_async):
         if id(node) in self._visited_func_ids:
             return  # already processed via an enclosing function's own
                      # body traversal -- prevents double-counting ops for
-                     # nested async defs (e.g. workers nested inside a
+                     # nested defs (e.g. workers nested inside a
                      # benchmark function, or asyncpg's _acquire_impl
                      # nested inside _acquire)
         self._visited_func_ids.add(id(node))
@@ -313,6 +345,7 @@ class CoroutineExtractor(ast.NodeVisitor):
         prev_class = self.current_class_scope
         prev_func = self.current_function_scope
         prev_node = self.current_func_node
+        prev_is_async = self.current_is_async
         self.current_coro = node.name
         enclosing_class_scope, enclosing_function_scope = self.scopes.scope_of(node)
         # The scope FOR STATEMENTS INSIDE this function's body is its own
@@ -328,6 +361,7 @@ class CoroutineExtractor(ast.NodeVisitor):
             f"{enclosing_function_scope}.{node.name}" if enclosing_function_scope else node.name
         )
         self.current_func_node = node
+        self.current_is_async = is_async
         self.program.coro(node.name)
         for stmt in node.body:
             self.visit(stmt)
@@ -335,6 +369,7 @@ class CoroutineExtractor(ast.NodeVisitor):
         self.current_class_scope = prev_class
         self.current_function_scope = prev_func
         self.current_func_node = prev_node
+        self.current_is_async = prev_is_async
 
     def visit_AsyncWith(self, node):
         acquired = []
@@ -438,17 +473,19 @@ class CoroutineExtractor(ast.NodeVisitor):
 
         kind = self.program.sync_objects[sync_name]
         if kind == __import__("ir").SyncKind.LOCK:
-            if method == "acquire":
+            if method == "acquire" and self.current_is_async:
                 self._emit(OpKind.ACQUIRE, sync_name, lineno)
             elif method == "release":
                 self._emit(OpKind.RELEASE, sync_name, lineno)
         elif kind == __import__("ir").SyncKind.QUEUE:
-            if method == "get":
+            if method == "get" and self.current_is_async:
                 self._emit(OpKind.Q_GET, sync_name, lineno)
-            elif method in ("put", "put_nowait"):
+            elif method == "put_nowait":
+                self._emit(OpKind.Q_PUT, sync_name, lineno)
+            elif method == "put" and self.current_is_async:
                 self._emit(OpKind.Q_PUT, sync_name, lineno)
         elif kind == __import__("ir").SyncKind.EVENT:
-            if method == "wait":
+            if method == "wait" and self.current_is_async:
                 self._emit(OpKind.EV_WAIT, sync_name, lineno)
             elif method == "set":
                 self._emit(OpKind.EV_SET, sync_name, lineno)
@@ -749,6 +786,9 @@ def extract(source: str, coroutine_names=None) -> Program:
         if isinstance(node, ast.AsyncFunctionDef):
             if coroutine_names is None or node.name in coroutine_names:
                 extractor.visit_AsyncFunctionDef(node)
+        elif isinstance(node, ast.FunctionDef):
+            if coroutine_names is None or node.name in coroutine_names:
+                extractor.visit_FunctionDef(node)
 
     # Multi-hop interprocedural resolution (same file only, depth-limited
     # to avoid pathological recursion): if a wait_for site wasn't handled

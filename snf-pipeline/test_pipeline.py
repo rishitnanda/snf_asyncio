@@ -685,6 +685,88 @@ async def runner():
           results["lock"]["naive"] == "sat" and results["lock"]["structured"] == "unsat")
 
 
+def test_non_asyncio_constructors_excluded():
+    """Real methodological issue found via manual corpus spot-check:
+    websockets/trio/connection.py uses trio.Event(), and the extractor
+    was matching it purely by short class name ("Event"), analyzing it
+    as if it were asyncio.Event() and applying SNF's asyncio-scheduler-
+    specific structured encoding to a primitive this pipeline was never
+    validated against. Also caught threading.Lock() (seen in aioredis's
+    connection.py: `self._fork_lock = threading.Lock()`) via the same
+    bug. Only asyncio/compat-prefixed (or bare, unprefixed) constructor
+    calls should be recognized."""
+    program = run_source("""
+import trio
+import threading
+import asyncio
+
+class Connection:
+    def __init__(self):
+        self.send_in_progress = trio.Event()
+        self._fork_lock = threading.Lock()
+        self._real_lock = asyncio.Lock()
+
+    async def m(self):
+        async with self._real_lock:
+            pass
+""")
+    check("trio/threading excluded: only the real asyncio.Lock recognized",
+          list(program.sync_objects.keys()) == ["Connection._real_lock"])
+
+
+def test_sync_def_set_release_put_nowait_detected():
+    """Real false-negative found via manual corpus spot-check: Event.set()/
+    Lock.release()/Queue.put_nowait() are all SYNCHRONOUS asyncio methods,
+    and it's normal for them to be called from a plain `def`, most
+    commonly asyncio Protocol callbacks (data_received, pause_writing,
+    etc.) which asyncio always calls synchronously. The old async-only
+    traversal never visited plain `def`s at all, undercounting num_sets/
+    num_puts to 0 and leaving the naive/structured divergence
+    unconstrained -- producing a spurious both-sat result on real code
+    (aiosonic's Http2Handler._window_updated, sanic's SanicProtocol's
+    write-pause/data-received callbacks)."""
+    program = run_source("""
+import asyncio
+
+class Handler:
+    def __init__(self):
+        self._updated = asyncio.Event()
+
+    async def wait_for_it(self):
+        self._updated.clear()
+        await self._updated.wait()
+
+    def on_updated(self) -> None:
+        self._updated.set()
+""")
+    results = check_all(program)
+    check("sync-def/EV_SET: detected from plain def, gap correctly resolved",
+          results["Handler._updated"]["naive"] == "sat" and
+          results["Handler._updated"]["structured"] == "unsat")
+
+
+def test_sync_def_does_not_emit_await_requiring_ops():
+    """ACQUIRE/Q_GET/EV_WAIT/wait_for genuinely require `await`, which is
+    a SyntaxError outside `async def` -- a plain def must never emit
+    these even if (erroneously) written to call e.g. `.acquire()` without
+    awaiting it, since that discards the coroutine object without ever
+    running it (a bug in the target code, not real synchronization)."""
+    program = run_source("""
+import asyncio
+
+class Handler:
+    def __init__(self):
+        self._lock = asyncio.Lock()
+
+    def broken_sync_method(self):
+        self._lock.acquire()  # bug in target code: never awaited
+""")
+    from ir import OpKind
+    ops = program.coroutines["broken_sync_method"].ops
+    check("sync-def: no ACQUIRE emitted from a plain def",
+          not any(op.kind == OpKind.ACQUIRE for op in ops))
+
+
 def main():
     tests = [v for k, v in globals().items() if k.startswith("test_") and callable(v)]
     for t in tests:
