@@ -21,3 +21,6 @@ snf-pipeline/results
 tbd.md
 paper.md
 track1_snf_formal.md
+
+tdc_*.py
+tdc_*.json
