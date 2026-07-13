@@ -1060,60 +1060,6 @@
       "flagged_control_unbounded_interactions": 0,
       "flagged_data_interactions": 51
     },
-    "trio": {
-      "repo": "trio",
-      "destructive_names_total": 41,
-      "flagged_control_bounded_names": [
-        "SELF_ATTR:self._binding",
-        "SELF_ATTR:self._broken",
-        "SELF_ATTR:self._delayed_outgoing",
-        "SELF_ATTR:self._did_handshake",
-        "SELF_ATTR:self._listening_context",
-        "SELF_ATTR:self._pending",
-        "SELF_ATTR:self._pending_excs",
-        "SELF_ATTR:self._state",
-        "SELF_ATTR:self.acquired",
-        "SELF_ATTR:self.started"
-      ],
-      "flagged_control_unbounded_names": [
-        "SELF_ATTR:self.alive"
-      ],
-      "flagged_data_names": [
-        "CLOSURE:ubq",
-        "CLOSURE:var",
-        "GLOBAL:_active_threads_local",
-        "GLOBAL:_resolver",
-        "GLOBAL:trio_test_contextvar",
-        "GLOBAL:trio_testing_contextvar",
-        "SELF_ATTR:self._afd_waiters",
-        "SELF_ATTR:self._borrower",
-        "SELF_ATTR:self._estimated_receive_size",
-        "SELF_ATTR:self._final_volley",
-        "SELF_ATTR:self._handshake_mtu",
-        "SELF_ATTR:self._incoming",
-        "SELF_ATTR:self._nested_child_running",
-        "SELF_ATTR:self._nursery",
-        "SELF_ATTR:self._outgoing",
-        "SELF_ATTR:self._parent_waiting_in_aexit",
-        "SELF_ATTR:self._pending_borrowers",
-        "SELF_ATTR:self._pending_starts",
-        "SELF_ATTR:self._receiver_waiting",
-        "SELF_ATTR:self._scope",
-        "SELF_ATTR:self.closed",
-        "SELF_ATTR:self.done",
-        "SELF_ATTR:self.failing",
-        "SELF_ATTR:self.ip",
-        "SELF_ATTR:self.main_task",
-        "SELF_ATTR:self.main_task_outcome",
-        "SELF_ATTR:self.port",
-        "SELF_ATTR:self.succeeded",
-        "SELF_ATTR:self.trailing_needs_finalize",
-        "SELF_ATTR:self.transport_stream"
-      ],
-      "flagged_control_bounded_interactions": 43,
-      "flagged_control_unbounded_interactions": 7,
-      "flagged_data_interactions": 136
-    },
     "websockets": {
       "repo": "websockets",
       "destructive_names_total": 30,
@@ -1159,15 +1105,15 @@
     }
   },
   "overall": {
-    "flagged_control_bounded_interactions": 3482,
-    "flagged_control_unbounded_interactions": 293,
-    "flagged_data_interactions": 2143,
-    "pct_flagged_data_of_flagged": 36.21,
-    "pct_flagged_control_of_flagged": 63.79,
-    "pct_bounded_of_flagged_control": 92.24,
-    "pct_unbounded_of_flagged_control": 7.76,
-    "flagged_control_bounded_distinct_names": 370,
-    "flagged_control_unbounded_distinct_names": 25,
-    "flagged_data_distinct_names": 384
+    "flagged_control_bounded_interactions": 3439,
+    "flagged_control_unbounded_interactions": 286,
+    "flagged_data_interactions": 2007,
+    "pct_flagged_data_of_flagged": 35.01,
+    "pct_flagged_control_of_flagged": 64.99,
+    "pct_bounded_of_flagged_control": 92.32,
+    "pct_unbounded_of_flagged_control": 7.68,
+    "flagged_control_bounded_distinct_names": 360,
+    "flagged_control_unbounded_distinct_names": 24,
+    "flagged_data_distinct_names": 354
   }
 }

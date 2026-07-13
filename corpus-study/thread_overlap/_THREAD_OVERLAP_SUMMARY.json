@@ -474,19 +474,6 @@
       "pct_destructive_unmediated_in_thread_functions": 0.0,
       "overlap_examples": []
     },
-    "trio": {
-      "repo": "trio",
-      "thread_offloading_functions": [
-        "check_case",
-        "check_run_in_trio_thread",
-        "main",
-        "test_ssl_server_basics"
-      ],
-      "destructive_unmediated_interactions": 163,
-      "overlap_interactions": 0,
-      "pct_destructive_unmediated_in_thread_functions": 0.0,
-      "overlap_examples": []
-    },
     "websockets": {
       "repo": "websockets",
       "thread_offloading_functions": [],
@@ -497,10 +484,10 @@
     }
   },
   "overall": {
-    "destructive_unmediated_total": 5557,
+    "destructive_unmediated_total": 5394,
     "overlap_total": 43,
-    "pct_destructive_unmediated_in_thread_functions": 0.77,
-    "repos_with_thread_usage": 8,
+    "pct_destructive_unmediated_in_thread_functions": 0.8,
+    "repos_with_thread_usage": 7,
     "note": "Lower bound: same-function only, no call-graph analysis, constructor/run_in_executor detection only (no .start()-based detection). True overlap is >= this figure."
   }
 }

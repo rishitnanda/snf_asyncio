@@ -509,24 +509,6 @@
     ],
     "already_has_scope_fix": false
   },
-  "trio": {
-    "total_files_scanned": 144,
-    "sync_only_files": 45,
-    "pct_sync_only_files": 31.25,
-    "sample_sync_only_paths": [
-      "src/trio/__main__.py",
-      "src/trio/_deprecate.py",
-      "src/trio/socket.py",
-      "src/trio/to_thread.py",
-      "src/trio/from_thread.py",
-      "src/trio/lowlevel.py",
-      "src/trio/__init__.py",
-      "src/trio/abc.py",
-      "src/trio/_version.py",
-      "src/trio/testing/_raises_group.py"
-    ],
-    "already_has_scope_fix": false
-  },
   "websockets": {
     "total_files_scanned": 73,
     "sync_only_files": 46,

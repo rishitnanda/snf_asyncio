@@ -2379,88 +2379,6 @@
         }
       ]
     },
-    "trio": {
-      "total_interactions": 1645,
-      "counts_by_bucket": {
-        "READ_ONLY": 1213,
-        "COMMUTATIVE": 246,
-        "DESTRUCTIVE": 186
-      },
-      "mediated_by_bucket": {
-        "READ_ONLY": 41,
-        "COMMUTATIVE": 7,
-        "DESTRUCTIVE": 23
-      },
-      "unmediated_by_bucket": {
-        "READ_ONLY": 1172,
-        "COMMUTATIVE": 239,
-        "DESTRUCTIVE": 163
-      },
-      "unmediated_total": 1574,
-      "unmediated_destructive_pct_of_all": 9.91,
-      "unmediated_destructive_pct_of_unmediated": 10.36,
-      "distinct_names_seen": 472,
-      "distinct_names_destructive": 41,
-      "distinct_names_commutative": 25,
-      "distinct_names_readonly": 406,
-      "destructive_examples": [
-        {
-          "file": "src/trio/_threads.py",
-          "func": "wait_all_threads_completed",
-          "lineno": 105,
-          "name": "_active_threads_local",
-          "kind": "GLOBAL",
-          "access": "write",
-          "mediated": false,
-          "reason": "no lock/queue/event mediation found in function",
-          "write_form": "mutating_method_noncommutative"
-        },
-        {
-          "file": "src/trio/_threads.py",
-          "func": "wait_all_threads_completed",
-          "lineno": 105,
-          "name": "_active_threads_local",
-          "kind": "GLOBAL",
-          "access": "read",
-          "mediated": false,
-          "reason": "no lock/queue/event mediation found in function",
-          "write_form": "read"
-        },
-        {
-          "file": "src/trio/_channel.py",
-          "func": "send",
-          "lineno": 212,
-          "name": "self._state",
-          "kind": "SELF_ATTR",
-          "access": "read",
-          "mediated": false,
-          "reason": "no lock/queue/event mediation found in function",
-          "write_form": "read"
-        },
-        {
-          "file": "src/trio/_channel.py",
-          "func": "receive",
-          "lineno": 360,
-          "name": "self._state",
-          "kind": "SELF_ATTR",
-          "access": "read",
-          "mediated": false,
-          "reason": "no lock/queue/event mediation found in function",
-          "write_form": "read"
-        },
-        {
-          "file": "src/trio/_dtls.py",
-          "func": "_send_volley",
-          "lineno": 923,
-          "name": "self._handshake_mtu",
-          "kind": "SELF_ATTR",
-          "access": "read",
-          "mediated": false,
-          "reason": "no lock/queue/event mediation found in function",
-          "write_form": "read"
-        }
-      ]
-    },
     "websockets": {
       "total_interactions": 721,
       "counts_by_bucket": {
@@ -2545,27 +2463,27 @@
     }
   },
   "overall": {
-    "total_interactions": 22067,
+    "total_interactions": 20422,
     "counts_by_bucket": {
-      "READ_ONLY": 15396,
-      "COMMUTATIVE": 753,
-      "DESTRUCTIVE": 5918
+      "READ_ONLY": 14183,
+      "COMMUTATIVE": 507,
+      "DESTRUCTIVE": 5732
     },
     "mediated_by_bucket": {
-      "READ_ONLY": 300,
-      "COMMUTATIVE": 29,
-      "DESTRUCTIVE": 361
+      "READ_ONLY": 259,
+      "COMMUTATIVE": 22,
+      "DESTRUCTIVE": 338
     },
     "unmediated_by_bucket": {
-      "READ_ONLY": 15096,
-      "COMMUTATIVE": 724,
-      "DESTRUCTIVE": 5557
+      "READ_ONLY": 13924,
+      "COMMUTATIVE": 485,
+      "DESTRUCTIVE": 5394
     },
-    "pct_of_all_read_only": 69.77,
-    "pct_of_all_commutative": 3.41,
-    "pct_of_all_destructive": 26.82,
-    "pct_unmediated_read_only_of_all": 68.41,
-    "pct_unmediated_commutative_of_all": 3.28,
-    "pct_unmediated_destructive_of_all": 25.18
+    "pct_of_all_read_only": 69.45,
+    "pct_of_all_commutative": 2.48,
+    "pct_of_all_destructive": 28.07,
+    "pct_unmediated_read_only_of_all": 68.18,
+    "pct_unmediated_commutative_of_all": 2.37,
+    "pct_unmediated_destructive_of_all": 26.41
   }
 }

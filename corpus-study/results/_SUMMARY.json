@@ -715,29 +715,6 @@
       "n_async_functions_with_interactions": 285,
       "scoped_to": null
     },
-    "trio": {
-      "total_interactions": 1645,
-      "mediated": 71,
-      "unmediated": 1574,
-      "pct_mediated": 4.32,
-      "by_kind": {
-        "GLOBAL": {
-          "total": 459,
-          "mediated": 5
-        },
-        "SELF_ATTR": {
-          "total": 608,
-          "mediated": 63
-        },
-        "CLOSURE": {
-          "total": 578,
-          "mediated": 3
-        }
-      },
-      "n_python_files_scanned": 144,
-      "n_async_functions_with_interactions": 529,
-      "scoped_to": null
-    },
     "websockets": {
       "total_interactions": 721,
       "mediated": 0,
@@ -763,22 +740,22 @@
     }
   },
   "overall": {
-    "total_interactions": 22067,
-    "mediated": 690,
-    "unmediated": 21377,
-    "pct_mediated": 3.13,
+    "total_interactions": 20422,
+    "mediated": 619,
+    "unmediated": 19803,
+    "pct_mediated": 3.03,
     "by_kind": {
       "GLOBAL": {
-        "total": 3087,
-        "mediated": 32
+        "total": 2628,
+        "mediated": 27
       },
       "SELF_ATTR": {
-        "total": 17811,
-        "mediated": 653
+        "total": 17203,
+        "mediated": 590
       },
       "CLOSURE": {
-        "total": 1169,
-        "mediated": 5
+        "total": 591,
+        "mediated": 2
       }
     }
   }

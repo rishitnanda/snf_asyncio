@@ -10,8 +10,25 @@ NON_SNF_TARGETS = $(foreach b,$(NON_SNF_BENCHMARKS),$(b)_nonsnf)
 # Define the corpus directory
 CORPUS_DIR = corpus-study/repo_src
 
-.PHONY: all z3 z3_snf z3_non_snf z3_plot cvc5 cvc5_structured compare clean calligraph pipeline $(ALL_TARGETS) $(CVC5_TARGETS) $(NON_SNF_TARGETS)
+.PHONY: all z3 z3_snf z3_non_snf z3_plot cvc5 cvc5_structured compare clean calligraph pipeline corpus $(ALL_TARGETS) $(CVC5_TARGETS) $(NON_SNF_TARGETS)
 
+corpus:
+	@if [ ! -d "$(CORPUS_DIR)" ]; then \
+		echo "$(CORPUS_DIR) not found. Importing corpus..."; \
+		bash corpus-study/corpus_import.sh; \
+	else \
+		echo "Using existing corpus in $(CORPUS_DIR)"; \
+	fi
+	python3 corpus-study/scan.py
+	python3 corpus-study/refine.py
+	python3 corpus-study/branch_check.py
+	python3 corpus-study/eager_factory_check.py
+	python3 corpus-study/scope_conflation_check.py
+	python3 corpus-study/scope_contamination_check.py
+	python3 corpus-study/thread_overlap_check.py
+	python3 corpus-study/make_sankey.py
+	python3 corpus-study/corpus_pie.py
+	
 all: z3 cvc5
 
 pipeline:

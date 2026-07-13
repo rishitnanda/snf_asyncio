@@ -1,7 +1,7 @@
 {
   "per_repo": {},
   "overall": {
-    "repos_scanned": 34,
+    "repos_scanned": 33,
     "repos_with_eager_task_factory_reference": 0,
     "pct_repos_using_eager_task_factory": 0.0,
     "repos_with_unclear_set_task_factory_only": 0,
