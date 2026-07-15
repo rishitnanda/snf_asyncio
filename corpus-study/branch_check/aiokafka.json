@@ -41,7 +41,7 @@
     "SELF_ATTR:self._wait_consume_future",
     "SELF_ATTR:self._writer"
   ],
-  "flagged_control_bounded_interactions": 167,
-  "flagged_control_unbounded_interactions": 12,
-  "flagged_data_interactions": 74
+  "flagged_control_bounded_interactions": 164,
+  "flagged_control_unbounded_interactions": 9,
+  "flagged_data_interactions": 73
 }

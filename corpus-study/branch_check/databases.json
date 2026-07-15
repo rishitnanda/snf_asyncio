@@ -15,7 +15,7 @@
     "SELF_ATTR:self._savepoint_name",
     "SELF_ATTR:self._transaction"
   ],
-  "flagged_control_bounded_interactions": 61,
+  "flagged_control_bounded_interactions": 56,
   "flagged_control_unbounded_interactions": 0,
-  "flagged_data_interactions": 194
+  "flagged_data_interactions": 155
 }

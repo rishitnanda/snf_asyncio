@@ -47,7 +47,7 @@
     "SELF_ATTR:self.state",
     "SELF_ATTR:self.url"
   ],
-  "flagged_control_bounded_interactions": 230,
+  "flagged_control_bounded_interactions": 224,
   "flagged_control_unbounded_interactions": 6,
-  "flagged_data_interactions": 95
+  "flagged_data_interactions": 86
 }

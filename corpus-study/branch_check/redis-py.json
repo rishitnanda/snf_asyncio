@@ -67,7 +67,7 @@
     "SELF_ATTR:self.port",
     "SELF_ATTR:self.slots_cache"
   ],
-  "flagged_control_bounded_interactions": 409,
+  "flagged_control_bounded_interactions": 344,
   "flagged_control_unbounded_interactions": 0,
-  "flagged_data_interactions": 129
+  "flagged_data_interactions": 97
 }

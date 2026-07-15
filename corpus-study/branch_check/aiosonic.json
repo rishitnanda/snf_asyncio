@@ -36,7 +36,7 @@
     "SELF_ATTR:self.loop",
     "SELF_ATTR:self.requests"
   ],
-  "flagged_control_bounded_interactions": 93,
-  "flagged_control_unbounded_interactions": 40,
-  "flagged_data_interactions": 42
+  "flagged_control_bounded_interactions": 91,
+  "flagged_control_unbounded_interactions": 39,
+  "flagged_data_interactions": 40
 }

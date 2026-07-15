@@ -49,9 +49,9 @@
         "SELF_ATTR:self.state",
         "SELF_ATTR:self.url"
       ],
-      "flagged_control_bounded_interactions": 230,
+      "flagged_control_bounded_interactions": 224,
       "flagged_control_unbounded_interactions": 6,
-      "flagged_data_interactions": 95
+      "flagged_data_interactions": 86
     },
     "aiobotocore": {
       "repo": "aiobotocore",
@@ -88,7 +88,7 @@
         "SELF_ATTR:self._visited_profiles",
         "SELF_ATTR:self.environ"
       ],
-      "flagged_control_bounded_interactions": 68,
+      "flagged_control_bounded_interactions": 61,
       "flagged_control_unbounded_interactions": 5,
       "flagged_data_interactions": 42
     },
@@ -272,9 +272,9 @@
         "SELF_ATTR:self._wait_consume_future",
         "SELF_ATTR:self._writer"
       ],
-      "flagged_control_bounded_interactions": 167,
-      "flagged_control_unbounded_interactions": 12,
-      "flagged_data_interactions": 74
+      "flagged_control_bounded_interactions": 164,
+      "flagged_control_unbounded_interactions": 9,
+      "flagged_data_interactions": 73
     },
     "aiomysql": {
       "repo": "aiomysql",
@@ -369,7 +369,7 @@
       ],
       "flagged_control_bounded_interactions": 127,
       "flagged_control_unbounded_interactions": 22,
-      "flagged_data_interactions": 22
+      "flagged_data_interactions": 20
     },
     "aioredis": {
       "repo": "aioredis",
@@ -405,9 +405,9 @@
         "SELF_ATTR:self.port",
         "SELF_ATTR:self.sha"
       ],
-      "flagged_control_bounded_interactions": 165,
+      "flagged_control_bounded_interactions": 154,
       "flagged_control_unbounded_interactions": 0,
-      "flagged_data_interactions": 40
+      "flagged_data_interactions": 26
     },
     "aiosonic": {
       "repo": "aiosonic",
@@ -447,9 +447,9 @@
         "SELF_ATTR:self.loop",
         "SELF_ATTR:self.requests"
       ],
-      "flagged_control_bounded_interactions": 93,
-      "flagged_control_unbounded_interactions": 40,
-      "flagged_data_interactions": 42
+      "flagged_control_bounded_interactions": 91,
+      "flagged_control_unbounded_interactions": 39,
+      "flagged_data_interactions": 40
     },
     "apscheduler": {
       "repo": "apscheduler",
@@ -570,7 +570,7 @@
       ],
       "flagged_control_bounded_interactions": 138,
       "flagged_control_unbounded_interactions": 0,
-      "flagged_data_interactions": 29
+      "flagged_data_interactions": 26
     },
     "asyncz": {
       "repo": "asyncz",
@@ -603,9 +603,9 @@
         "SELF_ATTR:self._savepoint_name",
         "SELF_ATTR:self._transaction"
       ],
-      "flagged_control_bounded_interactions": 61,
+      "flagged_control_bounded_interactions": 56,
       "flagged_control_unbounded_interactions": 0,
-      "flagged_data_interactions": 194
+      "flagged_data_interactions": 155
     },
     "elasticsearch-py": {
       "repo": "elasticsearch-py",
@@ -730,7 +730,7 @@
       ],
       "flagged_control_bounded_interactions": 184,
       "flagged_control_unbounded_interactions": 0,
-      "flagged_data_interactions": 197
+      "flagged_data_interactions": 193
     },
     "httpx": {
       "repo": "httpx",
@@ -835,9 +835,9 @@
         "SELF_ATTR:self.shutdown_event",
         "SELF_ATTR:self.status_code"
       ],
-      "flagged_control_bounded_interactions": 89,
-      "flagged_control_unbounded_interactions": 26,
-      "flagged_data_interactions": 87
+      "flagged_control_bounded_interactions": 86,
+      "flagged_control_unbounded_interactions": 16,
+      "flagged_data_interactions": 72
     },
     "redis-py": {
       "repo": "redis-py",
@@ -908,9 +908,9 @@
         "SELF_ATTR:self.port",
         "SELF_ATTR:self.slots_cache"
       ],
-      "flagged_control_bounded_interactions": 409,
+      "flagged_control_bounded_interactions": 344,
       "flagged_control_unbounded_interactions": 0,
-      "flagged_data_interactions": 129
+      "flagged_data_interactions": 97
     },
     "sanic": {
       "repo": "sanic",
@@ -971,9 +971,9 @@
         "SELF_ATTR:self.websocket_tasks",
         "SELF_ATTR:self.websocket_url"
       ],
-      "flagged_control_bounded_interactions": 241,
+      "flagged_control_bounded_interactions": 160,
       "flagged_control_unbounded_interactions": 43,
-      "flagged_data_interactions": 72
+      "flagged_data_interactions": 63
     },
     "sqlalchemy": {
       "repo": "sqlalchemy",
@@ -994,9 +994,9 @@
         "SELF_ATTR:self.sync_transaction",
         "SELF_ATTR:self.trans"
       ],
-      "flagged_control_bounded_interactions": 18,
+      "flagged_control_bounded_interactions": 16,
       "flagged_control_unbounded_interactions": 0,
-      "flagged_data_interactions": 77
+      "flagged_data_interactions": 70
     },
     "taskiq": {
       "repo": "taskiq",
@@ -1021,7 +1021,7 @@
       ],
       "flagged_control_bounded_interactions": 27,
       "flagged_control_unbounded_interactions": 0,
-      "flagged_data_interactions": 30
+      "flagged_data_interactions": 28
     },
     "tortoise-orm": {
       "repo": "tortoise-orm",
@@ -1105,13 +1105,13 @@
     }
   },
   "overall": {
-    "flagged_control_bounded_interactions": 3439,
-    "flagged_control_unbounded_interactions": 286,
-    "flagged_data_interactions": 2007,
-    "pct_flagged_data_of_flagged": 35.01,
-    "pct_flagged_control_of_flagged": 64.99,
-    "pct_bounded_of_flagged_control": 92.32,
-    "pct_unbounded_of_flagged_control": 7.68,
+    "flagged_control_bounded_interactions": 3254,
+    "flagged_control_unbounded_interactions": 272,
+    "flagged_data_interactions": 1868,
+    "pct_flagged_data_of_flagged": 34.63,
+    "pct_flagged_control_of_flagged": 65.37,
+    "pct_bounded_of_flagged_control": 92.29,
+    "pct_unbounded_of_flagged_control": 7.71,
     "flagged_control_bounded_distinct_names": 360,
     "flagged_control_unbounded_distinct_names": 24,
     "flagged_data_distinct_names": 354

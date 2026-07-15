@@ -19,6 +19,15 @@ corpus:
 	else \
 		echo "Using existing corpus in $(CORPUS_DIR)"; \
 	fi
+	rm -rf corpus-study/eager_factory
+	rm -rf corpus-study/branch_check
+	rm -rf corpus-study/refined
+	rm -rf corpus-study/results
+	rm -rf corpus-study/scope_contamination
+	rm -rf corpus-study/scope_conflation
+	rm -rf corpus-study/thread_overlap
+	rm -r corpus-study/corpus_breakdown_pie.png
+	rm -r corpus-study/corpus_sankey.png
 	python3 corpus-study/scan.py
 	python3 corpus-study/refine.py
 	python3 corpus-study/branch_check.py

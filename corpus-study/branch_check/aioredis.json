@@ -32,7 +32,7 @@
     "SELF_ATTR:self.port",
     "SELF_ATTR:self.sha"
   ],
-  "flagged_control_bounded_interactions": 165,
+  "flagged_control_bounded_interactions": 154,
   "flagged_control_unbounded_interactions": 0,
-  "flagged_data_interactions": 40
+  "flagged_data_interactions": 26
 }

@@ -276,10 +276,21 @@ def main():
 
         # Interaction-level counts: every DESTRUCTIVE interaction inherits
         # its name's split, same inheritance rule refine.py uses for buckets.
+        # Only UNMEDIATED interactions count here -- an already-mediated
+        # destructive interaction is already safe via Proposition 1a and
+        # does not belong in the "needs Prop 12/13 havoc-injection
+        # treatment" denominator. refine.py itself makes this distinction
+        # explicitly (mediated_counts vs unmediated_counts); this filter
+        # brings branch_check.py's own counting in line with it -- without
+        # it, this script's own denominator (all destructive interactions,
+        # mediated or not) silently diverged from corpus_pie.py's, which
+        # correctly used only the unmediated subset.
         control_bounded_interactions = 0
         control_unbounded_interactions = 0
         data_interactions = 0
         for i in data["interactions"]:
+            if i["mediated"]:
+                continue
             key = (i["kind"], i["name"])
             if bucket_by_name.get(key) != "DESTRUCTIVE":
                 continue

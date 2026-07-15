@@ -33,7 +33,7 @@
     "SELF_ATTR:self._visited_profiles",
     "SELF_ATTR:self.environ"
   ],
-  "flagged_control_bounded_interactions": 68,
+  "flagged_control_bounded_interactions": 61,
   "flagged_control_unbounded_interactions": 5,
   "flagged_data_interactions": 42
 }

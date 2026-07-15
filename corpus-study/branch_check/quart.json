@@ -38,7 +38,7 @@
     "SELF_ATTR:self.shutdown_event",
     "SELF_ATTR:self.status_code"
   ],
-  "flagged_control_bounded_interactions": 89,
-  "flagged_control_unbounded_interactions": 26,
-  "flagged_data_interactions": 87
+  "flagged_control_bounded_interactions": 86,
+  "flagged_control_unbounded_interactions": 16,
+  "flagged_data_interactions": 72
 }

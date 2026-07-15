@@ -17,7 +17,7 @@
     "SELF_ATTR:self.sync_transaction",
     "SELF_ATTR:self.trans"
   ],
-  "flagged_control_bounded_interactions": 18,
+  "flagged_control_bounded_interactions": 16,
   "flagged_control_unbounded_interactions": 0,
-  "flagged_data_interactions": 77
+  "flagged_data_interactions": 70
 }

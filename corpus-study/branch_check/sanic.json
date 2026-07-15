@@ -57,7 +57,7 @@
     "SELF_ATTR:self.websocket_tasks",
     "SELF_ATTR:self.websocket_url"
   ],
-  "flagged_control_bounded_interactions": 241,
+  "flagged_control_bounded_interactions": 160,
   "flagged_control_unbounded_interactions": 43,
-  "flagged_data_interactions": 72
+  "flagged_data_interactions": 63
 }
