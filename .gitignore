@@ -18,8 +18,10 @@ temp/
 corpus-study/repo_src/
 
 tbd.md
-paper.md
+draft.md
 track1_snf_formal.md
 
 tdc_*.py
 tdc_*.json
+
+submission_latex/
